@@ -1,28 +1,30 @@
 site_name: SlateFlow Docs
-site_description: Documentation utilisateur des addons Blender de la suite SlateFlow
+site_description: User documentation for the SlateFlow suite of Blender add-ons
 site_url: https://oylbis.github.io/slateflow-docs/
 repo_url: https://github.com/oylbis/slateflow-docs
 
 theme:
   name: material
+  logo: assets/branding/logo_slateflow.png
+  favicon: assets/branding/favicon.png
+  font:
+    text: Inter
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: black
+      accent: teal
       toggle:
         icon: material/weather-night
-        name: Passer en mode sombre
+        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: black
+      accent: teal
       toggle:
         icon: material/weather-sunny
-        name: Passer en mode clair
+        name: Switch to light mode
   features:
-    - navigation.instant
-    - navigation.tracking
     - navigation.sections
     - navigation.top
     - search.suggest
@@ -31,6 +33,9 @@ theme:
     - toc.follow
   icon:
     repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition
@@ -41,16 +46,31 @@ markdown_extensions:
   - toc:
       permalink: true
 
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: fr
+          name: Français
+          build: true
+          site_name: Documentation SlateFlow
+          site_description: Documentation utilisateur de la suite d'addons Blender SlateFlow
+
 nav:
-  - Accueil: index.md
+  - index.md
   - dopesheetFlow:
-      - Présentation: dopesheetFlow/index.md
-      - Installation: dopesheetFlow/installation.md
-      - Prise en main: dopesheetFlow/prise-en-main.md
-      - Fonctionnalités: dopesheetFlow/fonctionnalites.md
-      - Préférences & raccourcis: dopesheetFlow/preferences.md
-      - FAQ & dépannage: dopesheetFlow/faq.md
-      - Historique des versions: dopesheetFlow/changelog.md
+      - dopesheetFlow/index.md
+      - dopesheetFlow/installation.md
+      - dopesheetFlow/getting-started.md
+      - dopesheetFlow/features.md
+      - dopesheetFlow/preferences.md
+      - dopesheetFlow/faq.md
+      - dopesheetFlow/changelog.md
 
 extra:
   social:
