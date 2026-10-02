@@ -21,15 +21,9 @@ l'overlay :
 
 ## Préférences de l'addon
 
-Dans **Edit > Preferences > Add-ons**, ouvrez les préférences de
-dopesheetFlow pour accéder au réglage du raccourci de scrubbing 3D :
-
-- **Modifier** : `None`, `Ctrl`, `Alt` ou `Shift` — **Alt** par défaut.
-- **Key** : la touche à maintenir avec le modificateur — **M** par défaut.
-
-Le raccourci complet par défaut est donc **Alt+M**, maintenu dans la vue
-3D pour afficher le défileur de vignettes. Tout changement s'applique
-**immédiatement**, sans redémarrer Blender ni désactiver/réactiver l'addon.
+**Edit > Preferences > Add-ons > dopesheetFlow** permet de changer le
+raccourci de scrubbing 3D (**Alt+M** par défaut) — le changement s'applique
+immédiatement, sans redémarrage.
 
 ## Raccourcis dans la Dope Sheet
 

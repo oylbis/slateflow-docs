@@ -49,11 +49,7 @@ constraints, nothing that requires storyFlow to make sense of. The "Video
 Editing" and "2D Animation" workspaces it relies on are Blender's own
 standard workspaces, not custom UI.
 
-## Requirements
-
-**Blender 5.0 or newer** (5.2 LTS recommended). storyFlow relies on the
-sequencer strip API (`Strip`, `SceneStrip`, `Window.workspace.sequencer_scene`)
-introduced in Blender 5.0.
+Requires **Blender 5.0 or newer** (5.2 LTS recommended).
 
 ## License
 
@@ -65,3 +61,12 @@ add-on (Blender Foundation, GPL) by Antonio Vazquez, Matias Mendiola, Daniel
 Martinez Lara, Rodrigo Blaas and Samuel Bernou.
 
 storyFlow is part of the **[SlateFlow](../index.md)** suite.
+
+## Support
+
+This project is developed at its author's own pace, in their free time.
+It's provided **as-is**, with no warranty.
+
+Found a bug or have a suggestion? Use the support channel listed on your
+purchase page — every message is read, but response times can't be
+guaranteed.

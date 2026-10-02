@@ -1,6 +1,6 @@
 # Installation
 
-1. Download the `storyFlow-<version>.zip` file from your source of
+1. Download the `sequencerOTIO-<version>.zip` file from your source of
    purchase.
 2. Drag and drop the `.zip` anywhere into Blender's window — or, from
    **Edit > Preferences > Get Extensions** (**Add-ons** on some versions),
@@ -11,8 +11,7 @@ duplicate, no manual removal needed.
 
 Requires **Blender 5.0 or newer** (5.2 LTS recommended).
 
-!!! warning "Button or panel not showing up right after installation?"
-    On a Blender profile that has never had the add-on installed before,
-    some UI elements can occasionally fail to appear immediately after
-    installation. Disable then re-enable the add-on once (in *Preferences >
-    Get Extensions*) — no reinstall needed.
+!!! info "The opentimelineio dependency installs itself"
+    No extra setup needed in most cases — see
+    [Configuration](configuration.md) for how that works and what to do on
+    an uncovered platform.

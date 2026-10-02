@@ -1,16 +1,23 @@
 # Historique des versions
 
-## 1.0.0 — Version actuelle
+Version actuelle : **1.0.0**.
 
-Ensemble complet des fonctionnalités décrites dans ce guide :
+## Depuis la première release
 
-- Export du montage VSE vers un `.otio` calibré pour Resolve (disposition
-  des pistes, courbes de Bézier, fondus natifs, vitesse/freeze en
-  `TimeEffect`).
-- Import en mode Add, Replace ou Conform.
-- Diff par conform (inchangé / déplacé / retrimé / split / modifié / nouveau
-  / supprimé) avec application sélective.
-- Installation automatique de la dépendance `opentimelineio` depuis des
-  wheels embarquées, avec repli PyPI et interpréteur externe.
-- Rapports de debug pour chaque export/import, chargés directement dans
-  l'éditeur de texte de Blender.
+Aucun changement pour l'instant — c'est la version actuelle.
+
+## Roadmap
+
+Idées envisagées pour une future version — pas des engagements, juste la
+direction actuelle :
+
+- **Étendre le pont Blender ↔ Resolve** au-delà des strips adossés à un
+  média (le périmètre actuel de l'export/import/conform) : strips TEXT,
+  effets supplémentaires, modes de fusion, et l'état activé/désactivé
+  d'un strip.
+- **Exposer l'export OTIO générique** (non spécifique à Resolve) déjà
+  présent dans le moteur, ouvrant la voie à d'autres logiciels compatibles
+  OTIO au-delà de Resolve.
+
+Les retours et suggestions sont les bienvenus — voir
+[Support](index.md#support).

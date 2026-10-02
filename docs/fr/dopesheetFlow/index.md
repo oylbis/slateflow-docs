@@ -38,9 +38,8 @@ activable depuis un bouton dans l'en-tête de la Dope Sheet.
 - **Scrubbing dans la vue 3D** : une touche maintenue affiche un défileur de
   vignettes près du curseur, sans jamais quitter la vue 3D.
 
-Ce guide couvre l'installation, la prise en main et le détail de chaque
-fonctionnalité. Pour une démonstration en images, voir la page
-**[Fonctionnalités](features.md)**.
+Voir la page **[Fonctionnalités](features.md)** pour une démonstration
+complète en images.
 
 ## Pourquoi ça reste "natif"
 
@@ -51,9 +50,7 @@ est un vrai layer, groupe ou keyframe Grease Pencil. Désactivez l'overlay
 depuis le bouton d'en-tête : la Dope Sheet redevient exactement celle de
 Blender, channels compris.
 
-## Prérequis
-
-- **Blender 5.2 ou plus récent** (Grease Pencil v3 requis).
+Nécessite **Blender 5.2 ou plus récent** (Grease Pencil v3).
 
 ## Licence
 
@@ -61,3 +58,12 @@ Blender, channels compris.
 — SPDX : `GPL-3.0-or-later`.
 
 dopesheetFlow fait partie de la suite **[SlateFlow](../index.md)**.
+
+## Support
+
+Ce projet est développé à son propre rythme, sur le temps libre de son
+auteur. Il est fourni **en l'état**, sans garantie.
+
+Un bug à signaler, une suggestion ? Utilisez le canal de support indiqué
+sur votre page d'achat — chaque message est lu, mais sans garantie de délai
+de réponse.

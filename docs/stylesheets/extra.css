@@ -81,3 +81,25 @@ body {
 .md-typeset code {
   border-radius: 6px;
 }
+
+/* ——— Sidebar: drop the redundant "SlateFlow Docs" site-title header —
+   the "SlateFlow" nav item right below it already serves as the home
+   link, so this duplicated it. Only targets the top-level label (a
+   direct child of .md-nav--primary), not nested section titles. */
+.md-nav--primary > .md-nav__title {
+  display: none;
+}
+
+/* ——— Per-addon accent color (set by addon-theme.js via data-addon on
+   <html>, matching each addon's category color on slateflow-website) ——— */
+html[data-addon="storyflow"] {
+  --md-accent-fg-color: #00c7d6;
+  --md-accent-fg-color--transparent: #00c7d61a;
+  --md-typeset-a-color: #0097a3;
+}
+
+html[data-addon="sequencerotio"] {
+  --md-accent-fg-color: #b60c10;
+  --md-accent-fg-color--transparent: #b60c101a;
+  --md-typeset-a-color: #b60c10;
+}

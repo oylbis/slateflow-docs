@@ -35,9 +35,7 @@ Dope Sheet header.
 - **3D viewport scrubbing**: hold a customizable key to bring up a
   thumbnail scrubber near the cursor, without leaving the 3D view.
 
-This guide covers installation, getting started, and every feature in
-detail. For a visual walkthrough, see the
-**[Features](features.md)** page.
+See the **[Features](features.md)** page for a full visual walkthrough.
 
 ## Why it feels native
 
@@ -47,9 +45,7 @@ doesn't need one. Everything it shows and moves is a real Grease Pencil
 layer, group or keyframe. Turn the overlay off from the header button and
 the Dope Sheet is exactly Blender's own, channels and all.
 
-## Requirements
-
-- **Blender 5.2 or newer** (Grease Pencil v3 required).
+Requires **Blender 5.2 or newer** (Grease Pencil v3).
 
 ## License
 
@@ -57,3 +53,12 @@ the Dope Sheet is exactly Blender's own, channels and all.
 — SPDX: `GPL-3.0-or-later`.
 
 dopesheetFlow is part of the **[SlateFlow](../index.md)** suite.
+
+## Support
+
+This project is developed at its author's own pace, in their free time.
+It's provided **as-is**, with no warranty.
+
+Found a bug or have a suggestion? Use the support channel listed on your
+purchase page — every message is read, but response times can't be
+guaranteed.

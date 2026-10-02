@@ -20,15 +20,9 @@ In the Dope Sheet, open the side panel (**N** key) and find the
 
 ## Add-on preferences
 
-In **Edit > Preferences > Add-ons**, open dopesheetFlow's preferences to
-access the 3D scrubbing shortcut setting:
-
-- **Modifier**: `None`, `Ctrl`, `Alt` or `Shift` — **Alt** by default.
-- **Key**: the key to hold together with the modifier — **M** by default.
-
-The full default shortcut is therefore **Alt+M**, held in the 3D view to
-show the thumbnail scrubber. Any change applies **immediately**, without
-restarting Blender or disabling/re-enabling the add-on.
+**Edit > Preferences > Add-ons > dopesheetFlow** lets you change the 3D
+scrubbing shortcut (**Alt+M** by default) — changes apply immediately, no
+restart needed.
 
 ## Shortcuts in the Dope Sheet
 

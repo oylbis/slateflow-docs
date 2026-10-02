@@ -50,9 +50,7 @@ See **[Export](export.md)**, **[Import & conform](import.md)** and
   F-Curves. Turn the add-on off and your edit is exactly what Blender
   itself put there.
 
-## Requirements
-
-**Blender 5.0 or newer** (5.2 LTS recommended).
+Requires **Blender 5.0 or newer** (5.2 LTS recommended).
 
 ## License
 
@@ -60,3 +58,12 @@ See **[Export](export.md)**, **[Import & conform](import.md)** and
 — SPDX: `GPL-3.0-or-later`.
 
 sequencerOTIO is part of the **[SlateFlow](../index.md)** suite.
+
+## Support
+
+This project is developed at its author's own pace, in their free time.
+It's provided **as-is**, with no warranty.
+
+Found a bug or have a suggestion? Use the support channel listed on your
+purchase page — every message is read, but response times can't be
+guaranteed.

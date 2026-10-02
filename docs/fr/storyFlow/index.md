@@ -54,11 +54,7 @@ scènes, de vrais strips, de vraies contraintes, rien qui nécessite storyFlow
 pour avoir un sens. Les workspaces "Video Editing" et "2D Animation" utilisés
 sont les workspaces standards de Blender, pas une UI custom.
 
-## Prérequis
-
-**Blender 5.0 ou plus récent** (**5.2 LTS recommandé**). storyFlow s'appuie
-sur l'API strips du séquenceur (`Strip`, `SceneStrip`,
-`Window.workspace.sequencer_scene`) introduite dans Blender 5.0.
+Nécessite **Blender 5.0 ou plus récent** (5.2 LTS recommandé).
 
 ## Licence
 
@@ -70,3 +66,12 @@ Basé sur l'addon [Storypencil](https://developer.blender.org/docs/features/scen
 Martinez Lara, Rodrigo Blaas et Samuel Bernou.
 
 storyFlow fait partie de la suite **[SlateFlow](../index.md)**.
+
+## Support
+
+Ce projet est développé à son propre rythme, sur le temps libre de son
+auteur. Il est fourni **en l'état**, sans garantie.
+
+Un bug à signaler, une suggestion ? Utilisez le canal de support indiqué
+sur votre page d'achat — chaque message est lu, mais sans garantie de délai
+de réponse.

@@ -14,7 +14,7 @@ theme:
     primary: white
     accent: teal
   features:
-    - navigation.sections
+    - navigation.indexes
     - navigation.top
     - search.suggest
     - search.highlight
@@ -28,6 +28,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/page-fx.js
+  - javascripts/addon-theme.js
 
 markdown_extensions:
   - admonition
@@ -58,25 +59,21 @@ nav:
   - dopesheetFlow:
       - dopesheetFlow/index.md
       - dopesheetFlow/installation.md
-      - dopesheetFlow/getting-started.md
       - dopesheetFlow/features.md
       - dopesheetFlow/preferences.md
-      - dopesheetFlow/faq.md
       - dopesheetFlow/changelog.md
   - storyFlow:
       - storyFlow/index.md
       - storyFlow/installation.md
-      - storyFlow/getting-started.md
       - storyFlow/features.md
       - storyFlow/shortcuts.md
-      - storyFlow/faq.md
       - storyFlow/changelog.md
   - sequencerOTIO:
       - sequencerOTIO/index.md
+      - sequencerOTIO/installation.md
       - sequencerOTIO/export.md
       - sequencerOTIO/import.md
       - sequencerOTIO/configuration.md
-      - sequencerOTIO/faq.md
       - sequencerOTIO/changelog.md
 
 extra:

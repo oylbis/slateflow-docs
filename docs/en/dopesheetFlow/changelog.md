@@ -1,37 +1,26 @@
 # Version history
 
-## 1.0.0 — First release
+Current version: **1.0.0**.
 
-First public version, with the full feature set described in this guide:
+## Since the first release
 
-- Real thumbnails through GPU rasterization, with caching and batched
-  asynchronous generation.
-- Scene / Summary / group / layer hierarchy, each level independently
-  toggleable.
-- Key dragging in trim or ripple mode, cross-layer and cross-group
-  multi-selection, group-as-parent dragging.
-- Enlarged floating preview (Alt+hover).
-- Row isolation (Isolate, stackable).
-- Channel color and keyframe type editable from the overlay.
-- Layer/group renaming from the overlay (double-click).
-- Thumbnail scrubbing in the 3D view (Alt+M by default, customizable),
-  with vertical layer navigation and cursor wrap-around at screen edges.
-
-### Improvements since release
-
-Several fixes followed the first release, based on real-world usage on
-production files:
-
-- Improved thumbnail-generation reliability on dense files (the
-  per-batch generation budget was revised so it no longer systematically
-  favors the same keys).
+- Improved thumbnail-generation reliability on dense files (the per-batch
+  generation budget no longer favors the same keys every time).
 - 3D viewport scrubbing now requests its own thumbnail generation, even
   with no Dope Sheet open on screen.
-- An empty key (*Insert Blank Keyframe*, no strokes) now shows a
-  dedicated thumbnail (plain white background) instead of looking
-  ungenerated.
+- An empty key (*Insert Blank Keyframe*, no strokes) now shows a dedicated
+  thumbnail instead of looking ungenerated.
 - Fixed a case where a custom channel color came out slightly washed out
   compared to the color actually picked.
 
-These improvements are all included in the current **1.0.0** version (no
-version bump yet).
+## Roadmap
+
+Ideas being considered for a future version — not commitments, just the
+current direction:
+
+- **Level of detail (LOD)** for very long, dense timelines, if display
+  performance at extreme zoom-out ever becomes a real issue in practice.
+- Further representation options for very long instance holds (exact shape
+  not decided yet).
+
+Feedback and suggestions are welcome — see [Support](index.md#support).
