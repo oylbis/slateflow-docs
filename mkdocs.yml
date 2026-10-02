@@ -63,6 +63,21 @@ nav:
       - dopesheetFlow/preferences.md
       - dopesheetFlow/faq.md
       - dopesheetFlow/changelog.md
+  - storyFlow:
+      - storyFlow/index.md
+      - storyFlow/installation.md
+      - storyFlow/getting-started.md
+      - storyFlow/features.md
+      - storyFlow/shortcuts.md
+      - storyFlow/faq.md
+      - storyFlow/changelog.md
+  - sequencerOTIO:
+      - sequencerOTIO/index.md
+      - sequencerOTIO/export.md
+      - sequencerOTIO/import.md
+      - sequencerOTIO/configuration.md
+      - sequencerOTIO/faq.md
+      - sequencerOTIO/changelog.md
 
 extra:
   social:

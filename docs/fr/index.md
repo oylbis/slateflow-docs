@@ -19,10 +19,21 @@ suite : installation, prise en main, fonctionnalités en détail, et FAQ.
     ("xsheet") pour le Grease Pencil : vignettes réelles par clé, hiérarchie
     Scene/Summary/groupes/layers, drag & drop, scrubbing dans la vue 3D.
 
+- **[storyFlow](storyFlow/index.md)**
+
+    Transforme le VSE en établi de storyboard/animatique : chaque plan est
+    un strip SCENE apparié à sa propre scène de dessin Grease Pencil,
+    synchronisés dans les deux sens.
+
+- **[sequencerOTIO](sequencerOTIO/index.md)**
+
+    Un aller-retour propre entre le VSE de Blender et DaVinci Resolve via
+    OpenTimelineIO, avec conform non destructif.
+
 </div>
 
-D'autres addons de la suite (gpFlow, gpOutliner, storyFlow, sequencerFlow,
-sequencerOTIO) seront documentés ici au fur et à mesure.
+D'autres addons de la suite (gpFlow, gpOutliner, sequencerFlow) seront
+documentés ici au fur et à mesure.
 
 ## Où trouver les addons
 

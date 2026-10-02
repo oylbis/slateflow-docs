@@ -19,10 +19,21 @@ installation, getting started, feature details, and FAQ.
     Pencil: real thumbnails per key, Scene/Summary/group/layer hierarchy,
     drag & drop, 3D viewport scrubbing.
 
+- **[storyFlow](storyFlow/index.md)**
+
+    Turns the VSE into a storyboard/animatic bench: every shot is a SCENE
+    strip paired with its own Grease Pencil drawing scene, kept in sync
+    both ways.
+
+- **[sequencerOTIO](sequencerOTIO/index.md)**
+
+    A clean round-trip between Blender's VSE and DaVinci Resolve via
+    OpenTimelineIO, with non-destructive conform.
+
 </div>
 
-Other add-ons in the suite (gpFlow, gpOutliner, storyFlow, sequencerFlow,
-sequencerOTIO) will be documented here over time.
+Other add-ons in the suite (gpFlow, gpOutliner, sequencerFlow) will be
+documented here over time.
 
 ## Where to find the add-ons
 
