@@ -1,0 +1,58 @@
+site_name: SlateFlow Docs
+site_description: Documentation utilisateur des addons Blender de la suite SlateFlow
+site_url: https://oylbis.github.io/slateflow-docs/
+repo_url: https://github.com/oylbis/slateflow-docs
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Passer en mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Passer en mode clair
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Accueil: index.md
+  - dopesheetFlow:
+      - Présentation: dopesheetFlow/index.md
+      - Installation: dopesheetFlow/installation.md
+      - Prise en main: dopesheetFlow/prise-en-main.md
+      - Fonctionnalités: dopesheetFlow/fonctionnalites.md
+      - Préférences & raccourcis: dopesheetFlow/preferences.md
+      - FAQ & dépannage: dopesheetFlow/faq.md
+      - Historique des versions: dopesheetFlow/changelog.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/oylbis
