@@ -24,6 +24,14 @@
       }
       return [STOPS[0][1], STOPS[0][2], STOPS[0][3]];
     }
+    // Base tone painted into every pixel first (cream), so the canvas is a
+    // fully opaque, self-contained image: the dissolve speckles overwrite
+    // some pixels with the gradient color, the rest stay this base tone.
+    // This avoids relying on any ancestor element's CSS background being
+    // visible "through" the canvas via z-index stacking, which some
+    // browsers get wrong for a propagated <body> background specifically.
+    var BASE = [251, 247, 241];
+
     function render() {
       var W = c.width = window.innerWidth, H = c.height = window.innerHeight;
       var img = ctx.createImageData(W, H), d = img.data;
@@ -36,10 +44,12 @@
           var ey = Math.max(0, Math.abs(y / H - 0.5) * 2 - 0.45) / 0.55;
           var edge = Math.min(1, Math.max(ex, ey));
           var alpha = 0.88 - edge * edge * 0.73;
+          var i = (y * W + x) * 4;
           if (Math.random() < alpha) {
             var col = gradColor(Math.max(0, Math.min(1, t)));
-            var i = (y * W + x) * 4;
             d[i] = col[0]; d[i + 1] = col[1]; d[i + 2] = col[2]; d[i + 3] = 255;
+          } else {
+            d[i] = BASE[0]; d[i + 1] = BASE[1]; d[i + 2] = BASE[2]; d[i + 3] = 255;
           }
         }
       }
