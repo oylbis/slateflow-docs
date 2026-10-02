@@ -1,5 +1,7 @@
 # SlateFlow
 
+![SlateFlow](../assets/branding/logo_slateflow.png){: .addon-hero-logo }
+
 **SlateFlow** is a suite of Blender add-ons built for storyboarding,
 animation and editing workflows — with a particular focus on **Grease
 Pencil**.

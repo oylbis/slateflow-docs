@@ -1,5 +1,7 @@
 # dopesheetFlow
 
+![dopesheetFlow](../../assets/branding/logo_dopesheetflow.png){: .addon-hero-logo }
+
 **A real light table for Grease Pencil, inside Blender's own Dope Sheet.**
 
 dopesheetFlow turns the Dope Sheet into an "xsheet": every Grease Pencil key

@@ -12,7 +12,7 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
+      primary: white
       accent: teal
       toggle:
         icon: material/weather-night
@@ -36,6 +36,9 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/bg-canvas.js
 
 markdown_extensions:
   - admonition
