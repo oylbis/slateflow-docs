@@ -35,7 +35,7 @@
           var ex = Math.max(0, Math.abs(x / W - 0.5) * 2 - 0.45) / 0.55;
           var ey = Math.max(0, Math.abs(y / H - 0.5) * 2 - 0.45) / 0.55;
           var edge = Math.min(1, Math.max(ex, ey));
-          var alpha = (0.88 - edge * edge * 0.73) * 0.6;
+          var alpha = 0.88 - edge * edge * 0.73;
           if (Math.random() < alpha) {
             var col = gradColor(Math.max(0, Math.min(1, t)));
             var i = (y * W + x) * 4;

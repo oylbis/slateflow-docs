@@ -44,9 +44,7 @@ body {
    times (not just in the page gutters), same spirit as the frosted header
    on slateflow-website. */
 .md-content__inner {
-  background: rgba(255, 255, 255, 0.86);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 14px;
   padding: 1.2rem 1.4rem 1.6rem;
 }
