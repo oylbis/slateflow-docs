@@ -1,6 +1,9 @@
-/* SlateFlow brand palette — mirrors slateflow-website (oylbis/slateflow-website) */
+/* SlateFlow brand palette — mirrors slateflow-website (oylbis/slateflow-website)
+   Light-only site, no dark mode / no scheme toggle. */
 
-[data-md-color-scheme="default"] {
+:root {
+  --md-text-font: "Inter";
+
   /* Header/nav bar: light, glassy, like the main site (not a dark bar) */
   --md-primary-fg-color: #fbf7f1;
   --md-primary-fg-color--light: #fdfbf8;
@@ -15,21 +18,6 @@
 
   --md-default-bg-color: #ffffff;
   --md-typeset-a-color: #00a76d;
-}
-
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #1b1b22;
-  --md-primary-fg-color--light: #3a3a44;
-  --md-primary-fg-color--dark: #000000;
-
-  --md-accent-fg-color: #00c281;
-  --md-accent-fg-color--transparent: #00c2811a;
-
-  --md-typeset-a-color: #3ddba3;
-}
-
-:root {
-  --md-text-font: "Inter";
 }
 
 /* ——— Brand dissolve-gradient background (bg-canvas.js) ——— */
@@ -47,25 +35,25 @@ body {
   background: #fbf7f1;
 }
 
-[data-md-color-scheme="slate"] #bgCanvas {
-  display: none;
-}
-
-/* Let the cream + dissolve texture show through in the gutters around the
-   content column; the content column itself stays on a plain white
-   surface for readability, same split as the card-on-gradient look of
-   slateflow-website. */
 .md-container {
   background: transparent;
+}
+
+/* The reading column sits as a translucent/frosted card over the canvas,
+   so the dissolve texture stays faintly visible behind the text at all
+   times (not just in the page gutters), same spirit as the frosted header
+   on slateflow-website. */
+.md-content__inner {
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 14px;
+  padding: 1.2rem 1.4rem 1.6rem;
 }
 
 .md-header {
   box-shadow: none;
   border-bottom: 1px solid rgba(228, 225, 218, 0.8);
-}
-
-[data-md-color-scheme="slate"] .md-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* ——— Bigger, more legible header logo ——— */
