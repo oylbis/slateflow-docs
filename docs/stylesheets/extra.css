@@ -103,3 +103,26 @@ html[data-addon="sequencerotio"] {
   --md-accent-fg-color--transparent: #b60c101a;
   --md-typeset-a-color: #b60c10;
 }
+
+/* ——— Category kicker (set by addon-theme.js), shown above the H1 of
+   every page within an addon's section — e.g. "2D Animation" in that
+   addon's accent color. Discreet but present throughout, not just on
+   the overview page's logo. */
+.addon-kicker {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--md-accent-fg-color);
+  margin: 0 0 0.5rem;
+}
+
+/* ——— Category dot next to each addon's entry in the left nav ——— */
+.addon-nav-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+}
