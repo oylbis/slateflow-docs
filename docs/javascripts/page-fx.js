@@ -1,16 +1,19 @@
 // SlateFlow brand background: dissolve-style gradient texture.
 // Ported from slateflow-website (oylbis/slateflow-website), same
-// stops/angle/falloff, so both sites share the same texture.
+// stops/angle/falloff.
+//
+// Implementation note: an earlier version drew this into a fixed,
+// negative-z-index <canvas> overlaid on the page. That approach turned
+// out to be unreliable across real browsers (the canvas ended up
+// painted either fully behind the <body> background - invisible - or,
+// with z-index raised to fix that, above normal in-flow page content -
+// hiding the text). Setting it as the <body> element's own CSS
+// background-image sidesteps stacking entirely: a background is by
+// definition painted behind an element's own content, no z-index
+// involved, so this can't reproduce either failure mode.
 (function () {
   function init() {
     try {
-      var c = document.getElementById("pageFx");
-      if (!c) {
-        c = document.createElement("canvas");
-        c.id = "pageFx";
-        document.body.insertBefore(c, document.body.firstChild);
-      }
-      var ctx = c.getContext("2d");
       var STOPS = [
         [0.00, 255, 204, 205], [0.18, 255, 217, 218], [0.42, 227, 253, 255],
         [0.55, 221, 255, 244], [0.78, 225, 255, 245], [1.00, 255, 214, 215]
@@ -25,10 +28,10 @@
         }
         return [STOPS[0][1], STOPS[0][2], STOPS[0][3]];
       }
-      // Base tone painted into every pixel first (cream), so the image is
-      // fully opaque and self-contained: dissolve speckles overwrite some
-      // pixels with a gradient color, the rest stay this base tone.
       var BASE = [251, 247, 241];
+
+      var c = document.createElement("canvas");
+      var ctx = c.getContext("2d");
 
       function render() {
         var W = c.width = window.innerWidth, H = c.height = window.innerHeight;
@@ -52,9 +55,14 @@
           }
         }
         ctx.putImageData(img, 0, 0);
+        var url = c.toDataURL("image/png");
+        document.body.style.backgroundImage = "url(" + url + ")";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundAttachment = "fixed";
+        document.body.style.backgroundRepeat = "no-repeat";
+        console.log("[slateflow-docs] page-fx: body background set,", W + "x" + H);
       }
       render();
-      console.log("[slateflow-docs] page-fx: rendered", c.width + "x" + c.height, "in DOM:", document.body.contains(c));
       var timer;
       window.addEventListener("resize", function () {
         clearTimeout(timer);

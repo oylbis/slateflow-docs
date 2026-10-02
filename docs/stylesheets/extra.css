@@ -20,29 +20,18 @@
   --md-typeset-a-color: #00a76d;
 }
 
-/* ——— Brand dissolve-gradient background (page-fx.js) ———
-   A NEGATIVE z-index here (the "obvious" way to put this behind
-   everything) gets painted BELOW the propagated <body> background in
-   practice, hiding it completely. Fix: non-negative z-index (0), and
-   push the real page content explicitly above it with its own z-index
-   on the wrapping .md-container instead. */
-#pageFx {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-}
-
+/* ——— Brand dissolve-gradient background ———
+   Set by page-fx.js as body's own background-image (a data URL), not as
+   a separate stacked element — backgrounds are always painted behind an
+   element's own content by definition, so this can't end up hiding text
+   or getting hidden itself, unlike the fixed+z-index overlay this
+   replaced (unreliable across real browsers in both directions). */
 html,
 body {
-  background: #fbf7f1;
+  background-color: #fbf7f1;
 }
 
 .md-container {
-  position: relative;
-  z-index: 1;
   background: transparent;
 }
 
