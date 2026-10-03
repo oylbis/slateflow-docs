@@ -35,7 +35,7 @@ retiming) à la sortie, et les mêmes données natives du VSE au retour.
   s'installe toute seule au premier chargement, depuis une wheel embarquée,
   sans connexion internet nécessaire dans la plupart des cas.
 
-Voir **[Export](export.md)**, **[Import & conform](import.md)** et
+Voir **[Fonctionnalités](features.md)** et
 **[Configuration](configuration.md)** pour le détail complet.
 
 ## Pourquoi c'est sûr de confier le montage et de le récupérer

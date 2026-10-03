@@ -33,8 +33,8 @@ same native VSE data on the way back in.
   itself automatically on first load, from a bundled wheel, no internet
   connection needed in most cases.
 
-See **[Export](export.md)**, **[Import & conform](import.md)** and
-**[Configuration](configuration.md)** for the full detail.
+See **[Features](features.md)** and **[Configuration](configuration.md)**
+for the full detail.
 
 ## Why it's safe to hand off and bring back
 

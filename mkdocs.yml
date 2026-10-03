@@ -71,8 +71,7 @@ nav:
   - sequencerOTIO:
       - sequencerOTIO/index.md
       - sequencerOTIO/installation.md
-      - sequencerOTIO/export.md
-      - sequencerOTIO/import.md
+      - sequencerOTIO/features.md
       - sequencerOTIO/configuration.md
       - sequencerOTIO/changelog.md
 
