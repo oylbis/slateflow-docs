@@ -7,7 +7,7 @@ animation and editing workflows — with a particular focus on **Grease
 Pencil**.
 
 This documentation gathers the user guides for every add-on in the suite:
-installation, getting started, feature details, and FAQ.
+installation, feature details, and support.
 
 ## Documented add-ons
 
@@ -30,10 +30,23 @@ installation, getting started, feature details, and FAQ.
     A clean round-trip between Blender's VSE and DaVinci Resolve via
     OpenTimelineIO, with non-destructive conform.
 
-</div>
+- **[gpFlow](gpFlow/index.md)**
 
-Other add-ons in the suite (gpFlow, gpOutliner, sequencerFlow) will be
-documented here over time.
+    A floating, GPU-drawn toolbar for faster Grease Pencil drawing: draw,
+    erase, fill, reshape, select & transform, flip, all one click away.
+
+- **[gpOutliner](gpOutliner/index.md)**
+
+    A dedicated command center for every Grease Pencil object: depth
+    sorting, visual-scale compensation, camera tools, 2D/3D staging.
+
+- **[sequencerFlow](sequencerFlow/index.md)**
+
+    Premiere/Resolve-style editing tools for the VSE: contextual toolbar,
+    3-point editing, strip curves, zone guides. Free LITE and paid PRO
+    editions.
+
+</div>
 
 ## Where to find the add-ons
 
@@ -42,5 +55,4 @@ documented here over time.
 
 !!! tip "Need help?"
     If you can't find the answer to your question in these pages, check the
-    **FAQ & troubleshooting** section for the relevant add-on, or contact
-    the support channel listed on its sales page.
+    **Support** section at the bottom of the relevant add-on's page.

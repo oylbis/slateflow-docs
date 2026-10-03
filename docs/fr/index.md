@@ -7,7 +7,7 @@ storyboard, d'animation et de montage — avec un souci particulier pour le
 **Grease Pencil**.
 
 Cette documentation regroupe les guides utilisateur de chaque addon de la
-suite : installation, prise en main, fonctionnalités en détail, et FAQ.
+suite : installation, fonctionnalités en détail, et support.
 
 ## Addons documentés
 
@@ -30,10 +30,25 @@ suite : installation, prise en main, fonctionnalités en détail, et FAQ.
     Un aller-retour propre entre le VSE de Blender et DaVinci Resolve via
     OpenTimelineIO, avec conform non destructif.
 
-</div>
+- **[gpFlow](gpFlow/index.md)**
 
-D'autres addons de la suite (gpFlow, gpOutliner, sequencerFlow) seront
-documentés ici au fur et à mesure.
+    Une boîte à outils flottante dessinée en GPU pour dessiner plus vite
+    avec le Grease Pencil : dessin, gomme, fill, retravail, select &
+    transform, flip, tout à un clic.
+
+- **[gpOutliner](gpOutliner/index.md)**
+
+    Un poste de commande dédié pour chaque objet Grease Pencil : tri par
+    profondeur, compensation d'échelle visuelle, outils caméra, mise en
+    scène 2D/3D.
+
+- **[sequencerFlow](sequencerFlow/index.md)**
+
+    Des outils de montage façon Premiere/Resolve pour le VSE : toolbar
+    contextuelle, montage 3 points, courbes sur les strips, guides de
+    zones. Versions LITE gratuite et PRO payante.
+
+</div>
 
 ## Où trouver les addons
 
@@ -42,5 +57,5 @@ documentés ici au fur et à mesure.
 
 !!! tip "Besoin d'aide ?"
     Si vous ne trouvez pas la réponse à votre question dans ces pages,
-    reportez-vous à la section **FAQ & dépannage** de l'addon concerné, ou
-    contactez le support indiqué sur sa page de vente.
+    reportez-vous à la section **Support** en bas de la page de l'addon
+    concerné.

@@ -109,7 +109,8 @@ body[data-addon="storyflow"] {
   --md-typeset-a-color: #0097a3;
 }
 
-body[data-addon="sequencerotio"] {
+body[data-addon="sequencerotio"],
+body[data-addon="sequencerflow"] {
   --md-accent-fg-color: #b60c10;
   --md-accent-fg-color--transparent: #b60c101a;
   --md-typeset-a-color: #b60c10;

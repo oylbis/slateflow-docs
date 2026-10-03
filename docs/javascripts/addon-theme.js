@@ -5,8 +5,11 @@
 (function () {
   var CATEGORIES = {
     dopesheetflow: { color: "#00c281", en: "2D Animation", fr: "Animation 2D" },
+    gpflow: { color: "#00c281", en: "2D Animation", fr: "Animation 2D" },
+    gpoutliner: { color: "#00c281", en: "2D Animation", fr: "Animation 2D" },
     storyflow: { color: "#00c7d6", en: "Storyboard", fr: "Storyboard" },
-    sequencerotio: { color: "#b60c10", en: "Editing", fr: "Montage" }
+    sequencerotio: { color: "#b60c10", en: "Editing", fr: "Montage" },
+    sequencerflow: { color: "#b60c10", en: "Editing", fr: "Montage" }
   };
 
   function currentLocale() {
