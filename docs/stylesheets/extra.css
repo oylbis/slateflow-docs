@@ -45,6 +45,16 @@ body {
   padding: 1.2rem 1.4rem 1.6rem;
 }
 
+/* ——— Table of contents sidebar: plain white card, not transparent —
+   left as transparent (like .md-container) it shows the brand dissolve
+   background through it, which reads as an unwanted gradient rather than
+   the texture it's supposed to be. */
+.md-sidebar--secondary .md-sidebar__inner {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0.6rem 0.8rem;
+}
+
 .md-header {
   box-shadow: none;
   border-bottom: 1px solid rgba(228, 225, 218, 0.8);
