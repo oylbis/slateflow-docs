@@ -56,41 +56,41 @@ plugins:
 
 nav:
   - index.md
-  - dopesheetFlow:
-      - dopesheetFlow/index.md
-      - dopesheetFlow/installation.md
-      - dopesheetFlow/features.md
-      - dopesheetFlow/preferences.md
-      - dopesheetFlow/changelog.md
-  - storyFlow:
-      - storyFlow/index.md
-      - storyFlow/installation.md
-      - storyFlow/features.md
-      - storyFlow/shortcuts.md
-      - storyFlow/changelog.md
-  - sequencerOTIO:
-      - sequencerOTIO/index.md
-      - sequencerOTIO/installation.md
-      - sequencerOTIO/features.md
-      - sequencerOTIO/configuration.md
-      - sequencerOTIO/changelog.md
-  - gpFlow:
-      - gpFlow/index.md
-      - gpFlow/installation.md
-      - gpFlow/features.md
-      - gpFlow/preferences.md
-      - gpFlow/changelog.md
-  - gpOutliner:
-      - gpOutliner/index.md
-      - gpOutliner/installation.md
-      - gpOutliner/features.md
-      - gpOutliner/changelog.md
   - sequencerFlow:
       - sequencerFlow/index.md
       - sequencerFlow/installation.md
       - sequencerFlow/features.md
       - sequencerFlow/shortcuts.md
       - sequencerFlow/changelog.md
+  - sequencerOTIO:
+      - sequencerOTIO/index.md
+      - sequencerOTIO/installation.md
+      - sequencerOTIO/features.md
+      - sequencerOTIO/configuration.md
+      - sequencerOTIO/changelog.md
+  - storyFlow:
+      - storyFlow/index.md
+      - storyFlow/installation.md
+      - storyFlow/features.md
+      - storyFlow/shortcuts.md
+      - storyFlow/changelog.md
+  - gpFlow:
+      - gpFlow/index.md
+      - gpFlow/installation.md
+      - gpFlow/features.md
+      - gpFlow/preferences.md
+      - gpFlow/changelog.md
+  - dopesheetFlow:
+      - dopesheetFlow/index.md
+      - dopesheetFlow/installation.md
+      - dopesheetFlow/features.md
+      - dopesheetFlow/preferences.md
+      - dopesheetFlow/changelog.md
+  - gpOutliner:
+      - gpOutliner/index.md
+      - gpOutliner/installation.md
+      - gpOutliner/features.md
+      - gpOutliner/changelog.md
 
 extra:
   social:

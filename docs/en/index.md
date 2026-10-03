@@ -13,11 +13,16 @@ installation, feature details, and support.
 
 <div class="grid cards" markdown>
 
-- **[dopesheetFlow](dopesheetFlow/index.md)**
+- **[sequencerFlow](sequencerFlow/index.md)**
 
-    Turns Blender's Dope Sheet into a real light table ("xsheet") for Grease
-    Pencil: real thumbnails per key, Scene/Summary/group/layer hierarchy,
-    drag & drop, 3D viewport scrubbing.
+    Premiere/Resolve-style editing tools for the VSE: contextual toolbar,
+    3-point editing, strip curves, zone guides. Free LITE and paid PRO
+    editions.
+
+- **[sequencerOTIO](sequencerOTIO/index.md)**
+
+    A clean round-trip between Blender's VSE and DaVinci Resolve via
+    OpenTimelineIO, with non-destructive conform.
 
 - **[storyFlow](storyFlow/index.md)**
 
@@ -25,26 +30,21 @@ installation, feature details, and support.
     strip paired with its own Grease Pencil drawing scene, kept in sync
     both ways.
 
-- **[sequencerOTIO](sequencerOTIO/index.md)**
-
-    A clean round-trip between Blender's VSE and DaVinci Resolve via
-    OpenTimelineIO, with non-destructive conform.
-
 - **[gpFlow](gpFlow/index.md)**
 
     A floating, GPU-drawn toolbar for faster Grease Pencil drawing: draw,
     erase, fill, reshape, select & transform, flip, all one click away.
 
+- **[dopesheetFlow](dopesheetFlow/index.md)**
+
+    Turns Blender's Dope Sheet into a real light table ("xsheet") for Grease
+    Pencil: real thumbnails per key, Scene/Summary/group/layer hierarchy,
+    drag & drop, 3D viewport scrubbing.
+
 - **[gpOutliner](gpOutliner/index.md)**
 
     A dedicated command center for every Grease Pencil object: depth
     sorting, visual-scale compensation, camera tools, 2D/3D staging.
-
-- **[sequencerFlow](sequencerFlow/index.md)**
-
-    Premiere/Resolve-style editing tools for the VSE: contextual toolbar,
-    3-point editing, strip curves, zone guides. Free LITE and paid PRO
-    editions.
 
 </div>
 
