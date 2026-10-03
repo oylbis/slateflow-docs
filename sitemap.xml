@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/dopesheetFlow/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/dopesheetFlow/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/dopesheetFlow/changelog/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/dopesheetFlow/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/changelog/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/dopesheetFlow/features/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/dopesheetFlow/features/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/features/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/dopesheetFlow/installation/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/dopesheetFlow/installation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/installation/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/dopesheetFlow/preferences/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/dopesheetFlow/preferences/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/preferences/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/gpFlow/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpFlow/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpFlow/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/gpFlow/changelog/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpFlow/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpFlow/changelog/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/gpFlow/features/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpFlow/features/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpFlow/features/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/gpFlow/installation/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpFlow/installation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpFlow/installation/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/gpFlow/preferences/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpFlow/preferences/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpFlow/preferences/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/gpOutliner/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpOutliner/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpOutliner/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/gpOutliner/changelog/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpOutliner/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpOutliner/changelog/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/gpOutliner/features/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpOutliner/features/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpOutliner/features/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/gpOutliner/installation/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpOutliner/installation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpOutliner/installation/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/sequencerFlow/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerFlow/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/sequencerFlow/changelog/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerFlow/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/changelog/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/sequencerFlow/features/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerFlow/features/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/features/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/sequencerFlow/installation/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerFlow/installation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/installation/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/sequencerFlow/shortcuts/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerFlow/shortcuts/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/shortcuts/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/sequencerOTIO/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerOTIO/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/sequencerOTIO/changelog/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerOTIO/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/changelog/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/sequencerOTIO/configuration/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerOTIO/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/configuration/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/sequencerOTIO/features/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerOTIO/features/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/features/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/sequencerOTIO/installation/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerOTIO/installation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/installation/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/storyFlow/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/storyFlow/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/storyFlow/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/storyFlow/changelog/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/storyFlow/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/storyFlow/changelog/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/storyFlow/features/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/storyFlow/features/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/storyFlow/features/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/storyFlow/installation/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/storyFlow/installation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/storyFlow/installation/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/storyFlow/shortcuts/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/storyFlow/shortcuts/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/storyFlow/shortcuts/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/dopesheetFlow/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/changelog/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/dopesheetFlow/changelog/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/features/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/features/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/dopesheetFlow/features/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/installation/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/dopesheetFlow/installation/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/preferences/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/dopesheetFlow/preferences/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/dopesheetFlow/preferences/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/gpFlow/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpFlow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpFlow/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/gpFlow/changelog/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpFlow/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpFlow/changelog/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/gpFlow/features/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpFlow/features/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpFlow/features/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/gpFlow/installation/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpFlow/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpFlow/installation/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/gpFlow/preferences/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpFlow/preferences/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpFlow/preferences/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/gpOutliner/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpOutliner/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpOutliner/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/gpOutliner/changelog/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpOutliner/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpOutliner/changelog/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/gpOutliner/features/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpOutliner/features/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpOutliner/features/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/gpOutliner/installation/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/gpOutliner/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/gpOutliner/installation/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerFlow/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/changelog/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerFlow/changelog/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/features/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/features/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerFlow/features/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/installation/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerFlow/installation/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/shortcuts/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/shortcuts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerFlow/shortcuts/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerOTIO/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/changelog/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerOTIO/changelog/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/configuration/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/configuration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerOTIO/configuration/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/features/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/features/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerOTIO/features/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/installation/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/sequencerOTIO/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/sequencerOTIO/installation/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/storyFlow/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/storyFlow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/storyFlow/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/storyFlow/changelog/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/storyFlow/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/storyFlow/changelog/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/storyFlow/features/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/storyFlow/features/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/storyFlow/features/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/storyFlow/installation/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/storyFlow/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/storyFlow/installation/"/>
+    </url>
+    <url>
+        <loc>https://oylbis.github.io/slateflow-docs/fr/storyFlow/shortcuts/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://oylbis.github.io/slateflow-docs/fr/storyFlow/shortcuts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oylbis.github.io/slateflow-docs/storyFlow/shortcuts/"/>
+    </url>
+</urlset>
