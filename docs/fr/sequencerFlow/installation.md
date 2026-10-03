@@ -10,7 +10,7 @@
 Réinstaller un `.zip` plus récent remplace proprement la version
 précédente — pas de doublon, rien à retirer manuellement.
 
-Nécessite **Blender 5.2 LTS ou plus récent**.
+Nécessite **Blender 5.2 ou plus récent**.
 
 !!! info "LITE et PRO sont deux extensions séparées"
     Elles ont des identifiants différents, donc les deux peuvent

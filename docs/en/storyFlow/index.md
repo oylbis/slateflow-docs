@@ -49,7 +49,7 @@ constraints, nothing that requires storyFlow to make sense of. The "Video
 Editing" and "2D Animation" workspaces it relies on are Blender's own
 standard workspaces, not custom UI.
 
-Requires **Blender 5.0 or newer** (5.2 LTS recommended).
+Requires **Blender 5.2 or newer**.
 
 ## License
 
@@ -64,9 +64,8 @@ storyFlow is part of the **[SlateFlow](../index.md)** suite.
 
 ## Support
 
-This project is developed at its author's own pace, in their free time.
-It's provided **as-is**, with no warranty.
-
-Found a bug or have a suggestion? Use the support channel listed on your
-purchase page — every message is read, but response times can't be
-guaranteed.
+slateFlow is developed in my spare time, alongside my freelance work. Prices
+are deliberately affordable: in return, I can't commit to fix deadlines or
+on-demand development. Feedback and ideas are welcome — the most important
+bugs will be fixed, and good ideas will make their way in. Thank you for
+your understanding.

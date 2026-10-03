@@ -83,9 +83,7 @@ like any native layer.
 
 ## 3D viewport scrubbing
 
-<video controls muted playsinline style="max-width: 100%;">
-  <source src="../assets/dopesheetFlow_timelineScrub_01.mp4" type="video/mp4">
-</video>
+![3D viewport scrubbing](assets/dopesheetFlow_timelineScrub_01.gif)
 
 In the 3D view, hold **Alt+M** (customizable shortcut, see
 [Preferences](preferences.md)) to show a thumbnail scrubber near the

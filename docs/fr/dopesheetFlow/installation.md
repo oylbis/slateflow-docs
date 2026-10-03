@@ -10,7 +10,7 @@
 Réinstaller un `.zip` plus récent remplace proprement la version
 précédente — pas de doublon, rien à retirer manuellement.
 
-Nécessite **Blender 5.2 ou plus récent** (Grease Pencil v3).
+Nécessite **Blender 5.2 ou plus récent**.
 
 !!! warning "Le bouton n'apparaît pas après l'installation ?"
     Sur un profil Blender qui n'a jamais eu l'addon installé, le bouton

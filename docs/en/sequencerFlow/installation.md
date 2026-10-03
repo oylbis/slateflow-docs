@@ -9,7 +9,7 @@
 Reinstalling a newer `.zip` cleanly replaces the previous version — no
 duplicate, no manual removal needed.
 
-Requires **Blender 5.2 LTS or newer**.
+Requires **Blender 5.2 or newer**.
 
 !!! info "LITE and PRO are separate extensions"
     They have different ids, so both can technically be installed side by

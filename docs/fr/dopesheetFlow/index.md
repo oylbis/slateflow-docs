@@ -44,7 +44,7 @@ est un vrai layer, groupe ou keyframe Grease Pencil. Désactivez l'overlay
 depuis le bouton d'en-tête : la Dope Sheet redevient exactement celle de
 Blender.
 
-Nécessite **Blender 5.2 ou plus récent** (Grease Pencil v3).
+Nécessite **Blender 5.2 ou plus récent**.
 
 ## Licence
 
@@ -55,8 +55,9 @@ dopesheetFlow fait partie de la suite **[SlateFlow](../index.md)**.
 
 ## Support
 
-Ce projet est développé à son propre rythme, sur le temps libre de son
-auteur. Il est fourni **en l'état**, sans garantie.
-
-Un bug à signaler, une suggestion ? Utilisez le canal de support indiqué
-sur votre page d'achat — chaque message est lu et autant que possible résolu, mais sans garantie de délai.
+slateFlow est développé sur mon temps libre, en parallèle d'une activité
+d'indépendant. Les prix sont volontairement accessibles : en échange, je ne
+peux pas m'engager sur des délais de correctifs ou des développements sur
+demande. Les retours et les idées sont les bienvenus — les bugs les plus
+importants seront corrigés, et les bonnes idées feront leur chemin. Merci de
+votre compréhension.

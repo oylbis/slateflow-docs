@@ -10,7 +10,7 @@
 Réinstaller un `.zip` plus récent remplace proprement la version
 précédente — pas de doublon, rien à retirer manuellement.
 
-Nécessite **Blender 5.2 LTS ou plus récent**. Aucune dépendance
+Nécessite **Blender 5.2 ou plus récent**. Aucune dépendance
 supplémentaire à installer — gpFlow est autonome et ne contacte jamais le
 réseau.
 

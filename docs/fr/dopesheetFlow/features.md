@@ -86,9 +86,7 @@ gérées automatiquement par Blender, comme pour n'importe quel layer natif.
 
 ## Scrubbing dans la vue 3D
 
-<video controls muted playsinline style="max-width: 100%;">
-  <source src="../assets/dopesheetFlow_timelineScrub_01.mp4" type="video/mp4">
-</video>
+![Scrubbing dans la vue 3D](assets/dopesheetFlow_timelineScrub_01.gif)
 
 Dans la vue 3D, maintenez **Alt+M** (raccourci personnalisable, voir
 [Préférences](preferences.md)) pour afficher un défileur de vignettes près

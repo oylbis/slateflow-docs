@@ -10,7 +10,7 @@
 Réinstaller un `.zip` plus récent remplace proprement la version
 précédente — pas de doublon, rien à retirer manuellement.
 
-Nécessite **Blender 5.0 ou plus récent** (5.2 LTS recommandé).
+Nécessite **Blender 5.2 ou plus récent**.
 
 !!! info "La dépendance opentimelineio s'installe toute seule"
     Aucune manipulation nécessaire dans la plupart des cas — voir

@@ -50,7 +50,7 @@ Voir **[Fonctionnalités](features.md)** et
   les F-Curves de Blender. Désactivez l'addon : votre montage est exactement
   ce que Blender lui-même y a mis.
 
-Nécessite **Blender 5.0 ou plus récent** (5.2 LTS recommandé).
+Nécessite **Blender 5.2 ou plus récent**.
 
 ## Licence
 
@@ -61,9 +61,9 @@ sequencerOTIO fait partie de la suite **[SlateFlow](../index.md)**.
 
 ## Support
 
-Ce projet est développé à son propre rythme, sur le temps libre de son
-auteur. Il est fourni **en l'état**, sans garantie.
-
-Un bug à signaler, une suggestion ? Utilisez le canal de support indiqué
-sur votre page d'achat — chaque message est lu, mais sans garantie de délai
-de réponse.
+slateFlow est développé sur mon temps libre, en parallèle d'une activité
+d'indépendant. Les prix sont volontairement accessibles : en échange, je ne
+peux pas m'engager sur des délais de correctifs ou des développements sur
+demande. Les retours et les idées sont les bienvenus — les bugs les plus
+importants seront corrigés, et les bonnes idées feront leur chemin. Merci de
+votre compréhension.

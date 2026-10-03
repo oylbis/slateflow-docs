@@ -9,7 +9,7 @@
 Reinstalling a newer `.zip` cleanly replaces the previous version — no
 duplicate, no manual removal needed.
 
-Requires **Blender 5.2 LTS or newer**. No extra dependencies to install —
+Requires **Blender 5.2 or newer**. No extra dependencies to install —
 gpFlow ships self-contained and never reaches out to the network.
 
 !!! warning "Button or panel not showing up right after installation?"

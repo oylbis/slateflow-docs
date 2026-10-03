@@ -51,7 +51,7 @@ native Outliner or Properties editor. Only the handful of things Blender
 doesn't offer directly — depth sorting, visual-scale compensation, the
 2D/3D staging toggle, multiplicative global opacity — get dedicated code.
 
-Requires **Blender 5.2 LTS or newer**.
+Requires **Blender 5.2 or newer**.
 
 ## License
 
@@ -62,9 +62,8 @@ gpOutliner is part of the **[SlateFlow](../index.md)** suite.
 
 ## Support
 
-This project is developed at its author's own pace, in their free time.
-It's provided **as-is**, with no warranty.
-
-Found a bug or have a suggestion? Use the support channel listed on your
-purchase page — every message is read, but response times can't be
-guaranteed.
+slateFlow is developed in my spare time, alongside my freelance work. Prices
+are deliberately affordable: in return, I can't commit to fix deadlines or
+on-demand development. Feedback and ideas are welcome — the most important
+bugs will be fixed, and good ideas will make their way in. Thank you for
+your understanding.
