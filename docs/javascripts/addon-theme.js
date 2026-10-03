@@ -26,16 +26,26 @@
     return null;
   }
 
-  function addKicker(slug, locale) {
+  // The breadcrumb's last item is always the current addon (see
+  // markNavDots below for why matching by text, not href, is reliable) —
+  // append its category in parentheses and color the whole segment,
+  // e.g. "SlateFlow > dopesheetFlow (2D Animation)" with the second part
+  // in that addon's brand color. Ancestor segments (e.g. "SlateFlow")
+  // are left at the default (ink) color.
+  function tagBreadcrumb(slug, locale) {
     if (!slug) return;
     var cat = CATEGORIES[slug];
-    var article = document.querySelector(".md-content__inner");
-    if (!article || article.querySelector(".addon-kicker")) return;
-    var p = document.createElement("p");
-    p.className = "addon-kicker";
-    p.textContent = cat[locale] || cat.en;
-    p.style.color = cat.color;
-    article.insertBefore(p, article.firstChild);
+    var items = document.querySelectorAll(".md-path__item");
+    if (!items.length) return;
+    var last = items[items.length - 1];
+    var link = last.querySelector(".md-path__link");
+    var ellipsis = link && link.querySelector(".md-ellipsis");
+    if (!link || !ellipsis || link.querySelector(".addon-path-category")) return;
+    var tag = document.createElement("span");
+    tag.className = "addon-path-category";
+    tag.textContent = " (" + (cat[locale] || cat.en) + ")";
+    ellipsis.appendChild(tag);
+    link.style.color = cat.color;
   }
 
   // Top-level nav links for sections that have their own index page
@@ -62,7 +72,7 @@
   function init() {
     var slug = currentAddonSlug();
     if (slug) document.body.setAttribute("data-addon", slug);
-    addKicker(slug, currentLocale());
+    tagBreadcrumb(slug, currentLocale());
     markNavDots();
   }
 

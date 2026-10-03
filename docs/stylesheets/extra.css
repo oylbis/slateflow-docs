@@ -126,17 +126,23 @@ body[data-addon="sequencerflow"] {
   --md-typeset-a-color: #b60c10;
 }
 
-/* ——— Category kicker (set by addon-theme.js), shown above the H1 of
-   every page within an addon's section — e.g. "2D Animation" in that
-   addon's accent color. Discreet but present throughout, not just on
-   the overview page's logo. */
-.addon-kicker {
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--md-accent-fg-color);
-  margin: 0 0 0.5rem;
+/* ——— Breadcrumb trail: bigger and bolder than Material's small default,
+   so "where am I" stays clearly visible on every page. The current
+   addon's segment gets its category appended and colored by
+   addon-theme.js (tagBreadcrumb); ancestor segments (e.g. "SlateFlow")
+   stay at this default ink color. */
+.md-path {
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+.md-path__link {
+  color: #1b1b22;
+}
+
+.addon-path-category {
+  font-weight: 500;
 }
 
 /* ——— Category dot next to each addon's entry in the left nav ——— */
