@@ -6,13 +6,8 @@
 
 dopesheetFlow transforme la Dope Sheet en "xsheet" : chaque clé Grease Pencil
 est affichée comme une vraie vignette du dessin, par layer, alignée sur les
-frames, avec une réglette de tenue entre deux instances — le workflow de
-table lumineuse de Toon Boom, TVPaint ou OpenToonz, sans jamais quitter la
+frames, avec une réglette de tenue entre deux instances — le même workflow que d'autres logiciels d'animation 2D, en simple "overlay" dans la
 Dope Sheet native de Blender.
-
-Pas de nouvel éditeur : une bande dessinée par-dessus la colonne de channels
-existante, avec sa propre hiérarchie Scene / Summary / groupes / layers,
-activable depuis un bouton dans l'en-tête de la Dope Sheet.
 
 ![Vue d'ensemble de l'overlay xsheet dans la Dope Sheet](assets/dopesheetFlow_all_01.png)
 
@@ -44,11 +39,10 @@ complète en images.
 ## Pourquoi ça reste "natif"
 
 dopesheetFlow n'introduit pas de nouvel éditeur ni de modèle de données
-parallèle — Blender ne permet pas de créer un espace/éditeur custom en
-Python, et cet addon n'en a pas besoin. Tout ce qu'il affiche et déplace
+parallèle — tout ce qu'il affiche et déplace
 est un vrai layer, groupe ou keyframe Grease Pencil. Désactivez l'overlay
 depuis le bouton d'en-tête : la Dope Sheet redevient exactement celle de
-Blender, channels compris.
+Blender.
 
 Nécessite **Blender 5.2 ou plus récent** (Grease Pencil v3).
 
@@ -65,5 +59,4 @@ Ce projet est développé à son propre rythme, sur le temps libre de son
 auteur. Il est fourni **en l'état**, sans garantie.
 
 Un bug à signaler, une suggestion ? Utilisez le canal de support indiqué
-sur votre page d'achat — chaque message est lu, mais sans garantie de délai
-de réponse.
+sur votre page d'achat — chaque message est lu et autant que possible résolu, mais sans garantie de délai.
