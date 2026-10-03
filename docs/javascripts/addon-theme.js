@@ -31,6 +31,7 @@
     var p = document.createElement("p");
     p.className = "addon-kicker";
     p.textContent = cat[locale] || cat.en;
+    p.style.color = cat.color;
     article.insertBefore(p, article.firstChild);
   }
 
@@ -57,7 +58,7 @@
 
   function init() {
     var slug = currentAddonSlug();
-    if (slug) document.documentElement.setAttribute("data-addon", slug);
+    if (slug) document.body.setAttribute("data-addon", slug);
     addKicker(slug, currentLocale());
     markNavDots();
   }

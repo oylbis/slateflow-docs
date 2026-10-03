@@ -48,6 +48,11 @@ body {
 .md-header {
   box-shadow: none;
   border-bottom: 1px solid rgba(228, 225, 218, 0.8);
+  /* Same glassy header as slateflow-website: translucent + blurred,
+     not a flat opaque bar. */
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* ——— Bigger, more legible header logo ——— */
@@ -90,15 +95,21 @@ body {
   display: none;
 }
 
-/* ——— Per-addon accent color (set by addon-theme.js via data-addon on
-   <html>, matching each addon's category color on slateflow-website) ——— */
-html[data-addon="storyflow"] {
+/* ——— Per-addon accent color (set by addon-theme.js via data-addon) ———
+   Must target <body>, not <html>: Material's own palette CSS sets
+   --md-accent-fg-color directly on <body data-md-color-accent="teal">
+   (unconditionally, since that's a static theme config value) — a
+   declaration on <html> only cascades by inheritance, which a direct,
+   same-element declaration on <body> always wins over regardless of
+   specificity. Redeclaring it on <body> too is what actually overrides
+   it for every descendant. */
+body[data-addon="storyflow"] {
   --md-accent-fg-color: #00c7d6;
   --md-accent-fg-color--transparent: #00c7d61a;
   --md-typeset-a-color: #0097a3;
 }
 
-html[data-addon="sequencerotio"] {
+body[data-addon="sequencerotio"] {
   --md-accent-fg-color: #b60c10;
   --md-accent-fg-color--transparent: #b60c101a;
   --md-typeset-a-color: #b60c10;
