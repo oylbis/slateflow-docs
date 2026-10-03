@@ -18,9 +18,7 @@ garde jamais de copie parallèle de votre montage — c'est une couche de
 traduction qui lit et écrit les données natives du VSE (strips, F-Curves,
 retiming) à la sortie, et les mêmes données natives du VSE au retour.
 
-<video controls muted playsinline style="max-width: 100%;">
-  <source src="assets/sequencerOTIO_all_01.mp4" type="video/mp4">
-</video>
+![Aperçu de sequencerOTIO](assets/sequencerOTIO_all_01.gif)
 
 ## En un coup d'œil
 

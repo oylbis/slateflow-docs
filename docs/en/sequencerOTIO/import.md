@@ -14,6 +14,8 @@ Blender edit to exactly mirror what Resolve has.
 
 ## Conform (the round-trip mode)
 
+![OTIO Import Settings: conform mode](assets/sequencerOTIO_import_01.png)
+
 Compares the **live Blender edit** against the Resolve export and
 classifies every clip:
 

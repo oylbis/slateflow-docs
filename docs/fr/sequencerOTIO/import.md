@@ -14,6 +14,8 @@ vous voulez que le montage Blender reflète exactement ce que Resolve a.
 
 ## Conform (le mode aller-retour)
 
+![Réglages d'import OTIO : mode conform](assets/sequencerOTIO_import_01.png)
+
 Compare le **montage vivant de Blender** à l'export Resolve et classe chaque
 plan :
 

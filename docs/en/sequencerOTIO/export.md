@@ -3,6 +3,8 @@
 Turns the current VSE edit into a `.otio` file tuned for Resolve, from the
 **OTIO** panel in the Sequencer sidebar.
 
+![Export to OTIO panel](assets/sequencerOTIO_export_01.png)
+
 ## What gets carried over
 
 - **One OTIO track per Blender channel actually in use** — including empty

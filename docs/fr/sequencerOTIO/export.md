@@ -3,6 +3,8 @@
 Transforme le montage VSE actuel en un fichier `.otio` calibré pour Resolve,
 depuis le panneau **OTIO** du panneau latéral du Sequencer.
 
+![Panneau Export to OTIO](assets/sequencerOTIO_export_01.png)
+
 ## Ce qui est conservé
 
 - **Une piste OTIO par canal Blender réellement utilisé** — canaux vides

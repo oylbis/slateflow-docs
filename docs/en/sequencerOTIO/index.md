@@ -17,9 +17,7 @@ parallel copy of your edit — it's a translation layer that reads and writes
 the VSE's own data (strips, F-Curves, retiming) on the way out, and the
 same native VSE data on the way back in.
 
-<video controls muted playsinline style="max-width: 100%;">
-  <source src="assets/sequencerOTIO_all_01.mp4" type="video/mp4">
-</video>
+![sequencerOTIO overview](assets/sequencerOTIO_all_01.gif)
 
 ## At a glance
 
