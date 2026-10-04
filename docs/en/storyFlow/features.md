@@ -65,8 +65,8 @@ comes with a real production:
 
 - **Add**, one shot or several at once, with naming, prefix/suffix and
   auto-numbering. Lands next to your selected shot — or, with nothing
-  selected, at the playhead, at the end of the timeline, or on a new
-  channel, your choice. Every shot it creates is its own independent scene.
+  selected, at the playhead or at the end of the timeline, your choice.
+  Every shot it creates is its own independent scene.
 
 ![Batch-adding and placing several shots at once](assets/storyFlow_addShots_02.gif)
 

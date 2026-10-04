@@ -66,10 +66,9 @@ Au-delà du flux quotidien, storyFlow couvre aussi l'intendance d'une vraie
 production :
 
 - **Ajouter**, un plan ou plusieurs d'un coup, avec nommage, préfixe/suffixe
-  et numérotation automatique. Atterrit à côté du plan sélectionné — ou, sans
-  rien de sélectionné, à la tête de lecture, en fin de timeline, ou sur un
-  nouveau canal, à votre choix. Chaque plan créé est sa propre scène
-  indépendante.
+  et numérotation automatique. Atterrit à côté du plan sélectionné — ou,
+  sans rien de sélectionné, à la tête de lecture ou en fin de timeline, à
+  votre choix. Chaque plan créé est sa propre scène indépendante.
 
 ![Ajouter et placer plusieurs plans d'un coup](assets/storyFlow_addShots_02.gif)
 
