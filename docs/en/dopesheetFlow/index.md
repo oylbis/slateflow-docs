@@ -6,9 +6,9 @@
 
 dopesheetFlow turns the Dope Sheet into an "xsheet": every Grease Pencil key
 is shown as an actual thumbnail of the drawing, per layer, aligned to
-frames, with a hold-duration ruler between instances — the light-table
-workflow of Toon Boom, TVPaint or OpenToonz, without ever leaving Blender's
-native Dope Sheet.
+frames, with a hold-duration ruler between instances — the same workflow as
+other 2D animation software, as a simple overlay on Blender's own native
+Dope Sheet.
 
 No new editor: a band is drawn over the existing channel column, with its
 own Scene / Summary / group / layer hierarchy, toggled from a button in the

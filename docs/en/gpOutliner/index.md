@@ -29,11 +29,11 @@ you're already drawing.
   or footage on your camera's background, right from the same panel.
 - **One-click isolation** — hide every other Grease Pencil object, or every
   other layer on the current one, with a single toggle.
-- **Camera constraints, one click** — Track To and Child Of, applied with
-  automatic stroke compensation.
-- **2D/3D view toggle** — swing your camera and selected drawings onto a
-  flat reference axis for comfortable, distortion-free flat drawing, then
-  snap everything back to its original 3D staging with a single click.
+- **Child Of camera constraint, one click** — a real Blender constraint,
+  applied and named for you.
+- **Boards** — group drawings under a dedicated camera, flip the whole
+  group flat for comfortable 2D drawing, then snap back to the exact 3D
+  staging you left, with no recentering or distortion.
 - **Smart stroke operations** — Duplicate Special, Separate Special, and
   Move to Special.
 - **Structure duplication** — copy an object's entire layer hierarchy
@@ -45,11 +45,11 @@ See the **[Features](features.md)** page for a full visual walkthrough.
 
 gpOutliner never invents a parallel system where Blender already has one:
 layer management runs through Blender's own layer tree widget and
-operators, camera constraints are real Blender constraints (just applied
-and compensated automatically), and nothing here locks you out of the
-native Outliner or Properties editor. Only the handful of things Blender
-doesn't offer directly — depth sorting, visual-scale compensation, the
-2D/3D staging toggle, multiplicative global opacity — get dedicated code.
+operators, the camera constraint is a real Blender constraint (just
+applied and named for you), and nothing here locks you out of the native
+Outliner or Properties editor. Only the handful of things Blender doesn't
+offer directly — depth sorting, visual-scale compensation, board-based 2D
+staging, multiplicative global opacity — get dedicated code.
 
 Requires **Blender 5.2 or newer**.
 

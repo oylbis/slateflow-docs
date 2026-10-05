@@ -37,18 +37,29 @@ without it visually growing or shrinking.
 - **Camera background images** — add, reorder, and manage reference images
   or footage on your camera's background: load an image, toggle visibility,
   adjust opacity, and reorder the stack.
-- **Camera constraints, one click** — Track To and Child Of, applied with
-  automatic stroke compensation so your drawing doesn't visibly jump the
-  moment the constraint kicks in (or drops out).
+- **Child Of constraint, one click** — rigidly parents a drawing to the
+  active camera (a real Blender constraint, just applied and named for you).
 
-## 2D/3D view toggle
+## Boards (2D/3D drawing contexts)
 
 ![Switching a drawing between 3D staging and flat 2D](assets/gpOutliner_2D3D_01.gif)
 
-Swing your camera and selected drawings onto a flat reference axis for
-comfortable, distortion-free flat drawing, then snap everything back to its
-original 3D staging with a single click. Every other Grease Pencil object
-in the scene stays visually put while you do it.
+A **board** is a dedicated camera that one or more drawings belong to, so
+you can flip the whole group flat for comfortable, distortion-free 2D
+drawing, then snap back to the exact 3D staging you left — no
+recentering, no distortion, every other object in the scene stays
+visually put.
+
+- Create a board from a brand-new reference camera (always starts in the
+  flat 2D pose), or promote any existing camera to one.
+- **Align to 2D** and **Back to 3D** are two separate buttons rather than
+  one toggle, each grayed out on its own terms — the panel also states the
+  camera's current 2D/3D status directly, and disables Back to 3D (with a
+  reason shown) once the camera has been moved by hand since the last
+  align.
+- A board's own panel lists its member drawings (add the current
+  selection, remove one at a time) and its 2D viewing distance. Switching
+  which board you're looking at also switches the scene's active camera.
 
 ## Smart stroke operations
 

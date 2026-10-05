@@ -31,11 +31,11 @@ déjà.
   panneau.
 - **Isolation en un clic** — masquez tous les autres objets Grease Pencil,
   ou tous les autres calques de l'objet courant, d'un seul interrupteur.
-- **Contraintes caméra en un clic** — Track To et Child Of, appliquées avec
-  compensation automatique du tracé.
-- **Bascule vue 2D/3D** — ramenez caméra et dessins sélectionnés sur un axe
-  de référence plat pour un dessin 2D confortable et sans distorsion, puis
-  restaurez tout en un clic.
+- **Contrainte caméra Child Of en un clic** — une vraie contrainte Blender,
+  appliquée et nommée pour vous.
+- **Boards** — regroupez des dessins sous une caméra dédiée, basculez tout
+  le groupe à plat pour un dessin 2D confortable, puis revenez exactement à
+  la mise en scène 3D quittée, sans recentrage ni distorsion.
 - **Opérations de tracé intelligentes** — Duplicate Special, Separate
   Special, et Move to Special.
 - **Duplication de structure** — copiez toute la hiérarchie de calques d'un
@@ -48,12 +48,12 @@ complète en images.
 
 gpOutliner n'invente jamais un système parallèle là où Blender en a déjà
 un : la gestion des calques passe par le widget natif et les opérateurs de
-Blender, les contraintes caméra sont de vraies contraintes Blender (juste
-appliquées et compensées automatiquement), et rien ici ne verrouille
-l'Outliner natif ou l'éditeur Properties. Seules les zones où Blender
-n'offre pas de solution directe — tri par profondeur, compensation
-d'échelle visuelle, bascule de mise en scène 2D/3D, opacité globale
-multiplicative — reçoivent du code dédié.
+Blender, la contrainte caméra est une vraie contrainte Blender (juste
+appliquée et nommée pour vous), et rien ici ne verrouille l'Outliner natif
+ou l'éditeur Properties. Seules les zones où Blender n'offre pas de
+solution directe — tri par profondeur, compensation d'échelle visuelle,
+mise en scène 2D via les Boards, opacité globale multiplicative —
+reçoivent du code dédié.
 
 Nécessite **Blender 5.2 ou plus récent**.
 

@@ -39,18 +39,31 @@ visuellement.
 - **Images de fond de caméra** — ajoutez, réordonnez et gérez des images de
   référence ou des rushes sur le fond de votre caméra : charger une image,
   basculer sa visibilité, régler son opacité, réordonner la pile.
-- **Contraintes caméra en un clic** — Track To et Child Of, appliquées avec
-  compensation automatique du tracé pour que le dessin ne saute pas
-  visiblement au moment où la contrainte s'active (ou se désactive).
+- **Contrainte Child Of en un clic** — parente rigidement un dessin à la
+  caméra active (une vraie contrainte Blender, juste appliquée et nommée
+  pour vous).
 
-## Bascule de vue 2D/3D
+## Boards (contextes de dessin 2D/3D)
 
 ![Basculer un dessin entre mise en scène 3D et 2D plat](assets/gpOutliner_2D3D_01.gif)
 
-Ramenez caméra et dessins sélectionnés sur un axe de référence plat pour un
-dessin 2D confortable et sans distorsion, puis restaurez tout à sa mise en
-scène 3D d'origine en un clic. Chaque autre objet Grease Pencil de la scène
-reste visuellement en place pendant l'opération.
+Un **board** est une caméra dédiée à laquelle appartiennent un ou
+plusieurs dessins, pour basculer tout le groupe à plat pour un dessin 2D
+confortable et sans distorsion, puis revenir exactement à la mise en
+scène 3D quittée — aucun recentrage, aucune distorsion, chaque autre objet
+de la scène reste visuellement en place.
+
+- Créez un board à partir d'une nouvelle caméra de référence (toujours
+  initialisée en pose 2D plate), ou promouvez n'importe quelle caméra
+  existante.
+- **Align to 2D** et **Back to 3D** sont deux boutons séparés plutôt
+  qu'une seule bascule, chacun grisé selon ses propres conditions — le
+  panneau indique aussi directement le statut 2D/3D actuel de la caméra,
+  et désactive Back to 3D (avec la raison affichée) dès que la caméra a
+  été déplacée à la main depuis le dernier alignement.
+- Le panneau d'un board liste ses dessins membres (ajoutez la sélection
+  courante, retirez-en un à la fois) et sa distance de vue 2D. Changer de
+  board change aussi la caméra active de la scène.
 
 ## Opérations de tracé intelligentes
 

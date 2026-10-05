@@ -1,7 +1,7 @@
 # Installation
 
 1. Download the `dopesheetFlow-<version>.zip` file from your source of
-   purchase (or from Blender Extensions for the free version).
+   purchase.
 2. Drag and drop the `.zip` anywhere into Blender's window — or, from
    **Edit > Preferences > Get Extensions** (**Add-ons** on some versions),
    use the ▾ menu > **Install from Disk...** and select the file.

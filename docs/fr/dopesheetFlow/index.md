@@ -36,7 +36,7 @@ Dope Sheet native de Blender.
 Voir la page **[Fonctionnalités](features.md)** pour une démonstration
 complète en images.
 
-## Pourquoi ça reste "natif"
+## Pourquoi ça reste natif
 
 dopesheetFlow n'introduit pas de nouvel éditeur ni de modèle de données
 parallèle — tout ce qu'il affiche et déplace
