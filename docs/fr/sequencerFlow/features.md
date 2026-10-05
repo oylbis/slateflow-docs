@@ -1,20 +1,20 @@
 # Fonctionnalités
 
 Chaque section ci-dessous est marquée **LITE** (inclus dans la version
-gratuite) ou **PRO** (uniquement dans la version payante). Voir
+gratuite) et/ou **PRO** (uniquement dans la version payante). Voir
 [LITE et PRO](index.md#lite-et-pro) pour le détail complet des niveaux.
 
-## Barre d'outils contextuelle — LITE
+## Barre d'outils contextuelle — LITE et PRO
 
 ![Toolbar sequencerFlow](assets/sequencerFlow_toolBar_01.png)
 
 Dessinée directement dans le VSE, sans fouiller les menus : split
-intelligent (gère correctement les strips SCENE), join, swap, slip,
+intelligent (strips sélectionnés coupés par le timeline cursor), join, swap, slip,
 sélection directionnelle/par canal, jeux de sélection, isolation de canal
 et de sélection, cadrage automatique du frame range, suivi de la tête de
 lecture pendant la lecture.
 
-## Guides de zones — LITE
+## Guides de zones — LITE et PRO
 
 ![Guides de zones sur des plages de canaux](assets/sequencerFlow_zoneGuides_01.gif)
 
