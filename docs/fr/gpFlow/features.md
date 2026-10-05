@@ -4,27 +4,28 @@
 
 ## Dessin
 
-- **Mode Dessin** en un clic, avec la dernière brosse utilisée.
-- **Mode Gomme** en un clic, cohérent avec les autres modes.
-- **Mode Fill** en un clic — pilote l'outil Fill natif de Blender, tous les
+- **Mode Dessin** en un clic (ou via un le raccourcis clavier paramétré), avec la dernière brosse utilisée.
+- **Mode Gomme** en un clic (ou via un le raccourcis clavier paramétré), cohérent avec les autres modes.
+- **Mode Fill** en un clic (ou via un le raccourcis clavier paramétré) — pilote l'outil Fill natif de Blender, tous les
   réglages de brosse (lignes d'extension, fermeture d'écart...) s'appliquent
   toujours. **Shift+clic** supprime un remplissage sous le curseur, un
   geste sans équivalent natif.
 
 ## Retravailler les traits
 
-![Lengthen/Shorten sur un trait](assets/gpFlow_LS_01.gif)
-
 - **Lengthen/Shorten** — saisissez l'extrémité la plus proche d'un trait,
   surlignée en survol, et glissez.
 
-![Deform avec un treillis temporaire](assets/gpFlow_deform_01.gif)
+![Lengthen/Shorten sur un trait](assets/gpFlow_LS_01.gif)
 
 - **Deform** pose un treillis aligné sur la vue autour de votre sélection
   pour une distorsion rapide et naturelle (2D ou volumétrique, résolution
   réglable). Ctrl+clic sur le bouton (ou son raccourci) pour construire ce
   treillis directement à partir d'une sélection déjà faite, sans avoir à
   resélectionner une fois dans l'outil.
+
+![Deform avec un treillis temporaire](assets/gpFlow_deform_01.gif)
+  
 - **Sculpt** bascule directement en mode sculpt natif de Blender, avec un
   comportement d'undo plus sûr.
 
