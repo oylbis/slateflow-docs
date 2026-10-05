@@ -20,8 +20,9 @@ sequencerFlow existe en deux niveaux, à partir de la même base de code :
   guides de zones, les raccourcis configurables.
 - **PRO** (payant) : tout LITE, plus le **Source Viewer** (montage 3 points
   et Insert), les **courbes** de volume/opacité **dessinées sur les
-  strips**, les outils **audio** avancés (VU-mètre, réattribution de
-  canal), et la **minimap** de la timeline.
+  strips**, le **contrôle de vitesse** (badge de retiming et freeze frame),
+  les outils **audio** avancés (VU-mètre, réattribution de canal), et la
+  **minimap** de la timeline.
 
 Voir **[Fonctionnalités](features.md)** pour le détail complet.
 
@@ -39,7 +40,7 @@ Voir **[Fonctionnalités](features.md)** pour le détail complet.
   qu'une timeline chargée reste organisée et lisible en un coup d'œil.
 - **Courbes de volume et d'opacité** (PRO) dessinées directement sur les
   strips, éditables au clic-glisser — pilotant de vraies F-Curves Blender.
-- **Contrôle de vitesse** : badge sur chaque strip pour directement faire un retime, dialogue de
+- **Contrôle de vitesse** (PRO) : badge sur chaque strip pour directement faire un retime, dialogue de
   vitesse en pourcentage, freeze frame, le tout sur les opérateurs de
   retiming natifs de Blender.
 - **Connexions de strips** — liaison automatique ou manuelle entre strips

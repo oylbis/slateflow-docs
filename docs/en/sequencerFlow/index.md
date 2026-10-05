@@ -18,9 +18,9 @@ sequencerFlow ships as two tiers from the same codebase:
   connections, advanced selections, channel/strip isolation, frame range,
   batch rename, per-strip export, zone guides, configurable shortcuts.
 - **PRO** (paid): everything in LITE, plus the **Source Viewer** (3-point
-  editing and Insert), volume/opacity **curves drawn on strips**, advanced
-  **audio** tools (VU meter, channel reassignment), and the timeline
-  **minimap**.
+  editing and Insert), volume/opacity **curves drawn on strips**, **speed
+  control** (retiming badge and freeze frame), advanced **audio** tools (VU
+  meter, channel reassignment), and the timeline **minimap**.
 
 See **[Features](features.md)** for the detailed breakdown.
 
@@ -38,7 +38,7 @@ See **[Features](features.md)** for the detailed breakdown.
   stays organized and readable at a glance.
 - **Volume and opacity curves** (PRO) drawn directly on strips,
   click-and-drag editable — driving real Blender F-Curves.
-- **Speed control**: a badge on every strip for quick retiming,
+- **Speed control** (PRO): a badge on every strip for quick retiming,
   percentage-based speed dialog, freeze frame, all built on Blender's own
   native retiming operators.
 - **Strip connections** — automatic or manual linking between related
