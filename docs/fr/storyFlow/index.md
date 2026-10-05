@@ -5,17 +5,16 @@
 **Storyboard et animatique dans le VSE de Blender, sans se battre avec l'outil.**
 
 storyFlow étend l'addon officiel **Storypencil** (Blender Foundation) pour
-transformer le Video Sequence Editor en un vrai établi de storyboard/
+transformer le Video Sequence Editor en un vrai outil de storyboard/
 animatique : une scène de montage où chaque plan est un strip SCENE pointant
 vers sa propre scène de dessin Grease Pencil. Pas de moteur d'édition ou de
 dessin parallèle — tout repose entièrement sur les scènes, workspaces et
-strips natifs de Blender, et storyFlow comble discrètement les manques que
-Blender laisse ouverts pour ce workflow précis : basculer entre un plan et
-son dessin fait perdre le fil, les durées se désynchronisent, deux plans
-peuvent se retrouver à pointer vers le même dessin sans avertissement, rien
-n'indique en un coup d'œil si un plan est synchronisé avec son dessin.
+strips natifs de Blender
+StoryFlow comble discrètement les gros manques que
+Blender laisse ouverts pour ce workflow précis : les navigations et l'ergonomie générale, les durées qui se désynchronisent ou qui sont bloquées dans le montage, deux plans
+qui peuvent se retrouver à pointer vers le même dessin sans avertissement, nettoyage automatique des plans abandonnés et allègement du fichir, etc.
 storyFlow referme ces manques pour que l'aller-retour entre montage et dessin
-reste rapide et transparent.
+reste rapide, propre et transparent.
 
 ![Panneaux storyFlow dans le VSE](assets/storyFlow_all_01.png)
 
@@ -38,7 +37,7 @@ reste rapide et transparent.
 - **Métadonnées incrustées sur l'image** au besoin — nom du plan, numéro de
   frame, durée — chacune un interrupteur indépendant.
 - **Outils de production** : ajout/renommage de plans par lot, nettoyage des
-  scènes de dessin inutilisées, rendu directement depuis la timeline.
+  scènes de dessin inutilisées, rendu directement depuis la timeline (avec réimport dans la scène), etc.
 
 ![Statut de synchro et avertissement de scène partagée dans le VSE](assets/storyFlow_all_02.png)
 
