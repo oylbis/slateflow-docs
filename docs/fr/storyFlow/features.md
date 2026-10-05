@@ -7,10 +7,9 @@
 - **Tab** bascule entre le plan sélectionné et sa scène de dessin, en
   atterrissant à la *frame* correspondante dans les deux sens — pas juste un
   changement de scène. Tab bascule aussi entre les workspaces "Video
-  Editing" et "2D Animation", désactive Pin Scene partout où il serait resté
-  bloqué, et pointe le Sequencer intégré du workspace de dessin vers la
-  scène de montage principale.
-- **Ctrl+←/→** se déplace entre les clés d'animation du plan courant.
+  Editing" et "2D Animation", et pointe le Sequencer intégré du workspace de dessin vers la
+  scène de montage principale (utile si dans votre template pour les scènes d'animation vous avez le VSE présent).
+- **Ctrl+Alt+←/→** se déplace entre les clés d'animation du plan courant avant de passer au plan suivant ou précédent quand ils sont atteints.
 - **Alt+←/→** se déplace entre les scènes de dessin, sans quitter le
   contexte de dessin.
 
@@ -18,18 +17,16 @@
 
 ![Synchro de durée entre un strip et sa scène de dessin](assets/storyFlow_synchro_01.gif)
 
-Redimensionnez la plage d'une scène de dessin et son strip de plan suit ;
-redimensionnez le strip et c'est la scène de dessin qui suit — avec tous les
-plans suivants de la timeline qui se décalent automatiquement pour qu'il n'y
-ait jamais de chevauchement.
+Redimensionnez la plage d'une scène de dessin et son strip dans le montage est aussi modifié ;
+redimensionnez le strip et c'est la scène de dessin qui est modifiée.
 
-Deux façons explicites d'étendre ou de rétrécir un plan :
+Trois façons explicites d'étendre ou de rétrécir un plan dans le montage :
 
 - **Par défaut** (glisser une poignée, ou double-clic sans cocher l'option) :
-  rogne le plan voisin.
-- **Ctrl maintenu** pendant le glisser (ou la case à cocher du popup
-  double-clic) : pousse tous les plans suivants (ou précédents), sur tous
+  rogne le plan voisin quand ça se chevauche.
+- **Ctrl maintenu** pendant le glisser : pousse tous les plans suivants (ou précédents), sur tous
   les canaux, au lieu de rogner.
+- **double clic sur une poignée** ouvre une popup pour ajouter ou retirer des frames, avec la possibilité ici aussi de pousser/tirer les plans qui suivent ou précèdent, selon les besoins.
 
 ## Protection des scènes partagées
 
@@ -81,7 +78,7 @@ production :
 - **Rendre directement depuis la timeline**, en séquence d'images ou en
   vidéo — découpé en segments là où le strip visible au canal le plus haut
   change réellement, pour que des plans volontairement superposés sur
-  plusieurs canaux se rendent correctement au lieu qu'un seul gagne
+  plusieurs canaux se rendent correctement au lieu qu'un seul ne gagne
   silencieusement pour toute sa durée d'origine. Le rendu en séquence
   d'images suit les *vraies* images-clés du dessin (objets, Grease Pencil,
   NLA, marqueurs de scène), pas un intervalle fixe, et peut réinjecter le
