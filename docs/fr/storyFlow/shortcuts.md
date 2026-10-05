@@ -3,7 +3,7 @@
 | Action | Raccourci | Où |
 |---|---|---|
 | Basculer entre un plan et son dessin | **Tab** | VSE / Dope Sheet / vue 3D |
-| Clé d'animation précédente/suivante du plan courant | **Ctrl+←** / **Ctrl+→** | Scène de dessin |
+| Clé d'animation précédente/suivante du plan courant | **Ctrl+Alt+←** / **Ctrl+Alt+→** | Scène de dessin |
 | Scène de dessin précédente/suivante | **Alt+←** / **Alt+→** | Scène de dessin |
 | Rogner le plan voisin en redimensionnant | Glisser une poignée de strip (par défaut) | VSE |
 | Pousser les plans suivants/précédents en redimensionnant | **Ctrl** + glisser une poignée de strip | VSE |
