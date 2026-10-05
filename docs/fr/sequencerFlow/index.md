@@ -6,11 +6,7 @@
 
 sequencerFlow ajoute une boîte à outils flottante dessinée en GPU et un
 ensemble d'outils de production directement dans le VSE, pour rapprocher le
-séquenceur natif de Blender d'un NLE dédié — sans jamais masquer ou
-verrouiller le moindre outil natif. Tout ce qu'il fait lit et écrit les
-données natives de Blender : de vrais strips, de vraies F-Curves, de
-vraies scènes. Désactivez l'addon et votre montage reste un fichier
-`.blend` parfaitement ordinaire.
+séquenceur natif de Blender d'un NLE dédié.
 
 ![Toolbar et Source Viewer dans le VSE](assets/sequencerFlow_all_01.png)
 
@@ -32,18 +28,18 @@ Voir **[Fonctionnalités](features.md)** pour le détail complet.
 ## En un coup d'œil
 
 - **Une barre d'outils contextuelle dessinée directement dans le VSE** :
-  split intelligent (gère correctement les strips SCENE), join, swap, slip,
+  split intelligent, join, swap, slip,
   sélection directionnelle/par canal, jeux de sélection, isolation de canal
   et de sélection, cadrage automatique du frame range, suivi de la tête de
-  lecture pendant la lecture.
+  lecture quand on fait "play".
 - **Source Viewer** (PRO) — vrai montage 3 points : posez des points IN/OUT
-  sur n'importe quel plan dans une scène dédiée, puis insérez à la tête de
+  sur n'importe quel plan source dans un espace dédié (second moniteur ou scène), puis insérez à la tête de
   lecture, avec tous les plans suivants qui se décalent automatiquement.
 - **Guides de zones** — bandes colorées sur des plages de canaux pour
-  qu'une timeline chargée reste lisible en un coup d'œil.
+  qu'une timeline chargée reste organisée et lisible en un coup d'œil.
 - **Courbes de volume et d'opacité** (PRO) dessinées directement sur les
   strips, éditables au clic-glisser — pilotant de vraies F-Curves Blender.
-- **Contrôle de vitesse** : badge sur chaque strip retimé, dialogue de
+- **Contrôle de vitesse** : badge sur chaque strip pour directement faire un retime, dialogue de
   vitesse en pourcentage, freeze frame, le tout sur les opérateurs de
   retiming natifs de Blender.
 - **Connexions de strips** — liaison automatique ou manuelle entre strips
