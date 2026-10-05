@@ -6,10 +6,7 @@
 
 sequencerFlow adds a floating, GPU-drawn toolbar and a set of production
 tools directly into the VSE, closing the gap between Blender's native
-sequencer and a dedicated NLE — without ever hiding or locking out a single
-native tool. Everything it does reads and writes Blender's own data: real
-strips, real F-Curves, real scenes. Turn the add-on off and your edit is
-still a completely ordinary `.blend` file.
+sequencer and a dedicated NLE.
 
 ![Toolbar and Source Viewer in the VSE](assets/sequencerFlow_all_01.png)
 
@@ -29,20 +26,21 @@ See **[Features](features.md)** for the detailed breakdown.
 
 ## At a glance
 
-- **A contextual toolbar drawn right into the VSE**: smart split (handles
-  SCENE strips correctly), join, swap, slip, directional/channel selection,
-  selection sets, channel and selection isolation, auto-fit frame range,
-  follow-playhead during playback.
+- **A contextual toolbar drawn right into the VSE**: smart split, join,
+  swap, slip, directional/channel selection, selection sets, channel and
+  selection isolation, auto-fit frame range, follow-playhead during
+  playback.
 - **Source Viewer** (PRO) — real 3-point editing: set IN/OUT points on any
-  clip in a dedicated scene, then insert at the playhead with every later
-  strip rippling out of the way automatically.
+  source clip in a dedicated space (second monitor or scene), then insert
+  at the playhead with every later strip rippling out of the way
+  automatically.
 - **Zone guides** — colored bands across channel ranges so a busy timeline
-  still reads at a glance.
+  stays organized and readable at a glance.
 - **Volume and opacity curves** (PRO) drawn directly on strips,
   click-and-drag editable — driving real Blender F-Curves.
-- **Speed control**: a badge on every retimed strip, percentage-based speed
-  dialog, freeze frame, all built on Blender's own native retiming
-  operators.
+- **Speed control**: a badge on every strip for quick retiming,
+  percentage-based speed dialog, freeze frame, all built on Blender's own
+  native retiming operators.
 - **Strip connections** — automatic or manual linking between related
   strips (typically a video clip and its audio). Reads these links to keep
   video/audio pairs together when exporting to Resolve via

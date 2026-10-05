@@ -1,33 +1,40 @@
 # Features
 
-## Export
+The **sequencerOTIO** panel lives in the Sequencer sidebar (N-panel), in
+three collapsible sections: Configuration, Export, Import. See
+[Configuration](configuration.md) for the first one.
 
-Turns the current VSE edit into a `.otio` file tuned for Resolve, from the
-**OTIO** panel in the Sequencer sidebar.
+## Export
 
 ![Export to OTIO panel](assets/sequencerOTIO_export_01.png)
 
-What gets carried over:
+Turns the current VSE edit into a `.otio` file tuned for Resolve.
 
-- **One OTIO track per Blender channel actually in use** — including empty
-  channels, so your track layout survives the round-trip. Blender's lowest
+**Options:**
+
+- **Export Folder / Filename** — where the `.otio` file is written. An
+  **Update Paths** action fills both in automatically from the current
+  `.blend` file's own location and name.
+- **Scope**: **All strips**, or **Selected only** — export the whole
+  timeline, or just the strips you've selected, without having to
+  temporarily hide or isolate anything.
+- **Native Resolve Fades** (on by default) — converts a pure fade at a
+  clip's edge (opacity/volume ramping to zero) into Resolve's own native
+  video transition or audio fade, instead of leaving it as raw opacity/
+  volume keyframes. An editor picking up the timeline in Resolve gets real
+  fade handles to grab, not keyframes to decode.
+- **Debug Export** — writes a companion debug report next to the `.otio`
+  file and loads it straight into Blender's text editor, so you can see
+  exactly what was written without digging through a hidden log.
+
+**What always gets carried over, regardless of these options:**
+
+- One OTIO track per Blender channel actually in use — including empty
+  channels, so the track layout survives the round-trip. Blender's lowest
   video channel becomes `Video 1`; audio channel order is flipped to match
   how Resolve stacks its audio tracks.
-- **Volume/opacity keyframes** carried over as Bézier curves, not
-  flattened.
-- **Pure fades** at a clip's edge (opacity/volume ramping to zero)
-  converted to Resolve's own native transitions/audio fades instead of raw
-  keyframes — optional, on by default, so an editor picking up the timeline
-  in Resolve gets real fade handles, not a pile of keyframes to decode.
-- **Speed changes and freeze frames** encoded as OTIO `TimeEffect`s.
-
-Export either the **whole timeline** or just the **current selection** —
-useful for handing off a specific sequence without exporting an entire
-project's edit.
-
-Every export drops a companion debug report next to the `.otio` file and
-loads it straight into Blender's text editor, so you can see exactly what
-was written without digging through a hidden log.
+- Volume/opacity keyframes as Bézier curves, never flattened.
+- Speed changes and freeze frames, encoded as OTIO `TimeEffect`s.
 
 !!! info "Paths and media relinking"
     If a media source referenced by the edit lives outside the export
@@ -37,17 +44,24 @@ was written without digging through a hidden log.
 
 ## Import
 
-Bringing a `.otio` back from Resolve, in one of three modes.
+![OTIO Import Settings](assets/sequencerOTIO_import_01.png)
 
-**Add** imports alongside whatever's already in the scene — the simplest
-mode, useful for bringing in a sequence you don't already have in Blender.
+Bringing a `.otio` back from Resolve, in one of four modes:
 
-**Replace** clears the VSE first, then imports — a full re-sync when you
-want the Blender edit to exactly mirror what Resolve has.
+| Mode | What it does |
+|---|---|
+| **Add To Current Scene** | Imports alongside whatever's already there. |
+| **New Scene** | Creates a dedicated scene for the import, leaving the current one untouched. |
+| **Replace Current Edit** | Clears the scene's VSE first, then imports — a full re-sync. |
+| **Update Existing Edit** (Conform) | Compares the current montage to the Resolve edit and reports — or applies — just the differences. See below. |
 
-## Conform (the round-trip mode)
+**Montage properties** (resolution and frame rate, read from the OTIO file
+by default) can instead be set manually and applied to the scene — useful
+when the `.otio` doesn't carry reliable project settings. A **Resolution**
+dropdown offers common presets (HD, UHD 4K, DCI 2K/4K, SD PAL/NTSC, square,
+vertical, anamorphic scope) alongside a custom width/height.
 
-![OTIO Import Settings: conform mode](assets/sequencerOTIO_import_01.png)
+### Conform (the round-trip mode)
 
 Compares the **live Blender edit** against the Resolve export and
 classifies every clip:
@@ -62,7 +76,26 @@ classifies every clip:
 | New | Present in the Resolve export, not in Blender |
 | Deleted | Present in Blender, missing from the Resolve export |
 
-You can then **optionally apply just the changes** — nothing gets blindly
+**Conform options:**
+
+- **Reference OTIO** (optional) — the original Blender export, the
+  "before" state. Without it, conform compares against the live Blender
+  edit directly; providing it sharpens the diff (in particular, it's
+  required to confirm real *deletions*, see below).
+- **Apply moves & retrims** — off by default, meaning conform first runs
+  as a dry-run report with nothing applied. Turn it on to actually move
+  and retrim the matching strips.
+- **Also remove deleted shots** (destructive) — removes strips confirmed
+  as deleted by comparing against the **Reference OTIO**. Never removes
+  anything without that reference to confirm the deletion is real, not
+  just a clip conform couldn't match.
+- **Also conform properties** — reapplies volume, opacity, transform and
+  speed (and fades, via opacity/volume) wherever they differ between the
+  reference export and the Resolve return. Also requires the reference.
+- **Generate debug report** (on by default) — same debug file as export,
+  written next to the imported OTIO and loaded as a text block.
+
+You can then **apply just the changes you want** — nothing gets blindly
 re-imported, so edits made inside Blender *after* the original export
 aren't discarded just because Resolve sent something back.
 

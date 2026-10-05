@@ -9,12 +9,14 @@ transformer le Video Sequence Editor en un vrai outil de storyboard/
 animatique : une scène de montage où chaque plan est un strip SCENE pointant
 vers sa propre scène de dessin Grease Pencil. Pas de moteur d'édition ou de
 dessin parallèle — tout repose entièrement sur les scènes, workspaces et
-strips natifs de Blender
-StoryFlow comble discrètement les gros manques que
-Blender laisse ouverts pour ce workflow précis : les navigations et l'ergonomie générale, les durées qui se désynchronisent ou qui sont bloquées dans le montage, deux plans
-qui peuvent se retrouver à pointer vers le même dessin sans avertissement, nettoyage automatique des plans abandonnés et allègement du fichir, etc.
-storyFlow referme ces manques pour que l'aller-retour entre montage et dessin
-reste rapide, propre et transparent.
+strips natifs de Blender.
+storyFlow comble discrètement les gros manques que Blender laisse ouverts
+pour ce workflow précis : les navigations et l'ergonomie générale, les
+durées qui se désynchronisent ou qui se bloquent en cours de montage, deux
+plans qui peuvent se retrouver à pointer vers le même dessin sans
+avertissement, les plans abandonnés qui s'accumulent et alourdissent le
+fichier, etc. storyFlow referme ces manques pour que l'aller-retour entre
+montage et dessin reste rapide, propre et transparent.
 
 ![Panneaux storyFlow dans le VSE](assets/storyFlow_all_01.png)
 
@@ -43,6 +45,25 @@ reste rapide, propre et transparent.
 
 Voir **[Fonctionnalités](features.md)** pour une démonstration en images de
 tout ce qui précède.
+
+## Pourquoi storyFlow reste indispensable
+
+Les outils de storyboard natifs de Blender ont eux aussi progressé —
+Grease Pencil peut désormais se dessiner et se monter directement dans
+une scène qui héberge aussi une vue de montage allégée. Pour un petit
+board, ça suffit. Ça ne suffit plus dès que le projet devient une
+vraie production : une grande timeline avec des dizaines de plans,
+qu'on scrube, réordonne et recoupe toute la journée sur un seul écran.
+Garder ce vrai travail de montage confortablement à côté d'une scène
+de dessin sur ce même écran est compliqué avec les seuls outils
+natifs de Blender — storyFlow fait cohabiter la scène de montage
+dédiée et les scènes de dessin au lieu d'imposer de choisir entre les
+deux. Et quelle que soit la façon dont les deux sont reliés, ça ne
+règle pas le vrai problème que storyFlow résout : Blender n'a toujours
+aucun mécanisme natif pour garder la durée d'un plan dans le montage
+synchronisée avec la plage de frames de sa scène de dessin — combler
+ce trou, proprement et dans les deux sens, c'est exactement à ça que
+sert storyFlow.
 
 ## Pourquoi ça reste natif
 

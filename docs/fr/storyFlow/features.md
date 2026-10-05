@@ -47,13 +47,19 @@ un coup d'œil dans le VSE, sans ouvrir de panneau latéral.
 
 L'audio qui chevauche un plan est copié automatiquement dans sa scène de
 dessin, repositionné correctement, pitch/pan/volume/vitesse préservés — vous
-pouvez entendre le timing en dessinant sans aucune copie manuelle.
+pouvez entendre le timing en dessinant sans aucune copie manuelle. Les
+pistes audio mises en muet peuvent être exclues de cette copie.
 
 ## Métadonnées incrustées sur l'image
 
-Au besoin, storyFlow peut incruster des métadonnées directement sur l'image :
-nom du plan, numéro de frame (projet ou relatif au plan), durée — chacune un
-**interrupteur indépendant**, pas un overlay tout-ou-rien.
+storyFlow peut incruster des métadonnées directement sur l'image, chacune
+un **interrupteur indépendant**, pas un overlay tout-ou-rien :
+
+- Nom du plan.
+- Numéro de frame relatif au projet.
+- Numéro de frame relatif au plan (départ à 0 ou à 1, au choix).
+- Durée.
+- Marqueurs de début/fin.
 
 ## Outils de production
 
@@ -81,5 +87,9 @@ production :
   plusieurs canaux se rendent correctement au lieu qu'un seul ne gagne
   silencieusement pour toute sa durée d'origine. Le rendu en séquence
   d'images suit les *vraies* images-clés du dessin (objets, Grease Pencil,
-  NLA, marqueurs de scène), pas un intervalle fixe, et peut réinjecter le
-  résultat dans la timeline comme nouveaux strips automatiquement.
+  NLA, marqueurs de scène), pas un intervalle fixe. Les segments sont
+  nommés soit d'après le strip au canal le plus haut, soit avec votre
+  propre schéma préfixe/suffixe/numérotation (mêmes options que le
+  renommage en lot), plus un suffixe de plage de frames en garde-fou
+  anti-collision. Le résultat peut être réinjecté dans la timeline comme
+  nouveaux strips automatiquement.

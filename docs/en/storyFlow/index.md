@@ -9,12 +9,13 @@ turn the Video Sequence Editor into a real storyboard/animatic bench: an
 edit scene where every shot is a SCENE strip pointing to its own Grease
 Pencil drawing scene. It doesn't introduce a parallel editing or drawing
 engine — it works entirely through Blender's native scenes, workspaces and
-strips, and quietly fills in the seams Blender leaves exposed for this
-specific workflow: switching between a shot and its drawing loses your
-place, durations drift out of sync, two shots can end up pointing at the
-same drawing without warning, nothing tells you at a glance whether a shot
-is in sync with its drawing. storyFlow closes those gaps so the back-and-forth
-between editing and drawing stays fast and stays out of your way.
+strips. storyFlow quietly fills in the big gaps Blender leaves open for
+this specific workflow: navigation and overall ergonomics, durations that
+drift out of sync or get stuck mid-edit, two shots that can end up
+pointing at the same drawing without warning, abandoned shots that pile
+up and bloat the file, and more. storyFlow closes those gaps so the
+back-and-forth between editing and drawing stays fast, clean and out of
+your way.
 
 ![storyFlow panels in the VSE](assets/storyFlow_all_01.png)
 
@@ -34,11 +35,29 @@ between editing and drawing stays fast and stays out of your way.
 - **Metadata burned onto the image** when you need it — shot name, frame
   number, duration — each an independent toggle.
 - **Production tools**: batch add/rename shots, clean up unused drawing
-  scenes, render straight from the timeline.
+  scenes, render straight from the timeline (with re-import into the
+  scene), and more.
 
 ![Sync status and shared-scene warning in the VSE](assets/storyFlow_all_02.png)
 
 See **[Features](features.md)** for a visual walkthrough of all of the above.
+
+## Why storyFlow still matters
+
+Blender's own storyboard tools have moved forward too — Grease Pencil can
+now be drawn and edited directly inside a scene that also holds a
+lightweight edit view. That's fine for a short board. It stops being
+fine once the project is a real production: a long timeline with dozens
+of shots, scrubbed, re-ordered and re-cut all day on a single screen.
+Keeping that kind of genuine editing comfortably alongside a drawing
+scene on one monitor is awkward with Blender's native tools alone —
+storyFlow lets the dedicated edit scene and the drawing scenes coexist
+instead of forcing a choice between them. And however the two are
+wired together, that doesn't touch the problem storyFlow actually
+solves: Blender still has no built-in way to keep a shot's duration in
+the edit and its drawing scene's frame range in sync with each other —
+closing that gap, cleanly and in both directions, is what storyFlow is
+for.
 
 ## Why it feels native
 
