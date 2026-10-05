@@ -8,7 +8,7 @@ sequencerOTIO est une porte de sortie professionnelle hors du Video Sequence
 Editor de Blender, construite sur **OpenTimelineIO (OTIO)** — le format
 d'échange ouvert aussi utilisé par Resolve, Nuke Studio, Premiere et
 d'autres. Il existe pour les étapes de production que le VSE de Blender ne
-couvre pas bien (vrai mixage audio, exports finaux prêts pour DCP) sans
+couvre pas bien (vrai mixage audio, exports finaux prêts pour DCP, etc.), sans
 enfermer votre montage dans Blender : coupez dans le VSE, confiez la
 timeline à Resolve, récupérez les changements, continuez à monter dans
 l'un ou l'autre outil.
