@@ -7,98 +7,68 @@ Each section below is tagged **LITE** and/or **PRO**. See
 
 ![sequencerFlow toolbar](assets/sequencerFlow_toolBar_01.png)
 
-Drawn right into the VSE, no menu diving. Every tool:
+Drawn right into the VSE, no menu diving.
 
-- **Cut** — splits every selected strip at the timeline cursor. On a SCENE
-  strip (a storyFlow shot, for instance), a native split would leave both
-  halves pointing at the *same* underlying scene — Cut instead gives the
-  right-hand half a full copy of the scene, so each half is independent
-  from the start.
-- **Join** — stitches two touching strips back together: same channel,
-  same type, same source file, and the first strip's right edge exactly
-  meeting the second one's left edge. In practice, this re-joins strips
-  that were split by Cut — it won't merge two genuinely different clips.
-  Works across a whole multi-strip selection at once, grouped by
-  channel+type.
-- **Swap** (left/right) — swaps a strip, or a whole block of several
+- **Cut** splits every selected strip at the playhead. On a SCENE strip (a
+  storyFlow shot, say), a native split would leave both halves sharing the
+  *same* underlying scene — Cut gives the right-hand half a full copy
+  instead, so each half is independent from the start.
+- **Join** only works on strips that are genuinely touching, on the same
+  channel, same type and same source file — in practice, it undoes a
+  Cut. It won't merge two different clips.
+- **Swap** (left/right) swaps a strip, or a whole block of several
   touching selected strips on the same channel, with its single
-  unselected neighbor on that side. The block moves as one rigid unit
-  (internal spacing never changes); a strip connected to another one
-  (see [Strip connections](#strip-connections-lite) below) is dragged
-  along automatically even if only its partner was selected. Selecting
-  strips across several channels swaps each channel's own block against
-  its own neighbor in the same click. Nothing happens on a side with no
-  unselected neighbor touching the block.
-- **Slip** — invokes Blender's own native Slip tool to move the source
-  within the strip's own bounds, without changing its position or
-  duration on the timeline.
-- **Insert** (PRO) — inserts an edited source (in/out set in the
-  [Source Viewer](#source-viewer-pro)) into the main edit at the playhead.
-- **Connect / Disconnect** — see [Strip connections](#strip-connections-lite)
-  below.
+  unselected neighbor on that side. The block moves as one rigid unit; a
+  strip connected to another (see [Strip connections](#strip-connections-lite))
+  is dragged along even if only its partner was selected.
+- **Slip** invokes Blender's own native Slip tool.
+- **Insert** (PRO) drops the Source Viewer's current in/out range at the
+  playhead — see [Source Viewer](#source-viewer-pro).
+- **Connect / Disconnect** — see [Strip connections](#strip-connections-lite).
 - **Advanced selections**:
 
-  | Action | What it selects |
+  | Action | Selects |
   |---|---|
-  | Select channel | Every strip sharing a channel with the current selection (or the active strip if nothing's selected) |
-  | Select above | Every strip in *any* channel above the highest selected channel — not just the next one up |
-  | Select below | Every strip in *any* channel below the lowest selected channel |
-  | Navigate next/previous | Jumps to — and selects — the next or previous strip in time, and moves the playhead to its start |
-  | Selection sets | Save the current selection under a name, recall it later, or remove it (see below) |
+  | Select channel | Every strip sharing a channel with the current selection |
+  | Select above / below | Every strip in *any* channel beyond the selection's highest/lowest — not just the next one |
+  | Navigate next/previous | The next or previous strip in time, moving the playhead to its start |
+  | Selection sets | Save, recall or remove a named selection |
 
-  **Selection sets** are matched back by name, strip type, timeline
-  position and channel — if a saved strip has since moved, been renamed,
-  or deleted, recall reports a partial restore (`N/M strips selected`)
-  instead of silently selecting the wrong thing.
-- **Isolate** — two independent, reversible toggles, both based on muting
-  (so they affect audio playback too, not just the preview image):
-  - **Isolate Channel** mutes every channel except the ones the current
-    selection touches.
-  - **Isolate Selection** mutes every strip that isn't currently selected
-    (by name, individually — not by channel).
-
-  Click either button again to restore every mute state exactly as it
-  was before.
-- **Frame range** — sets the *scene's* playback/render frame range
-  (`Scene.frame_start`/`frame_end`), not just the view:
-  - **Range Selected** fits it to the current selection's bounds.
-  - **Range All** fits it to every strip in the timeline.
-  - **Auto Range** keeps re-fitting it continuously (every ~100ms) as your
-    selection changes, falling back to framing every strip the moment
-    nothing is selected.
-- **Follow playhead** — the edit view scrolls to keep the playhead in a
+  Selection sets are matched back by name, type, position and channel —
+  if a strip has since moved or been renamed, recall reports a partial
+  restore instead of guessing.
+- **Isolate** has two independent, reversible toggles, both based on
+  muting (so they affect audio too): **Isolate Channel** mutes every
+  channel but the selection's; **Isolate Selection** mutes every strip
+  that isn't selected. Click again to restore.
+- **Frame range** sets the *scene's* playback/render range, not just the
+  view: **Range Selected**/**Range All** fit it once, **Auto Range** keeps
+  re-fitting it to the selection continuously.
+- **Follow playhead** scrolls the view to keep the playhead in a
   comfortable zone (25–40% of the visible width) during playback, instead
   of jumping or needing a manual re-center.
 - **Minimap toggle** (PRO) — see [Timeline minimap](#timeline-minimap-pro).
 
 ## Strip connections — LITE
 
-Marks a shared, invisible link between related strips — typically a video
-clip and its audio — so dragging, swapping or exporting one strip takes
-its partner along. A connection is just a shared ID stored on each strip
-(`strip["connection_id"]`); the toolbar's **Connect**/**Disconnect**
-buttons apply it to the current selection and call Blender's own native
-connect/disconnect operator alongside it.
+A connection is a shared, invisible link between related strips —
+typically a video clip and its audio — so dragging, swapping or exporting
+one takes its partner along. **Connect**/**Disconnect** on the toolbar
+apply it to the current selection.
 
-Connections aren't detected passively in the background — the **Connection
-Tools** N-panel drives that explicitly, through **Conditional Connect**: a
-set of criteria you can combine, applied with one click to either the
-current selection or the whole timeline:
+Connections aren't detected passively — the **Connection Tools** N-panel's
+**Conditional Connect** drives that explicitly, by combining criteria and
+applying them in one click:
 
 | Condition | Groups strips that... |
 |---|---|
-| Selected strips only | ...are limited to the current selection (on by default) |
-| Same start frame | ...start at exactly the same frame |
-| Same end frame | ...end at exactly the same frame |
-| Same channel | ...sit on the same channel |
-| Same length | ...share the same duration |
-| Movie-sound pairs | ...look like a video clip and its matching audio, by name (exact match, a shared numeric suffix, or ≥80% name similarity) |
+| Same start / end frame | start, or end, at the same frame |
+| Same channel / length | sit on the same channel, or share a duration |
+| Movie-sound pairs | look like a matching video+audio pair, by name |
 
-Leaving only **Movie-sound pairs** checked is the common case: it pairs up
-every MOVIE strip with its best-matching SOUND strip by name, with no
-other constraint. The same panel also lists every connection group
-currently in the scene, with a button to select all of that group's
-strips at once.
+The common case is leaving only **Movie-sound pairs** checked. The same
+panel also lists every existing connection group, with a button to select
+the whole group at once.
 
 Mainly there to prep a round-trip export:
 **[sequencerOTIO](../sequencerOTIO/index.md)** (a separate SlateFlow
@@ -109,111 +79,87 @@ exporting to Resolve via OpenTimelineIO.
 
 ![Zone guides across channel ranges](assets/sequencerFlow_zoneGuides_01.gif)
 
-Colored separator lines spanning a range of channels — audio, video,
-effects, or however you like to split up a busy timeline — each labeled
-with its own name at both ends of the line, so the grouping stays readable
-without opening any panel.
+Colored separator lines across a range of channels (audio, video,
+effects...), configurable in the **Zone Guides** N-panel.
 
-Everything lives in the **Zone Guides** N-panel:
+- **Show Zone Guides** / **Lock** show or hide the overlay; Lock freezes
+  the boundaries against dragging in the VSE without hiding them.
+- The **zone list**: clicking a zone's name makes it active (editable
+  below). Its channel range is shown read-only — there's no field to type
+  it directly. To change it: drag a boundary in the VSE (click-drag the
+  colored line, no modifier key, Esc cancels), or use ▲/▼, Add Zone,
+  Reset or a preset.
+- **▲ / ▼** don't reorder the list — they **swap a zone's position**
+  with its neighbor, each keeping its own size, name and color.
+- **+ Add Zone** adds a new zone right above the last one.
+- The box below the list edits the active zone's **name** and **color**.
+- **Drag Mode** decides what happens to the other zones when one is
+  resized:
 
-- **Show Zone Guides** turns the whole overlay on/off; **Lock** (next to
-  it) keeps the zones as they are and disables dragging their boundaries
-  in the VSE, without hiding them.
-- The **zone list** shows every zone from top to bottom (matching their
-  visual stacking in the VSE), each with its channel range, and three
-  controls:
-  - **▲ / ▼** — swaps a zone with its neighbor above/below: the two trade
-    places on the channel axis, each keeping its own size, name and
-    color. This is how you reorder zones (e.g. put "audio" above "video").
-  - **✕** — removes that zone entirely.
-  - **+ Add Zone** appends a new one right above the last, 4 channels
-    wide by default, cycling through 4 preset colors.
-- Click a zone's name in the list to make it the **active zone**, whose
-  **name** and **color** you can edit just below the list.
-- **Drag Mode** decides what happens to the *other* zones when you resize
-  one — from this panel, or by dragging a boundary line directly in the
-  VSE (grab near the colored line; disabled while **Lock** is on):
-
-  | Mode | When you move a boundary... |
+  | Mode | Effect |
   |---|---|
-  | **Adjust** (default) | Only the immediately touching neighbor's edge follows, closing or opening the gap between the two — every other zone stays put. |
-  | **Push** | Every zone further along in that direction shifts by the same amount, like pushing a stack. |
-- **Presets** save the entire current zone layout (names, ranges, colors)
-  under a name, list every saved preset, and let you re-apply or delete
-  one. Applying a preset replaces the current zones outright.
-- **Reset to Default** restores the two zones sequencerFlow starts with
-  (`audio`, channels 1–4; `video`, channels 5–8).
+  | **Adjust** (default) | Only the one directly touching neighbor follows — everything else stays put. |
+  | **Push** | The rest of the stack in that direction shifts along, like an accordion. |
+
+- **Presets** save the current layout under a name, recall it, or delete
+  it.
+
+!!! info "Per scene"
+    Zones and presets belong to the current scene, not the whole file —
+    another scene (or the Source Viewer) has its own configuration.
 
 ## Batch rename & scene sync — LITE
 
-The **Name Tools** N-panel renames a selection or the whole timeline at
-once (**Target**: Selected / All), with a live preview of what the first
-affected strip's name would become:
+The **Name Tools** N-panel renames a selection or the whole timeline
+(**Find/Replace**, or **Set Name** with an optional prefix/suffix — the
+suffix can auto-number instead, in **timeline order**, not selection
+order). A live preview shows what the first affected strip would become.
 
-- **Find/Replace** — substitutes a literal piece of text across every
-  targeted name.
-- **Set Name** — a new base name (optional), with an optional **prefix**
-  and **suffix**; the suffix can instead be an auto-increment counter
-  (adjustable digit count), numbered in **timeline order**, not selection
-  order, so the sequence always reads correctly regardless of click order.
-
-Renaming a SCENE strip (a storyFlow shot) also renames its underlying
-scene to match, automatically. A separate **Sync Scene Names** button (its
-own Selected/All target) re-applies that same strip-name → scene-name sync
-on demand, without renaming anything first — handy after a scene got
-renamed some other way.
+Renaming a SCENE strip also renames its underlying scene to match,
+automatically. **Sync Scene Names** re-applies that same strip→scene sync
+on demand, without renaming anything first.
 
 ## Export segments — LITE
 
 The **Export Tools** N-panel renders the timeline to one video file per
-segment — it does **not** export "each selected strip" individually, and
-doesn't do a separate audio mixdown (every unmuted sound strip in a
-segment's range is mixed into that segment's video automatically, for
-free, as part of the normal render).
+segment — not "each selected strip," and with no separate audio mixdown
+(every unmuted sound strip in a segment's range mixes into that segment's
+video automatically).
 
-- **Export Range (In/Out)** is the same `frame_start`/`frame_end` pair as
-  [Frame range](#contextual-toolbar-lite-and-pro) above — it's shown again
-  here since it drives what gets exported.
-- A segment boundary is placed only where the **topmost visible strip**
-  actually changes inside that range — strips stacked underneath don't
-  each force their own cut. The panel shows a live count of how many
-  segments the current range/stacking would produce.
+- **Export Range (In/Out)** is the same frame range as
+  [Frame range](#contextual-toolbar-lite-and-pro) above, shown again here
+  since it drives the export.
+- A cut is placed only where the **topmost visible strip** actually
+  changes — strips stacked underneath don't force their own cut. The
+  panel shows a live count of the segments this would produce.
 - **Naming**:
 
-  | Mode | Segment filename based on... |
+  | Mode | Segment name from... |
   |---|---|
-  | **Topmost Strip** (default) | The name of whichever strip is topmost in that segment |
-  | **Custom Pattern** | A base name + optional prefix/suffix/numbering — the exact same engine as Batch Rename above |
-- Either way, a **frame-number suffix** is appended on top as the real
-  collision guard (the same strip can be topmost again later, in a
-  different segment): off, a standard `0001-NNNN` duration count, or the
-  actual **Timeline** frame numbers. An optional toggle also appends the
-  current `.blend` filename.
-- Rendering uses whatever **Output Properties** (format, codec, path) are
-  already set on the scene the VSE is displaying — there's no separate
-  export-format picker here. The panel warns if that output path is still
-  Blender's untouched factory default, since that usually means Output
-  Properties were set while a different scene tab was active.
+  | **Topmost Strip** (default) | Whichever strip is topmost in that segment |
+  | **Custom Pattern** | A base name + prefix/suffix/numbering — same engine as Batch Rename |
+
+  A frame-number suffix is added on top either way, as the real
+  collision guard (a strip can be topmost again later): off, a
+  `0001-NNNN` duration count, or the actual **Timeline** frame numbers.
+- Rendering uses the scene's own **Output Properties** (format, codec,
+  path) — there's no separate format picker here. The panel warns if the
+  output path is still Blender's default, usually a sign those properties
+  were set on a different scene tab.
 
 ## Speed control — PRO
 
 A small **s** badge next to the opacity icon on every retimable strip
-(MOVIE, IMAGE, SCENE, META, MOVIECLIP, MASK and SOUND — not effect
-strips), colored to show its state at a glance: grey at normal speed,
-blue once a speed is set, purple when frozen. Click it to open the **Set
-Speed** dialog:
-
-- A **percentage** field (100 = normal, 50 = half speed/twice as long, 200
-  = double speed), or
-- **Freeze Frame**, which holds the strip on its in-point instead.
+(not effect strips — SOUND included, so a connected video+audio pair can
+be retimed together), colored grey/blue/purple for normal/set/frozen.
+Click it for the **Set Speed** dialog: a **percentage** (100 = normal, 50
+= half speed, 200 = double), or **Freeze Frame** to hold the in-point
+instead.
 
 Both drive Blender's own native retiming operators — never a parallel
-speed model — so the result behaves exactly like a manual retime would.
-The resulting factor is also written to the strip
-(`strip["otio_speed"]`, Resolve's own "Speed Ratio" convention) so
-**[sequencerOTIO](../sequencerOTIO/index.md)** can carry it over on
-export. A SOUND strip can be retimed too, which is what keeps a connected
-video+audio pair at the same speed together.
+speed model. The factor is also written to the strip
+(`strip["otio_speed"]`) so **[sequencerOTIO](../sequencerOTIO/index.md)**
+can carry it over on export.
 
 ## Source Viewer — PRO
 
@@ -243,37 +189,28 @@ can compare candidate files without opening each one first.
 Volume and opacity curves drawn directly on strips — no need to open the
 Graph Editor:
 
-- **Ctrl+click** anywhere on a strip to add a keyframe at that exact
-  frame/value.
-- **Click and drag** an existing key to move it (frame and value both
-  follow the mouse).
-- **Double-click** a key to open a small dialog with its exact **Frame**
-  and **Value**, live-updating as you type; cancel reverts it.
+- **Ctrl+click** anywhere on a strip adds a keyframe there.
+- **Click and drag** an existing key to move it.
+- **Double-click** a key opens its exact Frame/Value for direct editing.
 
 These drive real Blender F-Curves on the strip's own `volume` or
-`blend_alpha` property, not a parallel data model — opening the Graph
-Editor on the same strip shows the exact same keys.
+`blend_alpha` — opening the Graph Editor on the same strip shows the same
+keys.
 
 ## Advanced audio — PRO
 
-- A real-time **VU meter** (dB level plus the peak reached since the last
-  reset, with a one-click reset), dockable to the left or right edge of
-  the VSE.
-- Every sound strip gets a **channel badge** showing its actual format at
-  a glance (Mono / Stereo / 5.1 / 7.1, read from the source file, or
-  "Mono" if forced — see below).
-- Click a badge to force that one strip down to **mono**, independently of
-  every other strip, with a **Left / Center / Right** pan choice that only
-  appears once Mono is checked.
+- A real-time **VU meter** (dB level plus peak since last reset),
+  dockable left or right.
+- Every sound strip gets a **channel badge** showing its real format at a
+  glance (Mono / Stereo / 5.1 / 7.1).
+- Click a badge to force that strip to **mono**, with its own **Left /
+  Center / Right** pan.
 
 ## Timeline minimap — PRO
 
 ![Timeline minimap](assets/sequencerFlow_minimap_01.gif)
 
-A 2D (time × channels) overview of the whole timeline, shown as a
-fixed-size panel in the corner of the VSE — one silhouette per strip,
-colored from its own color tag if it has one, otherwise its type's native
-Blender color, plus an outline showing the currently visible viewport.
-Click or drag it to instantly recenter the main view on that point in the
-edit. Other SlateFlow add-ons' internal helper strips (named
-`__like_this__`) are excluded from the view.
+A 2D (time × channels) overview of the whole timeline in a fixed-size
+corner panel — one silhouette per strip, colored from its own color tag or
+its type's native color, plus an outline of the current viewport. Click or
+drag to recenter the main view there.
