@@ -8,8 +8,12 @@ Aucun changement pour l'instant — c'est la version actuelle.
 
 ## Roadmap
 
-Consolidation de l'addon et résolution des bugs qui pourraient être soulevés.
+Idées envisagées pour une future version — pas des engagements, juste la
+direction actuelle :
 
-A la manière d'autres logiciels de montages professionnels, In et Out dans le montage principal pour divers actions (suppression, copie, insert, etc.)
+  - Consolidation de l'addon et résolution des bugs qui pourraient être soulevés.
 
-Les retours et suggestions sont les bienvenus — voir Support.
+  - A la manière d'autres logiciels de montages professionnels, In et Out dans le montage principal pour divers actions (suppression, copie, insert en bloc, etc.)
+
+Les retours et suggestions sont les bienvenus — voir
+[Support](index.md#support).
