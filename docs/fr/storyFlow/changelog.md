@@ -10,8 +10,7 @@ Aucun changement pour l'instant — c'est la version actuelle.
 
 Consolidation de l'addon et résolution des bugs qui pourraient être soulevés.
 
-Exposer certaines options d'affichage du texte de l'overlay de données (sur
-l'image) : couleur, taille, arrondi, transparence, etc.
+Pour le **data overlay** (sur l'image) : exposer certaines options de gestion de l'affichage du texte telles que : couleur, taille, arrondi, transparence, etc.
 
 Les retours et suggestions sont les bienvenus — voir
 [Support](index.md#support).
