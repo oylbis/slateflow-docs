@@ -101,14 +101,19 @@ comes with a real production:
 - **Render straight from the timeline**, split into **segments** wherever
   the topmost visible strip actually changes — so shots deliberately
   layered across channels render correctly instead of one silently
-  winning for its whole original duration. Pick a video format (FFmpeg)
-  and each segment renders as one video file; pick any image format
-  (including multi-layer ones like OpenEXR — still "image" rendering, not
-  a third mode) and extra options appear: a minimum-spacing step between
-  the drawing's *actual* keyframes (objects, Grease Pencil, NLA, scene
-  markers) rather than a fixed interval, real-frame vs. consecutive
-  numbering, and an optional dedicated subfolder per segment. Either way,
-  segments are named after the topmost strip or with your own
+  winning for its whole original duration. Two modes, picked by the
+  output format:
+
+  - **Video** (an FFmpeg format): each segment renders straight to one
+    video file.
+  - **Image** (any image format — including multi-layer ones like
+    OpenEXR, still "image" rendering, not a third mode): a few extra
+    options appear — a minimum-spacing step between the drawing's
+    *actual* keyframes (objects, Grease Pencil, NLA, scene markers)
+    rather than a fixed interval, real-frame vs. consecutive numbering,
+    and an optional dedicated subfolder per segment.
+
+  Either way, segments are named after the topmost strip or with your own
   prefix/suffix/numbering scheme (same options as batch rename), plus a
   frame-range suffix as an anti-collision safeguard, and the result can be
   dropped back into the timeline as new strips automatically.

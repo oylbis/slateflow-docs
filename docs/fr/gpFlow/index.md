@@ -7,10 +7,10 @@
 gpFlow ajoute une boîte à outils flottante, dessinée en GPU, directement
 dans la vue 3D — les outils Grease Pencil qu'on utilise sans arrêt
 (dessiner, gommer, sélectionner, sculpter, remplir, retourner) sont à un
-clic plutôt qu'enfouis dans des menus et des changements de mode. gpFlow ne
-réinvente pas le Grease Pencil : il pilote les brosses, modes et opérateurs
-natifs de Blender, avec beaucoup moins de friction entre vous et le prochain
-trait.
+clic plutôt qu'enfouis dans des menus et des changements de mode, chacun
+avec son propre raccourci clavier. gpFlow ne réinvente pas le Grease
+Pencil : il pilote les brosses, modes et opérateurs natifs de Blender,
+avec beaucoup moins de friction entre vous et le prochain trait.
 
 ![Boîte à outils flottante au-dessus d'un dessin Grease Pencil](assets/gpFlow_all_01.png)
 

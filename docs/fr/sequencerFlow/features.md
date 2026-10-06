@@ -42,26 +42,11 @@ bouton ci-dessous a aussi son propre raccourci clavier — voir
   Les jeux de sélection sont retrouvés par nom, type, position et canal —
   si un strip a depuis été déplacé ou renommé, le rappel signale une
   restauration partielle plutôt que de deviner.
-- **Isolate** — deux bascules indépendantes et réversibles, toutes deux
-  basées sur le mute (donc elles affectent aussi l'audio, pas seulement ce
-  qui est visible) :
-
-  | Bouton | Coupe |
-  |---|---|
-  | Isolate Channel | Tous les canaux sauf ceux que touche la sélection actuelle |
-  | Isolate Selection | Tous les strips qui ne sont pas actuellement sélectionnés |
-
-  Recliquez sur le même bouton pour restaurer exactement l'état d'avant.
-
-- **Frame range, Follow playhead et Minimap** sont les éléments divers de
-  la toolbar, regroupés visuellement ensemble. Frame range règle la plage
-  de lecture/rendu de la **scène**, pas juste la vue : Range Selected et
-  Range All la cadrent une fois, Auto Range la recadre en continu sur la
-  sélection actuelle. Follow playhead fait défiler la vue pendant la
-  lecture pour garder la tête de lecture dans une zone confortable
-  (25–40% de la largeur visible), au lieu de sauter ou d'exiger un
-  recentrage manuel. Minimap (PRO) bascule simplement l'affichage de la
-  [minimap de la timeline](#minimap-de-la-timeline-pro).
+- **Isolate** — voir [Isolate](#isolate-lite) ci-dessous.
+- **Frame range** — voir [Frame range](#frame-range-lite) ci-dessous.
+- **Follow playhead** et **Minimap toggle** (PRO) — voir
+  [Follow playhead & Minimap](#follow-playhead-minimap-lite-et-pro)
+  ci-dessous.
 
 ## Connexions de strips — LITE
 
@@ -93,6 +78,38 @@ Principalement là pour préparer un aller-retour d'export :
 **[sequencerOTIO](../sequencerOTIO/index.md)** (un autre addon SlateFlow)
 lit ces liens pour garder les paires vidéo/audio ensemble à l'export vers
 Resolve via OpenTimelineIO.
+
+## Isolate — LITE
+
+Deux bascules indépendantes et réversibles, toutes deux basées sur le
+mute (donc elles affectent aussi l'audio, pas seulement ce qui est
+visible) :
+
+| Bouton | Coupe |
+|---|---|
+| Isolate Channel | Tous les canaux sauf ceux que touche la sélection actuelle |
+| Isolate Selection | Tous les strips qui ne sont pas actuellement sélectionnés |
+
+Recliquez sur le même bouton pour restaurer exactement l'état d'avant.
+
+## Frame range — LITE
+
+Règle la plage de lecture/rendu de la **scène**, pas juste la vue :
+
+| Bouton | Effet |
+|---|---|
+| Range Selected | Cadre la plage sur les bornes de la sélection actuelle, une fois |
+| Range All | Cadre la plage sur tous les strips de la timeline, une fois |
+| Auto Range | Recadre la plage en continu sur la sélection actuelle — retombe sur l'ensemble des strips dès que rien n'est sélectionné |
+
+## Follow playhead & Minimap — LITE et PRO
+
+**Follow playhead** fait défiler la vue pendant la lecture pour garder la
+tête de lecture dans une zone confortable (25–40% de la largeur
+visible), au lieu de sauter ou d'exiger un recentrage manuel.
+
+**Minimap** (PRO) bascule simplement l'affichage de la
+[minimap de la timeline](#minimap-de-la-timeline-pro).
 
 ## Guides de zones — LITE et PRO
 
@@ -152,8 +169,8 @@ segment — pas "chaque strip sélectionné", et sans mixdown audio séparé
 mixé dans la vidéo de ce segment).
 
 - **Export Range (In/Out)** est la même plage que
-  [Frame range](#barre-doutils-contextuelle-lite-et-pro) ci-dessus,
-  réaffichée ici puisqu'elle pilote l'export.
+  [Frame range](#frame-range-lite) ci-dessus, réaffichée ici puisqu'elle
+  pilote l'export.
 - Une coupure n'est posée que là où le **strip visible le plus haut**
   change réellement — les strips empilés dessous ne forcent pas chacun
   leur propre coupure. Le panneau affiche en direct le nombre de segments
@@ -174,22 +191,6 @@ mixé dans la vidéo de ce segment).
   avertit si le chemin de sortie est encore celui par défaut de Blender,
   signe fréquent que ces réglages ont été faits sur un autre onglet de
   scène.
-
-## Courbes sur les strips — PRO
-
-![Courbes de volume/opacité dessinées sur les strips](assets/sequencerFlow_curves_01.gif)
-
-Des courbes de volume et d'opacité dessinées directement sur les strips —
-pas besoin d'ouvrir le Graph Editor :
-
-- **Ctrl+clic** n'importe où sur un strip ajoute une clé à cet endroit.
-- **Clic-glisser** une clé existante pour la déplacer.
-- **Double-clic** sur une clé ouvre sa Frame/Value exacte pour édition
-  directe.
-
-Ces courbes pilotent de vraies F-Curves Blender sur les propriétés
-`volume` ou `blend_alpha` du strip — ouvrir le Graph Editor sur le même
-strip montre les mêmes clés.
 
 ## Source Viewer — PRO
 
@@ -227,6 +228,22 @@ fluide sans avoir à le configurer à la main.
 Dans les deux cas, **Insert** dépose la plage in/out sélectionnée à la
 tête de lecture, en décalant automatiquement tous les plans suivants.
 
+## Courbes sur les strips — PRO
+
+![Courbes de volume/opacité dessinées sur les strips](assets/sequencerFlow_curves_01.gif)
+
+Des courbes de volume et d'opacité dessinées directement sur les strips —
+pas besoin d'ouvrir le Graph Editor :
+
+- **Ctrl+clic** n'importe où sur un strip ajoute une clé à cet endroit.
+- **Clic-glisser** une clé existante pour la déplacer.
+- **Double-clic** sur une clé ouvre sa Frame/Value exacte pour édition
+  directe.
+
+Ces courbes pilotent de vraies F-Curves Blender sur les propriétés
+`volume` ou `blend_alpha` du strip — ouvrir le Graph Editor sur le même
+strip montre les mêmes clés.
+
 ## Contrôle de vitesse — PRO
 
 Un petit badge **s** à côté de l'icône d'opacité sur chaque strip
@@ -245,8 +262,7 @@ l'export.
 ## Audio avancé — PRO
 
 - Un **VU-mètre** en temps réel (niveau en dB plus le pic depuis la
-  dernière réinitialisation), ancré à gauche du VSE — pas de contrôle
-  dans l'interface pour le déplacer.
+  dernière réinitialisation), ancré à gauche du VSE.
 - Chaque strip son reçoit un **badge de canal** qui montre son format
   réel en un coup d'œil (Mono / Stereo / 5.1 / 7.1).
 - Cliquez un badge pour forcer ce strip en **mono**, avec son propre pan

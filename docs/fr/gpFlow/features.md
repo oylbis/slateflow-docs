@@ -91,15 +91,12 @@ incréments de 15°. Un cadre de référence vert reste affiché en permanence
 pendant la rotation pour toujours savoir de combien vous avez tourné par
 rapport au point de départ.
 
-Deux façons équivalentes de revenir directement au cadrage d'origine, sans
-attendre un nouveau glisser : **Ctrl+clic sur le bouton Canvas lui-même**
-(avant de commencer un glisser), ou maintenir **Ctrl** et cliquer pendant
-qu'un glisser est déjà en cours — les deux annulent/réinitialisent
-immédiatement. Le bouton **Reset Canvas Rotation** du panneau **Canvas
-Tools** dans la sidebar fait la même chose. Le cadrage d'origine n'est
-mémorisé **qu'une seule fois** par scène, à la première utilisation de
-l'outil. Le même panneau relaie aussi l'opacité du passe-partout caméra,
-réglage natif de Blender.
+**Ctrl+clic sur le bouton Canvas lui-même** pour revenir directement au
+cadrage d'origine, sans même démarrer un glisser — même effet que le
+bouton **Reset Canvas Rotation** du panneau **Canvas Tools** dans la
+sidebar. Le cadrage d'origine n'est mémorisé **qu'une seule fois** par
+scène, à la première utilisation de l'outil. Le même panneau relaie
+aussi l'opacité du passe-partout caméra, réglage natif de Blender.
 
 ## Raccourcis d'animation
 

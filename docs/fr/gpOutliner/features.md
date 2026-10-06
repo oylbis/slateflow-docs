@@ -18,18 +18,16 @@ permet de glisser horizontalement pour ajuster, d'utiliser les boutons
 
 Deux façons de déplacer la profondeur d'un objet avec ce même widget :
 
-- **Normal** — déplace simplement l'objet ; sa taille à l'écran change
-  comme pour n'importe quel objet qui se rapproche ou s'éloigne de la
-  caméra.
-- **Compensate** — déplacez la profondeur et l'échelle de l'objet s'ajuste
-  automatiquement pour garder sa taille apparente constante à l'écran, de
-  quoi replacer un dessin dans l'espace 3D sans qu'il grossisse ou
-  rétrécisse visuellement.
+| Mode | Glisser la profondeur... |
+|---|---|
+| **Normal** (défaut) | ...déplace simplement l'objet — sa taille à l'écran change comme pour n'importe quel objet qui se rapproche ou s'éloigne de la caméra. |
+| **Compensate** | ...ajuste aussi l'échelle de l'objet automatiquement pour garder sa taille apparente constante à l'écran. |
 
 ## Modes d'édition
 
 Choisissez comment gpOutliner gère le mode d'édition en cours quand vous
-changez l'objet Grease Pencil actif :
+changez d'objet Grease Pencil actif dans la liste des Grease Pencil de
+gpOutliner :
 
 | Mode | Changer d'objet... |
 |---|---|

@@ -40,24 +40,11 @@ the full list.
   Selection sets are matched back by name, type, position and channel —
   if a strip has since moved or been renamed, recall reports a partial
   restore instead of guessing.
-- **Isolate** — two independent, reversible toggles, both based on muting
-  (so they affect audio too, not just what's visible):
-
-  | Button | Mutes |
-  |---|---|
-  | Isolate Channel | Every channel except the ones the current selection touches |
-  | Isolate Selection | Every strip that isn't currently selected |
-
-  Click the same button again to restore everything exactly as it was.
-
-- **Frame range, Follow playhead and Minimap** are the toolbar's remaining
-  odds and ends, grouped together visually. Frame range sets the *scene's*
-  playback/render range, not just the view: Range Selected and Range All
-  fit it once, Auto Range keeps re-fitting it to the current selection
-  continuously. Follow playhead scrolls the view during playback to keep
-  the playhead in a comfortable zone (25–40% of the visible width) instead
-  of jumping or needing a manual re-center. Minimap (PRO) just toggles the
-  [Timeline minimap](#timeline-minimap-pro) on or off.
+- **Isolate** — see [Isolate](#isolate-lite) below.
+- **Frame range** — see [Frame range](#frame-range-lite) below.
+- **Follow playhead** and **Minimap toggle** (PRO) — see
+  [Follow playhead & Minimap](#follow-playhead-minimap-lite-and-pro)
+  below.
 
 ## Strip connections — LITE
 
@@ -89,6 +76,37 @@ Mainly there to prep a round-trip export:
 **[sequencerOTIO](../sequencerOTIO/index.md)** (a separate SlateFlow
 add-on) reads these links to keep video/audio pairs together when
 exporting to Resolve via OpenTimelineIO.
+
+## Isolate — LITE
+
+Two independent, reversible toggles, both based on muting (so they
+affect audio too, not just what's visible):
+
+| Button | Mutes |
+|---|---|
+| Isolate Channel | Every channel except the ones the current selection touches |
+| Isolate Selection | Every strip that isn't currently selected |
+
+Click the same button again to restore everything exactly as it was.
+
+## Frame range — LITE
+
+Sets the *scene's* playback/render range, not just the view:
+
+| Button | Effect |
+|---|---|
+| Range Selected | Fits the range to the current selection's bounds, once |
+| Range All | Fits the range to every strip in the timeline, once |
+| Auto Range | Keeps re-fitting the range to the current selection continuously — falls back to framing every strip the moment nothing is selected |
+
+## Follow playhead & Minimap — LITE and PRO
+
+**Follow playhead** scrolls the view during playback to keep the playhead
+in a comfortable zone (25–40% of the visible width), instead of jumping
+or needing a manual re-center.
+
+**Minimap** (PRO) toggles the [Timeline minimap](#timeline-minimap-pro)
+on or off.
 
 ## Zone guides — LITE and PRO
 
@@ -144,8 +162,8 @@ segment — not "each selected strip," and with no separate audio mixdown
 video automatically).
 
 - **Export Range (In/Out)** is the same frame range as
-  [Frame range](#contextual-toolbar-lite-and-pro) above, shown again here
-  since it drives the export.
+  [Frame range](#frame-range-lite) above, shown again here since it
+  drives the export.
 - A cut is placed only where the **topmost visible strip** actually
   changes — strips stacked underneath don't force their own cut. The
   panel shows a live count of the segments this would produce.
@@ -163,21 +181,6 @@ video automatically).
   path) — there's no separate format picker here. The panel warns if the
   output path is still Blender's default, usually a sign those properties
   were set on a different scene tab.
-
-## Strip curves — PRO
-
-![Volume/opacity curves drawn on strips](assets/sequencerFlow_curves_01.gif)
-
-Volume and opacity curves drawn directly on strips — no need to open the
-Graph Editor:
-
-- **Ctrl+click** anywhere on a strip adds a keyframe there.
-- **Click and drag** an existing key to move it.
-- **Double-click** a key opens its exact Frame/Value for direct editing.
-
-These drive real Blender F-Curves on the strip's own `volume` or
-`blend_alpha` — opening the Graph Editor on the same strip shows the same
-keys.
 
 ## Source Viewer — PRO
 
@@ -213,6 +216,21 @@ hand.
 Either way, **Insert** drops the selected in/out range at the playhead,
 rippling every later strip out of the way automatically.
 
+## Strip curves — PRO
+
+![Volume/opacity curves drawn on strips](assets/sequencerFlow_curves_01.gif)
+
+Volume and opacity curves drawn directly on strips — no need to open the
+Graph Editor:
+
+- **Ctrl+click** anywhere on a strip adds a keyframe there.
+- **Click and drag** an existing key to move it.
+- **Double-click** a key opens its exact Frame/Value for direct editing.
+
+These drive real Blender F-Curves on the strip's own `volume` or
+`blend_alpha` — opening the Graph Editor on the same strip shows the same
+keys.
+
 ## Speed control — PRO
 
 A small **s** badge next to the opacity icon on every retimable strip
@@ -230,7 +248,7 @@ can carry it over on export.
 ## Advanced audio — PRO
 
 - A real-time **VU meter** (dB level plus peak since last reset), docked
-  to the left of the VSE — there's no interface control to move it.
+  to the left of the VSE.
 - Every sound strip gets a **channel badge** showing its real format at a
   glance (Mono / Stereo / 5.1 / 7.1).
 - Click a badge to force that strip to **mono**, with its own **Left /

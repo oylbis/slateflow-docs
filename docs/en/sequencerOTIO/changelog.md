@@ -2,7 +2,13 @@
 
 Current version: **1.0.0**.
 
+## Since the first release
+
+No changes yet — this is the current release.
+
 ## Roadmap
+
+Addon consolidation and fixing any bugs that come up.
 
 Ideas being considered for a future version — not commitments, just the
 current direction:

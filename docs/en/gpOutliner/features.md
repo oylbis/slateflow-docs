@@ -17,16 +17,15 @@ buttons for ±1, or type an exact value.
 
 Two ways to move an object's depth with that same widget:
 
-- **Normal** — just moves the object; its on-screen size changes the way
-  any object's would as it gets closer to or further from the camera.
-- **Compensate** — drag the depth and the object's scale adjusts
-  automatically to keep its apparent size on screen constant, so you can
-  restage a drawing in 3D space without it visually growing or shrinking.
+| Mode | Dragging the depth... |
+|---|---|
+| **Normal** (default) | ...just moves the object — its on-screen size changes the way any object's would as it gets closer to or further from the camera. |
+| **Compensate** | ...also adjusts the object's scale automatically to keep its apparent size on screen constant. |
 
 ## Edit modes
 
 Choose how gpOutliner handles the current edit mode when you switch which
-Grease Pencil object is active:
+Grease Pencil object is active in gpOutliner's own Grease Pencil list:
 
 | Mode | Switching to another object... |
 |---|---|

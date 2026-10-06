@@ -85,14 +85,12 @@ more comfortable drawing angle without losing your original framing: hold
 frame stays on screen the whole time you're rotating, so you always know
 how far you've turned from where you started.
 
-Two equivalent ways to jump straight back to your original framing,
-without waiting for a new drag: **Ctrl+click the Canvas button itself**
-(before starting a drag), or hold **Ctrl** and click while a drag is
-already in progress — either one cancels/resets immediately. The
-**Reset Canvas Rotation** button in the **Canvas Tools** sidebar panel
-does the same thing. The original framing is only ever memorized **once**
-per scene, the first time the tool is used. The same sidebar panel also
-surfaces the camera's passepartout opacity, Blender's own native setting.
+**Ctrl+click the Canvas button itself** to jump straight back to your
+original framing, without even starting a drag — same effect as the
+**Reset Canvas Rotation** button in the **Canvas Tools** sidebar panel.
+The original framing is only ever memorized **once** per scene, the
+first time the tool is used. The same sidebar panel also surfaces the
+camera's passepartout opacity, Blender's own native setting.
 
 ## Animation shortcuts
 

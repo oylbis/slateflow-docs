@@ -7,9 +7,9 @@
 gpFlow adds a floating, GPU-drawn toolbar right inside the 3D Viewport,
 putting the Grease Pencil tools you reach for constantly — draw, erase,
 select, sculpt, fill, flip — one click away instead of buried in menus and
-mode switches. It doesn't reinvent Grease Pencil: it drives Blender's own
-brushes, modes and operators, just with a lot less friction between you and
-the next stroke.
+mode switches, each with its own keyboard shortcut too. It doesn't
+reinvent Grease Pencil: it drives Blender's own brushes, modes and
+operators, just with a lot less friction between you and the next stroke.
 
 ![Floating toolbar over a Grease Pencil drawing](assets/gpFlow_all_01.png)
 
