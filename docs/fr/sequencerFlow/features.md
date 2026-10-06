@@ -23,13 +23,13 @@ bouton ci-dessous a aussi son propre raccourci clavier — voir
   strips sélectionnés qui se touchent sur le même canal, avec son unique
   voisin non sélectionné de ce côté. Le bloc se déplace comme un seul
   élément rigide ; un strip connecté à un autre (voir
-  [Connexions de strips](#connexions-de-strips-lite)) est entraîné même
+  [Connexions de strips](#connexions-de-strips-lite-et-pro)) est entraîné même
   si seul son partenaire était sélectionné.
 - **Slip** invoque l'outil Slip natif de Blender.
 - **Insert** (PRO) dépose la plage in/out d'une source — éditée dans le
   Source Viewer ou dans le Dual Monitor, voir
   [Source Viewer](#source-viewer-pro) — à la tête de lecture.
-- **Connect / Disconnect** — voir [Connexions de strips](#connexions-de-strips-lite).
+- **Connect / Disconnect** — voir [Connexions de strips](#connexions-de-strips-lite-et-pro).
 - **Sélections avancées** :
 
   | Action | Sélectionne |
@@ -42,13 +42,13 @@ bouton ci-dessous a aussi son propre raccourci clavier — voir
   Les jeux de sélection sont retrouvés par nom, type, position et canal —
   si un strip a depuis été déplacé ou renommé, le rappel signale une
   restauration partielle plutôt que de deviner.
-- **Isolate** — voir [Isolate](#isolate-lite) ci-dessous.
-- **Frame range** — voir [Frame range](#frame-range-lite) ci-dessous.
+- **Isolate** — voir [Isolate](#isolate-lite-et-pro) ci-dessous.
+- **Frame range** — voir [Frame range](#frame-range-lite-et-pro) ci-dessous.
 - **Follow playhead** et **Minimap toggle** (PRO) — voir
   [Follow playhead & Minimap](#follow-playhead-minimap-lite-et-pro)
   ci-dessous.
 
-## Connexions de strips — LITE
+## Connexions de strips — LITE et PRO
 
 Une connexion est un lien partagé et invisible entre des strips liés —
 typiquement un plan vidéo et son son — pour que glisser, échanger (swap)
@@ -79,7 +79,7 @@ Principalement là pour préparer un aller-retour d'export :
 lit ces liens pour garder les paires vidéo/audio ensemble à l'export vers
 Resolve via OpenTimelineIO.
 
-## Isolate — LITE
+## Isolate — LITE et PRO
 
 Deux bascules indépendantes et réversibles, toutes deux basées sur le
 mute (donc elles affectent aussi l'audio, pas seulement ce qui est
@@ -92,7 +92,7 @@ visible) :
 
 Recliquez sur le même bouton pour restaurer exactement l'état d'avant.
 
-## Frame range — LITE
+## Frame range — LITE et PRO
 
 Règle la plage de lecture/rendu de la **scène**, pas juste la vue :
 
@@ -108,8 +108,14 @@ Règle la plage de lecture/rendu de la **scène**, pas juste la vue :
 tête de lecture dans une zone confortable (25–40% de la largeur
 visible), au lieu de sauter ou d'exiger un recentrage manuel.
 
-**Minimap** (PRO) bascule simplement l'affichage de la
-[minimap de la timeline](#minimap-de-la-timeline-pro).
+![Minimap de la timeline](assets/sequencerFlow_minimap_01.gif)
+
+**Minimap** (PRO) bascule une vue d'ensemble 2D (temps × canaux) de toute
+la timeline, affichée comme un panneau de taille fixe dans un coin — une
+silhouette par strip, colorée d'après son propre tag de couleur ou la
+couleur native de son type, plus un cadre indiquant la zone actuellement
+visible. Cliquez ou glissez pour recentrer la vue principale à cet
+endroit.
 
 ## Guides de zones — LITE et PRO
 
@@ -149,7 +155,7 @@ effets...), réglables dans le panneau N **Zone Guides**.
     Zones et presets sont propres à chaque scène, pas au fichier entier —
     une autre scène (ou le Source Viewer) a sa propre configuration.
 
-## Renommage en lot & synchro de scène — LITE
+## Renommage en lot & synchro de scène — LITE et PRO
 
 Le panneau N **Name Tools** renomme une sélection ou toute la timeline
 (**Find/Replace**, ou **Set Name** avec un préfixe/suffixe optionnel — le
@@ -161,7 +167,7 @@ Renommer un strip SCENE renomme aussi automatiquement sa scène
 sous-jacente pour correspondre. **Sync Scene Names** réapplique cette
 même synchro strip→scène à la demande, sans rien renommer d'abord.
 
-## Export de segments — LITE
+## Export de segments — LITE et PRO
 
 Le panneau N **Export Tools** rend la timeline en un fichier vidéo par
 segment — pas "chaque strip sélectionné", et sans mixdown audio séparé
@@ -169,7 +175,7 @@ segment — pas "chaque strip sélectionné", et sans mixdown audio séparé
 mixé dans la vidéo de ce segment).
 
 - **Export Range (In/Out)** est la même plage que
-  [Frame range](#frame-range-lite) ci-dessus, réaffichée ici puisqu'elle
+  [Frame range](#frame-range-lite-et-pro) ci-dessus, réaffichée ici puisqu'elle
   pilote l'export.
 - Une coupure n'est posée que là où le **strip visible le plus haut**
   change réellement — les strips empilés dessous ne forcent pas chacun
@@ -272,13 +278,3 @@ l'export.
   réel en un coup d'œil (Mono / Stereo / 5.1 / 7.1).
 - Cliquez un badge pour forcer ce strip en **mono**, avec son propre pan
   **Left / Center / Right**.
-
-## Minimap de la timeline — PRO
-
-![Minimap de la timeline](assets/sequencerFlow_minimap_01.gif)
-
-Une vue d'ensemble 2D (temps × canaux) de toute la timeline dans un
-panneau de taille fixe en coin — une silhouette par strip, colorée
-d'après son propre tag de couleur ou la couleur native de son type, plus
-un cadre indiquant la zone actuellement visible. Cliquez ou glissez pour
-recentrer la vue principale à cet endroit.

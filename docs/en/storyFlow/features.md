@@ -104,14 +104,10 @@ comes with a real production:
   winning for its whole original duration. Two modes, picked by the
   output format:
 
-  - **Video** (an FFmpeg format): each segment renders straight to one
-    video file.
-  - **Image** (any image format — including multi-layer ones like
-    OpenEXR, still "image" rendering, not a third mode): a few extra
-    options appear — a minimum-spacing step between the drawing's
-    *actual* keyframes (objects, Grease Pencil, NLA, scene markers)
-    rather than a fixed interval, real-frame vs. consecutive numbering,
-    and an optional dedicated subfolder per segment.
+  | Format | What happens |
+  |---|---|
+  | **Video** (an FFmpeg format) | Each segment renders straight to one video file. |
+  | **Image** (any image format — OpenEXR included, still "image" rendering, not a third mode) | A few extra options appear: a minimum-spacing step between the drawing's *actual* keyframes (objects, Grease Pencil, NLA, scene markers) rather than a fixed interval, real-frame vs. consecutive numbering, and an optional dedicated subfolder per segment. |
 
   Either way, segments are named after the topmost strip or with your own
   prefix/suffix/numbering scheme (same options as batch rename), plus a

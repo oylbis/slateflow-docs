@@ -21,13 +21,13 @@ the full list.
 - **Swap** (left/right) swaps a strip, or a whole block of several
   touching selected strips on the same channel, with its single
   unselected neighbor on that side. The block moves as one rigid unit; a
-  strip connected to another (see [Strip connections](#strip-connections-lite))
+  strip connected to another (see [Strip connections](#strip-connections-lite-and-pro))
   is dragged along even if only its partner was selected.
 - **Slip** invokes Blender's own native Slip tool.
 - **Insert** (PRO) drops the in/out range of a source — edited in either
   the Source Viewer or the Dual Monitor, see [Source Viewer](#source-viewer-pro)
   — at the playhead.
-- **Connect / Disconnect** — see [Strip connections](#strip-connections-lite).
+- **Connect / Disconnect** — see [Strip connections](#strip-connections-lite-and-pro).
 - **Advanced selections**:
 
   | Action | Selects |
@@ -40,13 +40,13 @@ the full list.
   Selection sets are matched back by name, type, position and channel —
   if a strip has since moved or been renamed, recall reports a partial
   restore instead of guessing.
-- **Isolate** — see [Isolate](#isolate-lite) below.
-- **Frame range** — see [Frame range](#frame-range-lite) below.
+- **Isolate** — see [Isolate](#isolate-lite-and-pro) below.
+- **Frame range** — see [Frame range](#frame-range-lite-and-pro) below.
 - **Follow playhead** and **Minimap toggle** (PRO) — see
   [Follow playhead & Minimap](#follow-playhead-minimap-lite-and-pro)
   below.
 
-## Strip connections — LITE
+## Strip connections — LITE and PRO
 
 A connection is a shared, invisible link between related strips —
 typically a video clip and its audio — so dragging, swapping or exporting
@@ -77,7 +77,7 @@ Mainly there to prep a round-trip export:
 add-on) reads these links to keep video/audio pairs together when
 exporting to Resolve via OpenTimelineIO.
 
-## Isolate — LITE
+## Isolate — LITE and PRO
 
 Two independent, reversible toggles, both based on muting (so they
 affect audio too, not just what's visible):
@@ -89,7 +89,7 @@ affect audio too, not just what's visible):
 
 Click the same button again to restore everything exactly as it was.
 
-## Frame range — LITE
+## Frame range — LITE and PRO
 
 Sets the *scene's* playback/render range, not just the view:
 
@@ -105,8 +105,13 @@ Sets the *scene's* playback/render range, not just the view:
 in a comfortable zone (25–40% of the visible width), instead of jumping
 or needing a manual re-center.
 
-**Minimap** (PRO) toggles the [Timeline minimap](#timeline-minimap-pro)
-on or off.
+![Timeline minimap](assets/sequencerFlow_minimap_01.gif)
+
+**Minimap** (PRO) toggles a 2D (time × channels) overview of the whole
+timeline, shown as a fixed-size panel in the corner — one silhouette per
+strip, colored from its own color tag or its type's native color, plus
+an outline of the current viewport. Click or drag it to recenter the
+main view there.
 
 ## Zone guides — LITE and PRO
 
@@ -143,7 +148,7 @@ effects...), configurable in the **Zone Guides** N-panel.
     Zones and presets belong to the current scene, not the whole file —
     another scene (or the Source Viewer) has its own configuration.
 
-## Batch rename & scene sync — LITE
+## Batch rename & scene sync — LITE and PRO
 
 The **Name Tools** N-panel renames a selection or the whole timeline
 (**Find/Replace**, or **Set Name** with an optional prefix/suffix — the
@@ -154,7 +159,7 @@ Renaming a SCENE strip also renames its underlying scene to match,
 automatically. **Sync Scene Names** re-applies that same strip→scene sync
 on demand, without renaming anything first.
 
-## Export segments — LITE
+## Export segments — LITE and PRO
 
 The **Export Tools** N-panel renders the timeline to one video file per
 segment — not "each selected strip," and with no separate audio mixdown
@@ -162,7 +167,7 @@ segment — not "each selected strip," and with no separate audio mixdown
 video automatically).
 
 - **Export Range (In/Out)** is the same frame range as
-  [Frame range](#frame-range-lite) above, shown again here since it
+  [Frame range](#frame-range-lite-and-pro) above, shown again here since it
   drives the export.
 - A cut is placed only where the **topmost visible strip** actually
   changes — strips stacked underneath don't force their own cut. The
@@ -258,12 +263,3 @@ can carry it over on export.
   glance (Mono / Stereo / 5.1 / 7.1).
 - Click a badge to force that strip to **mono**, with its own **Left /
   Center / Right** pan.
-
-## Timeline minimap — PRO
-
-![Timeline minimap](assets/sequencerFlow_minimap_01.gif)
-
-A 2D (time × channels) overview of the whole timeline in a fixed-size
-corner panel — one silhouette per strip, colored from its own color tag or
-its type's native color, plus an outline of the current viewport. Click or
-drag to recenter the main view there.

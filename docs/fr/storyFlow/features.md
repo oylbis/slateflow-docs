@@ -102,15 +102,10 @@ production :
   correctement au lieu qu'un seul ne gagne silencieusement pour toute sa
   durée d'origine. Deux modes, choisis par le format de sortie :
 
-  - **Vidéo** (un format FFmpeg) : chaque segment se rend directement en
-    un seul fichier vidéo.
-  - **Image** (n'importe quel format image — y compris les formats
-    multi-couches comme OpenEXR, ça reste du rendu "image", pas un
-    troisième mode) : quelques options supplémentaires apparaissent — un
-    espacement minimum entre les *vraies* images-clés du dessin (objets,
-    Grease Pencil, NLA, marqueurs de scène) plutôt qu'un intervalle fixe,
-    une numérotation en frame réelle ou consécutive, et un sous-dossier
-    dédié par segment en option.
+  | Format | Ce qui se passe |
+  |---|---|
+  | **Vidéo** (un format FFmpeg) | Chaque segment se rend directement en un seul fichier vidéo. |
+  | **Image** (n'importe quel format image — OpenEXR compris, ça reste du rendu "image", pas un troisième mode) | Quelques options supplémentaires apparaissent : un espacement minimum entre les *vraies* images-clés du dessin (objets, Grease Pencil, NLA, marqueurs de scène) plutôt qu'un intervalle fixe, une numérotation en frame réelle ou consécutive, et un sous-dossier dédié par segment en option. |
 
   Dans tous les cas, les segments sont nommés soit d'après le strip au
   canal le plus haut, soit avec votre propre schéma
