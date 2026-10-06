@@ -8,4 +8,7 @@ Aucun changement pour l'instant — c'est la version actuelle.
 
 ## Roadmap
 
-Rien de précis pour le moment, les retours et suggestions sont les bienvenus — voir Support.
+Consolidation de l'addon et résolution des bugs qui pourraient être soulevés.
+
+Les retours et suggestions sont les bienvenus — voir
+[Support](index.md#support).
