@@ -36,12 +36,10 @@ Each level can be shown or hidden independently from the N-panel (see
 
 Click and drag a thumbnail to move its key in time:
 
-- **No modifier → Trim mode**: only the selected keys move (together,
-  relative spacing kept), clamped so they never pass the nearest
-  non-selected neighbor, before or after the moved group.
-- **Ctrl held → Ripple mode**: the selected keys **and everything that
-  follows them** shift together by the same amount; only the preceding key
-  (which never moves) bounds the movement.
+| Mode | Effect |
+|---|---|
+| **Trim** (no modifier) | Only the selected keys move (together, relative spacing kept), clamped so they never pass the nearest non-selected neighbor on either side. |
+| **Ripple** (Ctrl held) | The selected keys **and everything that follows them** shift together by the same amount — only the preceding key (which never moves) bounds the movement. |
 
 ### Multi-selection and groups
 

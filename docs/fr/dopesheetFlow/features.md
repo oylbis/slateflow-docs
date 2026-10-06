@@ -37,13 +37,10 @@ N-panel (voir [Préférences](preferences.md)).
 
 Cliquez-glissez une vignette pour déplacer sa clé dans le temps :
 
-- **Sans modificateur → mode Trim** : seules les clés sélectionnées se
-  déplacent (ensemble, espacement relatif conservé), avec une butée qui
-  empêche de dépasser la clé non sélectionnée la plus proche, avant ou
-  après le groupe déplacé.
-- **Ctrl maintenu → mode Ripple** : les clés sélectionnées **et toutes
-  celles qui suivent** se décalent ensemble du même delta ; seule la clé
-  précédente (qui ne bouge jamais) borne le mouvement.
+| Mode | Effet |
+|---|---|
+| **Trim** (sans modificateur) | Seules les clés sélectionnées se déplacent (ensemble, espacement relatif conservé), avec une butée qui empêche de dépasser la clé non sélectionnée la plus proche, des deux côtés. |
+| **Ripple** (Ctrl maintenu) | Les clés sélectionnées **et toutes celles qui suivent** se décalent ensemble du même delta — seule la clé précédente (qui ne bouge jamais) borne le mouvement. |
 
 ### Multi-sélection et groupes
 

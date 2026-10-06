@@ -175,8 +175,13 @@ video automatically).
   | **Custom Pattern** | A base name + prefix/suffix/numbering — same engine as Batch Rename |
 
   A frame-number suffix is added on top either way, as the real
-  collision guard (a strip can be topmost again later): off, a
-  `0001-NNNN` duration count, or the actual **Timeline** frame numbers.
+  collision guard (a strip can be topmost again later):
+
+  | Suffix mode | Adds... |
+  |---|---|
+  | Off | Nothing |
+  | Standard | A `0001-NNNN` duration count |
+  | Timeline | The actual **Timeline** frame numbers |
 - Rendering uses the scene's own **Output Properties** (format, codec,
   path) — there's no separate format picker here. The panel warns if the
   output path is still Blender's default, usually a sign those properties

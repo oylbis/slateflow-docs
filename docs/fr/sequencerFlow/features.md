@@ -184,8 +184,13 @@ mixé dans la vidéo de ce segment).
 
   Un suffixe de numéro de frame s'ajoute par-dessus dans les deux cas,
   comme vrai garde-fou anti-collision (un strip peut redevenir le plus
-  haut plus tard) : désactivé, un compte de durée `0001-NNNN`, ou les
-  vrais numéros de frame de la **Timeline**.
+  haut plus tard) :
+
+  | Mode de suffixe | Ajoute... |
+  |---|---|
+  | Off | Rien |
+  | Standard | Un compte de durée `0001-NNNN` |
+  | Timeline | Les vrais numéros de frame de la **Timeline** |
 - Le rendu utilise les **Output Properties** propres à la scène (format,
   codec, chemin) — pas de sélecteur de format séparé ici. Le panneau
   avertit si le chemin de sortie est encore celui par défaut de Blender,
