@@ -8,5 +8,9 @@ Aucun changement pour l'instant — c'est la version actuelle.
 
 ## Roadmap
 
-Rien de précis en attente pour l'instant — les suggestions sont les
-bienvenues, voir [Support](index.md#support).
+Consolidation de l'addon et résolution des bugs qui pourraient être soulevés.
+
+Exposer certaines options d'affichage du texte de data overlay (sur l'image) : couleur, taille, arrondi, transparence, etc.)
+
+Les retours et suggestions sont les bienvenus — voir
+[Support](index.md#support).
