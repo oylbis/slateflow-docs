@@ -8,6 +8,8 @@ Aucun changement pour l'instant — c'est la version actuelle.
 
 ## Roadmap
 
+Consolidation de l'addon et résolution des bugs qui pourraient être soulevés.
+
 Idées envisagées pour une future version — pas des engagements, juste la
 direction actuelle :
 
