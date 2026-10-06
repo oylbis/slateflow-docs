@@ -8,10 +8,15 @@ Aucun changement pour l'instant — c'est la version actuelle.
 
 ## Roadmap
 
-Amélioration des options des background images (notamment positionnement et crop).
+Consolidation de l'addon et résolution des bugs qui pourraient être soulevés.
 
-Poursuivre la réflexion autour de la section board (comment l'utiliser pour du board de personnage, dans l'espace 3D ?).
+Idées envisagées pour une future version — pas des engagements, juste la
+direction actuelle :
 
-Implémentation d'une gestion des palettes/matériaux.
+- Amélioration des options des background images (notamment positionnement et crop).
+- Poursuivre la réflexion autour de la section "board" (comment l'utiliser pour du board de personnage, dans l'espace 3D ?).
+- Implémentation d'une gestion des palettes/matériaux.
+- Multi-sélection de grease pencil.
 
-Les retours et suggestions sont les bienvenus — voir Support.
+Les retours et suggestions sont les bienvenus — voir
+[Support](index.md#support).
