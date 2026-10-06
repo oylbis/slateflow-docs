@@ -17,12 +17,13 @@ you're already drawing.
 ## At a glance
 
 - **Depth-sorted object list** — sort your Grease Pencil objects by distance
-  to the camera, not just alphabetically.
-- **Compensate mode** — drag an object's depth and watch its scale adjust
-  automatically to keep its apparent size on screen constant.
-- **Edit-mode memory** — choose whether switching between drawings keeps
-  whatever mode you're in, or remembers and restores the last mode you used
-  on each object individually.
+  to the camera, closest on top, like layers in a 2D drawing app — not just
+  alphabetically.
+- **Depth mode** — drag an object's depth normally, or switch to Compensate
+  to keep its apparent size on screen constant while you do.
+- **Two edit-mode sync options** — Keep Current (switching objects keeps
+  whatever mode you're in) or Remember Last (restores each object's own
+  last-used mode).
 - **Global opacity per object** — one slider that fades every layer of a
   drawing together while preserving each layer's relative opacity.
 - **Camera background images** — add, reorder, and manage reference images
@@ -67,3 +68,6 @@ are deliberately affordable: in return, I can't commit to fix deadlines or
 on-demand development. Feedback and ideas are welcome — the most important
 bugs will be fixed, and good ideas will make their way in. Thank you for
 your understanding.
+
+Found a bug? See [Reporting a bug](../index.md#reporting-a-bug) for what
+to include.

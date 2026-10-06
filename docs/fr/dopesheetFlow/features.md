@@ -45,9 +45,6 @@ Cliquez-glissez une vignette pour déplacer sa clé dans le temps :
   celles qui suivent** se décalent ensemble du même delta ; seule la clé
   précédente (qui ne bouge jamais) borne le mouvement.
 
-Le mode est décidé au moment où vous cliquez (presser Ctrl en cours de
-glissement ne change pas le mode déjà choisi).
-
 ### Multi-sélection et groupes
 
 - **Shift+clic** sur une vignette ajoute ou retire une clé de la sélection,
@@ -60,7 +57,9 @@ glissement ne change pas le mode déjà choisi).
 
 Maintenez **Alt** en survolant n'importe quelle vignette pour afficher un
 aperçu flottant agrandi près du curseur — pratique pour juger un dessin
-sans quitter la vue d'ensemble de l'xsheet.
+sans quitter la vue d'ensemble de l'xsheet. Sa taille est réglable
+(**Hover Preview Scale** dans le N-panel propre à l'addon, voir
+[Préférences](preferences.md)).
 
 ## Isoler une rangée
 

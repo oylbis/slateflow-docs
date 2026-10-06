@@ -61,3 +61,6 @@ peux pas m'engager sur des délais de correctifs ou des développements sur
 demande. Les retours et les idées sont les bienvenus — les bugs les plus
 importants seront corrigés, et les bonnes idées feront leur chemin. Merci de
 votre compréhension.
+
+Trouvé un bug ? Voir [Signaler un bug](../index.md#signaler-un-bug) pour
+savoir quoi inclure.

@@ -8,11 +8,13 @@ Aucun changement pour l'instant — c'est la version actuelle.
 
 ## Roadmap
 
-Idées envisagées pour une future version — pas des engagements, juste la
-direction actuelle :
+Consolidation de l'addon et résolution des bugs qui pourraient être soulevés.
 
-  - Consolidation de l'addon et résolution des bugs qui pourraient être soulevés.
-  - A la manière d'autres logiciels de montages professionnels, In et Out dans le montage principal pour divers actions (suppression, copie, insert en bloc, etc.)
+À la manière d'autres logiciels de montage professionnels, des points In et
+Out dans le montage principal lui-même (pas seulement le Source Viewer),
+pour des actions comme supprimer, copier ou insérer en bloc.
+
+Transférer des valeurs de transform d'un strip vers un ou plusieurs autres.
 
 Les retours et suggestions sont les bienvenus — voir
 [Support](index.md#support).

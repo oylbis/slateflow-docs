@@ -7,7 +7,9 @@ Each section below is tagged **LITE** and/or **PRO**. See
 
 ![sequencerFlow toolbar](assets/sequencerFlow_toolBar_01.png)
 
-Drawn right into the VSE, no menu diving.
+Drawn right into the VSE, no menu diving. Every button below also has its
+own keyboard shortcut — see [Preferences & shortcuts](shortcuts.md) for
+the full list.
 
 - **Cut** splits every selected strip at the playhead. On a SCENE strip (a
   storyFlow shot, say), a native split would leave both halves sharing the
@@ -22,8 +24,9 @@ Drawn right into the VSE, no menu diving.
   strip connected to another (see [Strip connections](#strip-connections-lite))
   is dragged along even if only its partner was selected.
 - **Slip** invokes Blender's own native Slip tool.
-- **Insert** (PRO) drops the Source Viewer's current in/out range at the
-  playhead — see [Source Viewer](#source-viewer-pro).
+- **Insert** (PRO) drops the in/out range of a source — edited in either
+  the Source Viewer or the Dual Monitor, see [Source Viewer](#source-viewer-pro)
+  — at the playhead.
 - **Connect / Disconnect** — see [Strip connections](#strip-connections-lite).
 - **Advanced selections**:
 
@@ -37,17 +40,24 @@ Drawn right into the VSE, no menu diving.
   Selection sets are matched back by name, type, position and channel —
   if a strip has since moved or been renamed, recall reports a partial
   restore instead of guessing.
-- **Isolate** has two independent, reversible toggles, both based on
-  muting (so they affect audio too): **Isolate Channel** mutes every
-  channel but the selection's; **Isolate Selection** mutes every strip
-  that isn't selected. Click again to restore.
-- **Frame range** sets the *scene's* playback/render range, not just the
-  view: **Range Selected**/**Range All** fit it once, **Auto Range** keeps
-  re-fitting it to the selection continuously.
-- **Follow playhead** scrolls the view to keep the playhead in a
-  comfortable zone (25–40% of the visible width) during playback, instead
-  of jumping or needing a manual re-center.
-- **Minimap toggle** (PRO) — see [Timeline minimap](#timeline-minimap-pro).
+- **Isolate** — two independent, reversible toggles, both based on muting
+  (so they affect audio too, not just what's visible):
+
+  | Button | Mutes |
+  |---|---|
+  | Isolate Channel | Every channel except the ones the current selection touches |
+  | Isolate Selection | Every strip that isn't currently selected |
+
+  Click the same button again to restore everything exactly as it was.
+
+- **Frame range, Follow playhead and Minimap** are the toolbar's remaining
+  odds and ends, grouped together visually. Frame range sets the *scene's*
+  playback/render range, not just the view: Range Selected and Range All
+  fit it once, Auto Range keeps re-fitting it to the current selection
+  continuously. Follow playhead scrolls the view during playback to keep
+  the playhead in a comfortable zone (25–40% of the visible width) instead
+  of jumping or needing a manual re-center. Minimap (PRO) just toggles the
+  [Timeline minimap](#timeline-minimap-pro) on or off.
 
 ## Strip connections — LITE
 
@@ -62,11 +72,16 @@ applying them in one click:
 
 | Condition | Groups strips that... |
 |---|---|
-| Same start / end frame | start, or end, at the same frame |
-| Same channel / length | sit on the same channel, or share a duration |
-| Movie-sound pairs | look like a matching video+audio pair, by name |
+| Selected strips only | ...are limited to the current selection (on by default — switch it off to scan the whole timeline instead) |
+| Same start frame | ...start at exactly the same frame |
+| Same end frame | ...end at exactly the same frame |
+| Same channel | ...sit on the same channel |
+| Same length | ...share the same duration |
+| Movie-sound pairs | ...look like a matching video+audio pair, by name |
 
-The common case is leaving only **Movie-sound pairs** checked. The same
+Any combination can be checked at once — a strip has to satisfy every
+checked condition to join a group. The common case is leaving only
+**Movie-sound pairs** checked. The same
 panel also lists every existing connection group, with a button to select
 the whole group at once.
 
@@ -87,8 +102,10 @@ effects...), configurable in the **Zone Guides** N-panel.
 - The **zone list**: clicking a zone's name makes it active (editable
   below). Its channel range is shown read-only — there's no field to type
   it directly. To change it: drag a boundary in the VSE (click-drag the
-  colored line, no modifier key, Esc cancels), or use ▲/▼, Add Zone,
-  Reset or a preset.
+  colored line near the **left edge of the visible timeline** — that's
+  the only spot that's draggable, not anywhere along the line; no
+  modifier key needed, Esc cancels), or use ▲/▼, Add Zone, Reset or a
+  preset.
 - **▲ / ▼** don't reorder the list — they **swap a zone's position**
   with its neighbor, each keeping its own size, name and color.
 - **+ Add Zone** adds a new zone right above the last one.
@@ -147,41 +164,6 @@ video automatically).
   output path is still Blender's default, usually a sign those properties
   were set on a different scene tab.
 
-## Speed control — PRO
-
-A small **s** badge next to the opacity icon on every retimable strip
-(not effect strips — SOUND included, so a connected video+audio pair can
-be retimed together), colored grey/blue/purple for normal/set/frozen.
-Click it for the **Set Speed** dialog: a **percentage** (100 = normal, 50
-= half speed, 200 = double), or **Freeze Frame** to hold the in-point
-instead.
-
-Both drive Blender's own native retiming operators — never a parallel
-speed model. The factor is also written to the strip
-(`strip["otio_speed"]`) so **[sequencerOTIO](../sequencerOTIO/index.md)**
-can carry it over on export.
-
-## Source Viewer — PRO
-
-![Dual Monitor source viewing](assets/sequencerFlow_dualMonitor_01.gif)
-
-Real 3-point editing in Blender, through two interchangeable ways of
-previewing a source:
-
-- **Dedicated scene**: the classic Source Viewer — set IN/OUT points on any
-  clip in its own scene, with your edit scene untouched while you browse
-  footage.
-- **Dual Monitor**: an independent second preview (built on the Movie Clip
-  Editor) with its own playhead, image and audio — genuinely simultaneous
-  with the main edit, not a toggle between the two.
-
-Either way, **Insert** drops the selected in/out range at the playhead,
-rippling every later strip out of the way automatically. A shared media
-history and IN/OUT points work across both modes. Before loading anything,
-the **Folder Media Info** overlay shows a comparison table (fps,
-resolution, duration, color profile) directly in the File Browser, so you
-can compare candidate files without opening each one first.
-
 ## Strip curves — PRO
 
 ![Volume/opacity curves drawn on strips](assets/sequencerFlow_curves_01.gif)
@@ -197,10 +179,58 @@ These drive real Blender F-Curves on the strip's own `volume` or
 `blend_alpha` — opening the Graph Editor on the same strip shows the same
 keys.
 
+## Source Viewer — PRO
+
+![Dual Monitor source viewing](assets/sequencerFlow_dualMonitor_01.gif)
+
+Real 3-point editing in Blender, through two interchangeable ways of
+previewing a source:
+
+- **Dedicated scene**: the classic Source Viewer — set IN/OUT points on any
+  clip in its own scene, with your edit scene untouched while you browse
+  footage.
+- **Dual Monitor**: an independent second preview (built on the Movie Clip
+  Editor) with its own playhead, image and audio — genuinely simultaneous
+  with the main edit, not a toggle between the two.
+
+Double-clicking a file in the File Browser (or dragging it in) always
+goes to whichever one is currently active: into the **Dual Monitor** if a
+Clip Editor area is set up to show it, otherwise into the classic
+**dedicated scene**. A shared media history and IN/OUT points work across
+both — switch between them without losing your place. Before loading
+anything, the **Folder Media Info** overlay shows a comparison table
+(fps, resolution, duration, color profile) directly in the File Browser,
+so you can compare candidate files without opening each one first.
+
+The Dual Monitor adds a few things of its own: its own **I**/**O**
+shortcuts to set in/out directly in the Clip Editor, a **Reset In/Out**
+button, a timecode display toggle, and Blender's own native per-clip
+proxy generation (25/50/75/100%, adjustable quality) — a 50% proxy is
+built and switched to automatically in the background for every new clip
+you load, so scrubbing stays smooth without you having to set it up by
+hand.
+
+Either way, **Insert** drops the selected in/out range at the playhead,
+rippling every later strip out of the way automatically.
+
+## Speed control — PRO
+
+A small **s** badge next to the opacity icon on every retimable strip
+(not effect strips — SOUND included, so a connected video+audio pair can
+be retimed together), colored grey/blue/purple for normal/set/frozen.
+Click it for the **Set Speed** dialog: a **percentage** (100 = normal, 50
+= half speed, 200 = double), or **Freeze Frame** to hold the in-point
+instead.
+
+Both drive Blender's own native retiming operators — never a parallel
+speed model. The factor is also written to the strip
+(`strip["otio_speed"]`) so **[sequencerOTIO](../sequencerOTIO/index.md)**
+can carry it over on export.
+
 ## Advanced audio — PRO
 
-- A real-time **VU meter** (dB level plus peak since last reset),
-  dockable left or right.
+- A real-time **VU meter** (dB level plus peak since last reset), docked
+  to the left of the VSE — there's no interface control to move it.
 - Every sound strip gets a **channel badge** showing its real format at a
   glance (Mono / Stereo / 5.1 / 7.1).
 - Click a badge to force that strip to **mono**, with its own **Left /

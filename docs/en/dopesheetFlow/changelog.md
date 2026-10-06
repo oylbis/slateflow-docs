@@ -15,6 +15,8 @@ Current version: **1.0.0**.
 
 ## Roadmap
 
+Addon consolidation and fixing any bugs that come up.
+
 Ideas being considered for a future version — not commitments, just the
 current direction:
 
@@ -22,5 +24,7 @@ current direction:
   performance at extreme zoom-out ever becomes a real issue in practice.
 - Further representation options for very long instance holds (exact shape
   not decided yet).
+- Improve keyframe selection (multi-select).
+- Grease Pencil multi-selection.
 
 Feedback and suggestions are welcome — see [Support](index.md#support).

@@ -88,3 +88,6 @@ are deliberately affordable: in return, I can't commit to fix deadlines or
 on-demand development. Feedback and ideas are welcome — the most important
 bugs will be fixed, and good ideas will make their way in. Thank you for
 your understanding.
+
+Found a bug? See [Reporting a bug](../index.md#reporting-a-bug) for what
+to include.

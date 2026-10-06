@@ -22,9 +22,10 @@ same native VSE data on the way back in.
 ## At a glance
 
 - **Export** the current VSE edit to a `.otio` file tuned for Resolve —
-  full track layout, curves, fades, speed changes.
-- **Import** a `.otio` back from Resolve, in **Add**, **Replace** or
-  **Conform** mode.
+  full track layout, curves, fades, speed changes, and transform (position,
+  scale and rotation).
+- **Import** a `.otio` back from Resolve, in **Add**, **New Scene**,
+  **Replace** or **Conform** mode.
 - **Conform**: compare the *live* Blender edit against the Resolve export,
   classify every clip (unchanged / moved / retrimmed / split / changed /
   new / deleted), and apply just the changes — nothing gets blindly
@@ -44,9 +45,9 @@ for the full detail.
   companion debug report next to the `.otio` file and loads it straight
   into Blender's text editor.
 - **Nothing leaves the VSE's own data model** — volume, opacity, transform
-  and retiming all round-trip through Blender's real strip properties and
-  F-Curves. Turn the add-on off and your edit is exactly what Blender
-  itself put there.
+  (position, scale, rotation) and retiming all round-trip through
+  Blender's real strip properties and F-Curves. Turn the add-on off and
+  your edit is exactly what Blender itself put there.
 
 Requires **Blender 5.2 or newer**.
 
@@ -64,3 +65,6 @@ are deliberately affordable: in return, I can't commit to fix deadlines or
 on-demand development. Feedback and ideas are welcome — the most important
 bugs will be fixed, and good ideas will make their way in. Thank you for
 your understanding.
+
+Found a bug? See [Reporting a bug](../index.md#reporting-a-bug) for what
+to include.

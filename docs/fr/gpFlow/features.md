@@ -2,25 +2,29 @@
 
 ![Aperçu général de gpFlow](assets/gpFlow_demo_01.gif)
 
+Chaque bouton de la toolbar a son propre raccourci clavier, affiché dans
+son tooltip et reconfigurable dans **[Préférences](preferences.md)** —
+plus rappelé pour chaque outil ci-dessous.
+
 ## Dessin
 
-- **Mode Dessin** en un clic (ou via son raccourci clavier paramétré), avec
-  la dernière brosse utilisée pour ce mode — mémorisée pour la session en
-  cours, pas conservée au redémarrage de Blender.
-- **Mode Gomme** en un clic (ou via son raccourci clavier paramétré),
-  cohérent avec les autres modes.
-- **Mode Fill** en un clic (ou via son raccourci clavier paramétré) — pilote
-  l'outil Fill natif de Blender, tous les réglages de brosse (lignes
-  d'extension, fermeture d'écart...) s'appliquent toujours. **Shift+clic**
-  supprime un remplissage sous le curseur, cherché sur tous les calques
-  visibles et déverrouillés (pas seulement le calque actif, puisqu'un
-  remplissage atterrit sur le calque actif au moment du clic, qui peut avoir
-  changé depuis) — un geste sans équivalent natif.
+- **Mode Dessin** en un clic, avec la dernière brosse utilisée pour ce
+  mode — mémorisée pour la session en cours, pas conservée au redémarrage
+  de Blender.
+- **Mode Gomme** en un clic, cohérent avec les autres modes.
+- **Mode Fill** en un clic — pilote l'outil Fill natif de Blender, tous
+  les réglages de brosse (lignes d'extension, fermeture d'écart...)
+  s'appliquent toujours. **Shift+clic** supprime un remplissage sous le
+  curseur, cherché sur tous les calques visibles et déverrouillés (pas
+  seulement le calque actif, puisqu'un remplissage atterrit sur le calque
+  actif au moment du clic, qui peut avoir changé depuis) — un geste sans
+  équivalent natif.
 
-Dans ces trois modes, le clic droit continue d'ouvrir les options natives de
-la brosse ou de l'outil Fill (direction, réglages...) plutôt que de fermer
-le mode — seuls **Échap** et **Entrée** en sortent. Ctrl+Z / Ctrl+Shift+Z
-annulent/rétablissent sans vous faire perdre la brosse en cours.
+Dans ces trois modes, le clic droit continue d'ouvrir les options natives
+de la brosse ou de l'outil Fill (direction, réglages...) plutôt que de
+fermer le mode — seuls **Échap** et **Entrée** en sortent. Ctrl+Z /
+Ctrl+Shift+Z annulent/rétablissent sans vous faire perdre la brosse en
+cours.
 
 ## Retravailler les traits
 
@@ -37,10 +41,11 @@ curseur.
 
 - **Deform** pose un treillis aligné sur la vue au moment de la création,
   autour de votre sélection pour une distorsion rapide et naturelle (2D ou
-  volumétrique, résolution réglable). Ctrl+clic sur le bouton (ou son
-  raccourci dédié, indépendant du raccourci Deform de base et réglable dans
-  les Préférences) pour construire ce treillis directement à partir d'une
-  sélection déjà faite, sans avoir à resélectionner une fois dans l'outil.
+  volumétrique, résolution réglable). **Ctrl+clic sur le bouton Deform**
+  (ou son raccourci dédié, indépendant du raccourci Deform de base et
+  réglable dans les Préférences) pour construire ce treillis directement à
+  partir d'une sélection déjà faite, sans avoir à resélectionner une fois
+  dans l'outil.
 
 ![Deform avec un treillis temporaire](assets/gpFlow_deform_01.gif)
 
@@ -78,33 +83,32 @@ image — et ignore automatiquement les calques verrouillés.
 
 ![Rotation du canevas de dessin](assets/gpFlow_canva_01.png)
 
-Cliquez le bouton puis glissez horizontalement pour tourner la **caméra de
-la scène elle-même** (pas seulement la vue) autour de son axe local, vers un
-angle de dessin plus confortable sans perdre le cadrage d'origine : **Ctrl
-maintenu** pendant le glisser pour un magnétisme par incréments de 15°,
-**Ctrl+clic** pour annuler le glisser en cours et revenir directement au
-cadrage d'origine. Un cadre de référence vert reste affiché en permanence
+Cliquez le bouton **Canvas**, puis glissez horizontalement pour tourner la
+**caméra de la scène elle-même** (pas seulement la vue) autour de son axe
+local, vers un angle de dessin plus confortable sans perdre le cadrage
+d'origine : **Ctrl** maintenu pendant le glisser pour un magnétisme par
+incréments de 15°. Un cadre de référence vert reste affiché en permanence
 pendant la rotation pour toujours savoir de combien vous avez tourné par
 rapport au point de départ.
 
-Le cadrage d'origine n'est mémorisé **qu'une seule fois** par scène, à la
-première utilisation de l'outil : le bouton **Reset Canvas Rotation** du
-panneau **Canvas Tools**, dans la sidebar, y revient à tout moment sans
-avoir à relancer un glisser. Le même panneau relaie aussi l'opacité du
-passe-partout caméra (réglage natif de Blender).
+Deux façons équivalentes de revenir directement au cadrage d'origine, sans
+attendre un nouveau glisser : **Ctrl+clic sur le bouton Canvas lui-même**
+(avant de commencer un glisser), ou maintenir **Ctrl** et cliquer pendant
+qu'un glisser est déjà en cours — les deux annulent/réinitialisent
+immédiatement. Le bouton **Reset Canvas Rotation** du panneau **Canvas
+Tools** dans la sidebar fait la même chose. Le cadrage d'origine n'est
+mémorisé **qu'une seule fois** par scène, à la première utilisation de
+l'outil. Le même panneau relaie aussi l'opacité du passe-partout caméra,
+réglage natif de Blender.
 
 ## Raccourcis d'animation
 
-- Insérer une clé vide à la frame courante — sur tous les calques visibles
-  par défaut, ou seulement le calque actif avec son propre raccourci Ctrl.
-- Dupliquer la clé précédente, même logique tous-calques / calque-actif.
+- Insérer une clé vide à la frame courante, sur tous les calques visibles —
+  ou **Ctrl+clic sur le bouton** pour la restreindre au seul calque actif.
+- Dupliquer la clé précédente, même logique clic / Ctrl+clic (tous les
+  calques visibles, ou seulement l'actif).
 - Décaler toute une séquence de clés en avant ou en arrière, d'un nombre de
   frames réglable en cliquant sur le badge numérique de la toolbar. Le
   décalage s'applique aussi bien aux images-clés Grease Pencil qu'aux clés
   d'animation F-Curve de l'objet (utile si une caméra ou un empty est
   elle-même animée en parallèle du dessin).
-
-## Raccourcis
-
-Le raccourci de chaque outil est personnalisable — voir
-**[Préférences](preferences.md)**.

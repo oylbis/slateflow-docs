@@ -24,9 +24,9 @@ retiming) à la sortie, et les mêmes données natives du VSE au retour.
 
 - **Export** du montage VSE actuel vers un fichier `.otio` calibré pour
   Resolve — disposition complète des pistes, courbes, fondus, changements de
-  vitesse.
-- **Import** d'un `.otio` venant de Resolve, en mode **Add**, **Replace** ou
-  **Conform**.
+  vitesse, et transform (position, échelle et rotation).
+- **Import** d'un `.otio` venant de Resolve, en mode **Add**, **New Scene**,
+  **Replace** ou **Conform**.
 - **Conform** : compare le montage *vivant* de Blender à l'export Resolve,
   classe chaque plan (inchangé / déplacé / retrimé / split / modifié /
   nouveau / supprimé), et applique seulement les changements — rien n'est
@@ -46,9 +46,9 @@ Voir **[Fonctionnalités](features.md)** et
   un rapport de debug à côté du fichier `.otio` et le charge directement dans
   l'éditeur de texte de Blender.
 - **Rien ne sort du modèle de données du VSE** — volume, opacité, transform
-  et retiming font tous l'aller-retour via les vraies propriétés de strip et
-  les F-Curves de Blender. Désactivez l'addon : votre montage est exactement
-  ce que Blender lui-même y a mis.
+  (position, échelle, rotation) et retiming font tous l'aller-retour via les
+  vraies propriétés de strip et les F-Curves de Blender. Désactivez
+  l'addon : votre montage est exactement ce que Blender lui-même y a mis.
 
 Nécessite **Blender 5.2 ou plus récent**.
 
@@ -67,3 +67,6 @@ peux pas m'engager sur des délais de correctifs ou des développements sur
 demande. Les retours et les idées sont les bienvenus — les bugs les plus
 importants seront corrigés, et les bonnes idées feront leur chemin. Merci de
 votre compréhension.
+
+Trouvé un bug ? Voir [Signaler un bug](../index.md#signaler-un-bug) pour
+savoir quoi inclure.

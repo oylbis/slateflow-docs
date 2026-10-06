@@ -7,7 +7,9 @@ Chaque section ci-dessous est taguée **LITE** et/ou **PRO**. Voir
 
 ![Toolbar de sequencerFlow](assets/sequencerFlow_toolBar_01.png)
 
-Dessinée directement dans le VSE, sans fouiller dans les menus.
+Dessinée directement dans le VSE, sans fouiller dans les menus. Chaque
+bouton ci-dessous a aussi son propre raccourci clavier — voir
+[Préférences & raccourcis](shortcuts.md) pour la liste complète.
 
 - **Cut** coupe chaque strip sélectionné à la tête de lecture. Sur un
   strip SCENE (un plan storyFlow par exemple), un split natif laisserait
@@ -24,8 +26,9 @@ Dessinée directement dans le VSE, sans fouiller dans les menus.
   [Connexions de strips](#connexions-de-strips-lite)) est entraîné même
   si seul son partenaire était sélectionné.
 - **Slip** invoque l'outil Slip natif de Blender.
-- **Insert** (PRO) dépose la plage in/out actuelle du Source Viewer à la
-  tête de lecture — voir [Source Viewer](#source-viewer-pro).
+- **Insert** (PRO) dépose la plage in/out d'une source — éditée dans le
+  Source Viewer ou dans le Dual Monitor, voir
+  [Source Viewer](#source-viewer-pro) — à la tête de lecture.
 - **Connect / Disconnect** — voir [Connexions de strips](#connexions-de-strips-lite).
 - **Sélections avancées** :
 
@@ -39,18 +42,26 @@ Dessinée directement dans le VSE, sans fouiller dans les menus.
   Les jeux de sélection sont retrouvés par nom, type, position et canal —
   si un strip a depuis été déplacé ou renommé, le rappel signale une
   restauration partielle plutôt que de deviner.
-- **Isolate** propose deux bascules indépendantes et réversibles, toutes
-  deux basées sur le mute (donc elles affectent aussi l'audio) :
-  **Isolate Channel** coupe tous les canaux sauf ceux de la sélection ;
-  **Isolate Selection** coupe tous les strips non sélectionnés. Recliquez
-  pour restaurer.
-- **Frame range** règle la plage de lecture/rendu de la **scène**, pas
-  juste la vue : **Range Selected**/**Range All** la cadrent une fois,
-  **Auto Range** la recadre en continu sur la sélection.
-- **Follow playhead** fait défiler la vue pour garder la tête de lecture
-  dans une zone confortable (25–40% de la largeur visible) pendant la
-  lecture, au lieu de sauter ou d'exiger un recentrage manuel.
-- **Minimap toggle** (PRO) — voir [Minimap de la timeline](#minimap-de-la-timeline-pro).
+- **Isolate** — deux bascules indépendantes et réversibles, toutes deux
+  basées sur le mute (donc elles affectent aussi l'audio, pas seulement ce
+  qui est visible) :
+
+  | Bouton | Coupe |
+  |---|---|
+  | Isolate Channel | Tous les canaux sauf ceux que touche la sélection actuelle |
+  | Isolate Selection | Tous les strips qui ne sont pas actuellement sélectionnés |
+
+  Recliquez sur le même bouton pour restaurer exactement l'état d'avant.
+
+- **Frame range, Follow playhead et Minimap** sont les éléments divers de
+  la toolbar, regroupés visuellement ensemble. Frame range règle la plage
+  de lecture/rendu de la **scène**, pas juste la vue : Range Selected et
+  Range All la cadrent une fois, Auto Range la recadre en continu sur la
+  sélection actuelle. Follow playhead fait défiler la vue pendant la
+  lecture pour garder la tête de lecture dans une zone confortable
+  (25–40% de la largeur visible), au lieu de sauter ou d'exiger un
+  recentrage manuel. Minimap (PRO) bascule simplement l'affichage de la
+  [minimap de la timeline](#minimap-de-la-timeline-pro).
 
 ## Connexions de strips — LITE
 
@@ -65,11 +76,16 @@ explicitement, en combinant des critères appliqués en un clic :
 
 | Condition | Regroupe les strips qui... |
 |---|---|
-| Same start / end frame | démarrent, ou se terminent, à la même frame |
-| Same channel / length | sont sur le même canal, ou partagent une durée |
-| Movie-sound pairs | ressemblent à une paire vidéo+audio correspondante, par le nom |
+| Selected strips only | ...sont limités à la sélection actuelle (activé par défaut — désactivez pour scanner toute la timeline) |
+| Same start frame | ...démarrent exactement à la même frame |
+| Same end frame | ...se terminent exactement à la même frame |
+| Same channel | ...sont sur le même canal |
+| Same length | ...partagent la même durée |
+| Movie-sound pairs | ...ressemblent à une paire vidéo+audio correspondante, par le nom |
 
-Le cas courant consiste à ne garder que **Movie-sound pairs** coché. Le
+N'importe quelle combinaison peut être cochée à la fois — un strip doit
+satisfaire chaque condition cochée pour rejoindre un groupe. Le cas
+courant consiste à ne garder que **Movie-sound pairs** coché. Le
 même panneau liste aussi chaque groupe de connexion existant, avec un
 bouton pour sélectionner tout le groupe d'un coup.
 
@@ -91,8 +107,10 @@ effets...), réglables dans le panneau N **Zone Guides**.
   active (éditable juste en dessous). Sa plage de canaux est affichée en
   lecture seule — pas de champ pour la taper directement. Pour la
   changer : glissez une limite dans le VSE (clic-glisser sur la ligne
-  colorée, aucune touche requise, Échap annule), ou utilisez ▲/▼, Add
-  Zone, Reset ou un preset.
+  colorée près du **bord gauche de la timeline visible** — c'est le seul
+  endroit où c'est possible, pas n'importe où sur la ligne ; aucune
+  touche requise, Échap annule), ou utilisez ▲/▼, Add Zone, Reset ou un
+  preset.
 - **▲ / ▼** n'insèrent pas la zone ailleurs dans la liste : ils
   **échangent sa place** avec la zone voisine, chacune gardant sa taille,
   son nom et sa couleur.
@@ -157,44 +175,6 @@ mixé dans la vidéo de ce segment).
   signe fréquent que ces réglages ont été faits sur un autre onglet de
   scène.
 
-## Contrôle de vitesse — PRO
-
-Un petit badge **s** à côté de l'icône d'opacité sur chaque strip
-retimable (pas les strips d'effet — SOUND inclus, pour qu'une paire
-vidéo+audio connectée puisse être retimée ensemble), coloré gris/bleu/
-violet pour normal/réglé/figé. Cliquez-le pour le dialogue **Set Speed** :
-un **pourcentage** (100 = normal, 50 = demi-vitesse, 200 = double), ou
-**Freeze Frame** pour figer le point d'entrée à la place.
-
-Les deux pilotent les vrais opérateurs de retiming natifs de Blender —
-jamais un modèle de vitesse parallèle. Le facteur est aussi écrit sur le
-strip (`strip["otio_speed"]`) pour que
-**[sequencerOTIO](../sequencerOTIO/index.md)** puisse le reporter à
-l'export.
-
-## Source Viewer — PRO
-
-![Dual Monitor source viewing](assets/sequencerFlow_dualMonitor_01.gif)
-
-Un vrai montage 3 points dans Blender, via deux façons interchangeables de
-prévisualiser une source :
-
-- **Scène dédiée** : le Source Viewer classique — posez des points IN/OUT
-  sur n'importe quel plan dans sa propre scène, votre scène de montage
-  restant intacte pendant que vous parcourez les rushs.
-- **Dual Monitor** : une seconde prévisualisation indépendante (construite
-  sur le Movie Clip Editor) avec sa propre tête de lecture, image et son —
-  vraiment simultanée avec le montage principal, pas une bascule entre
-  les deux.
-
-Dans les deux cas, **Insert** dépose la plage in/out sélectionnée à la
-tête de lecture, en décalant automatiquement tous les plans suivants. Un
-historique de médias et des points IN/OUT partagés fonctionnent dans les
-deux modes. Avant de charger quoi que ce soit, l'overlay **Folder Media
-Info** affiche un tableau comparatif (fps, résolution, durée, profil
-couleur) directement dans le File Browser, pour comparer des fichiers
-candidats sans en ouvrir aucun au préalable.
-
 ## Courbes sur les strips — PRO
 
 ![Courbes de volume/opacité dessinées sur les strips](assets/sequencerFlow_curves_01.gif)
@@ -211,10 +191,62 @@ Ces courbes pilotent de vraies F-Curves Blender sur les propriétés
 `volume` ou `blend_alpha` du strip — ouvrir le Graph Editor sur le même
 strip montre les mêmes clés.
 
+## Source Viewer — PRO
+
+![Dual Monitor source viewing](assets/sequencerFlow_dualMonitor_01.gif)
+
+Un vrai montage 3 points dans Blender, via deux façons interchangeables de
+prévisualiser une source :
+
+- **Scène dédiée** : le Source Viewer classique — posez des points IN/OUT
+  sur n'importe quel plan dans sa propre scène, votre scène de montage
+  restant intacte pendant que vous parcourez les rushs.
+- **Dual Monitor** : une seconde prévisualisation indépendante (construite
+  sur le Movie Clip Editor) avec sa propre tête de lecture, image et son —
+  vraiment simultanée avec le montage principal, pas une bascule entre
+  les deux.
+
+Double-cliquer un fichier dans le File Browser (ou le glisser-déposer) va
+toujours vers celui qui est actuellement actif : dans le **Dual Monitor**
+si une zone Clip Editor est configurée pour l'afficher, sinon dans la
+**scène dédiée** classique. Un historique de médias et des points IN/OUT
+partagés fonctionnent dans les deux — basculez de l'un à l'autre sans
+perdre votre position. Avant de charger quoi que ce soit, l'overlay
+**Folder Media Info** affiche un tableau comparatif (fps, résolution,
+durée, profil couleur) directement dans le File Browser, pour comparer
+des fichiers candidats sans en ouvrir aucun au préalable.
+
+Le Dual Monitor ajoute quelques éléments propres : ses propres raccourcis
+**I**/**O** pour poser in/out directement dans le Clip Editor, un bouton
+**Reset In/Out**, une bascule d'affichage du timecode, et le système
+natif de Blender de génération de proxy par clip (25/50/75/100%, qualité
+réglable) — un proxy à 50% est construit et activé automatiquement en
+arrière-plan pour chaque nouveau clip chargé, pour que le scrubbing reste
+fluide sans avoir à le configurer à la main.
+
+Dans les deux cas, **Insert** dépose la plage in/out sélectionnée à la
+tête de lecture, en décalant automatiquement tous les plans suivants.
+
+## Contrôle de vitesse — PRO
+
+Un petit badge **s** à côté de l'icône d'opacité sur chaque strip
+retimable (pas les strips d'effet — SOUND inclus, pour qu'une paire
+vidéo+audio connectée puisse être retimée ensemble), coloré gris/bleu/
+violet pour normal/réglé/figé. Cliquez-le pour le dialogue **Set Speed** :
+un **pourcentage** (100 = normal, 50 = demi-vitesse, 200 = double), ou
+**Freeze Frame** pour figer le point d'entrée à la place.
+
+Les deux pilotent les vrais opérateurs de retiming natifs de Blender —
+jamais un modèle de vitesse parallèle. Le facteur est aussi écrit sur le
+strip (`strip["otio_speed"]`) pour que
+**[sequencerOTIO](../sequencerOTIO/index.md)** puisse le reporter à
+l'export.
+
 ## Audio avancé — PRO
 
 - Un **VU-mètre** en temps réel (niveau en dB plus le pic depuis la
-  dernière réinitialisation), ancrable à gauche ou à droite.
+  dernière réinitialisation), ancré à gauche du VSE — pas de contrôle
+  dans l'interface pour le déplacer.
 - Chaque strip son reçoit un **badge de canal** qui montre son format
   réel en un coup d'œil (Mono / Stereo / 5.1 / 7.1).
 - Cliquez un badge pour forcer ce strip en **mono**, avec son propre pan

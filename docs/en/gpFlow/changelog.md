@@ -4,5 +4,6 @@ Current version: **2.2.0**.
 
 ## Roadmap
 
-Nothing specific queued right now — suggestions are welcome, see
-[Support](index.md#support).
+Addon consolidation and fixing any bugs that come up.
+
+Feedback and suggestions are welcome — see [Support](index.md#support).

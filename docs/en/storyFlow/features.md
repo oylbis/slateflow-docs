@@ -6,10 +6,11 @@
 
 - **Tab** switches between the selected shot and its drawing scene,
   landing at the matching *frame* in both directions — not just switching
-  scenes. Tab also swaps between the "Video Editing" and "2D Animation"
-  workspaces, and points the drawing workspace's own embedded Sequencer at
-  the main edit scene (handy if your animation-scene template keeps the
-  VSE visible there too).
+  scenes. Tab also swaps between the two workspaces set in the **Settings
+  > General** panel ("Video Editing" and "2D Animation" by default, but
+  any pair of workspaces works), and points the drawing workspace's own
+  embedded Sequencer at the main edit scene (handy if your animation-scene
+  template keeps the VSE visible there too).
 - **Ctrl+Alt+←/→** moves between the current shot's animation keys first;
   once you've reached the last (or first) key, the next press moves on to
   the next (or previous) shot instead.
@@ -46,7 +47,8 @@ sharing is resolved.
 ## A live overlay on the selected shot
 
 A small on-screen overlay shows the selected shot's name and duration at a
-glance in the VSE, without opening a side panel.
+glance in the VSE, without opening a side panel — and if more than one
+shot is selected, it also shows how many.
 
 ## Sound follows the picture
 
@@ -57,8 +59,9 @@ tracks can be excluded from this copy.
 
 ## Metadata burned onto the image
 
-storyFlow can burn metadata directly onto the frame, each one an
-**independent toggle** rather than an all-or-nothing overlay:
+storyFlow can burn metadata directly onto the frame itself. Each piece of
+information below has its own on/off toggle, so you pick exactly which
+ones show rather than getting them all at once or none:
 
 - Shot name.
 - Project-relative frame number.
@@ -73,26 +76,39 @@ storyFlow can burn metadata directly onto the frame, each one an
 Beyond the day-to-day flow, storyFlow also covers the housekeeping that
 comes with a real production:
 
-- **Add**, one shot or several at once, with naming, prefix/suffix and
-  auto-numbering. Lands next to your selected shot — or, with nothing
-  selected, at the playhead or at the end of the timeline, your choice.
-  Every shot it creates is its own independent scene.
+- **Add**, one shot or several at once — two different behaviors depending
+  on what's selected:
+  - **A shot is selected**: the new one lands right after it, named by
+    incrementing the trailing number found on the selected shot's own
+    name — the naming options in the sidebar are ignored entirely for
+    this path.
+  - **Nothing is selected**: the new shot is named from the sidebar's own
+    base name/prefix/suffix instead, and a popup additionally lets you
+    place it at the playhead or at the end of the timeline, pick its
+    channel, and set how many to add at once.
+
+  Either way, every shot it creates is its own independent scene.
 
 ![Batch-adding and placing several shots at once](assets/storyFlow_addShots_02.gif)
 
 - **Batch rename**, on the selection or the whole timeline at once: either
-  find/replace across existing names, or set a new base name with
-  prefix/suffix and auto-numbering — numbered in timeline order, not
-  selection order, so the sequence always reads correctly.
+  find/replace across existing names, or set a new base name with an
+  optional prefix and a suffix — that suffix is either a fixed piece of
+  text you set, or auto-numbering instead, numbered in timeline order
+  (not selection order) so the sequence always reads correctly.
 - **Clean up unused drawing scenes** in one click, with per-scene
   protection for anything you want kept regardless.
-- **Render straight from the timeline**, as an image sequence or video —
-  split into segments wherever the topmost visible strip actually
-  changes, so shots deliberately layered across channels render correctly
-  instead of one silently winning for its whole original duration.
-  Image-sequence rendering follows the drawing's *actual* keyframes
-  (objects, Grease Pencil, NLA, scene markers), not a fixed interval.
-  Segments are named either after the topmost strip, or with your own
+- **Render straight from the timeline**, split into **segments** wherever
+  the topmost visible strip actually changes — so shots deliberately
+  layered across channels render correctly instead of one silently
+  winning for its whole original duration. Pick a video format (FFmpeg)
+  and each segment renders as one video file; pick any image format
+  (including multi-layer ones like OpenEXR — still "image" rendering, not
+  a third mode) and extra options appear: a minimum-spacing step between
+  the drawing's *actual* keyframes (objects, Grease Pencil, NLA, scene
+  markers) rather than a fixed interval, real-frame vs. consecutive
+  numbering, and an optional dedicated subfolder per segment. Either way,
+  segments are named after the topmost strip or with your own
   prefix/suffix/numbering scheme (same options as batch rename), plus a
-  frame-range suffix as an anti-collision safeguard. The result can be
+  frame-range suffix as an anti-collision safeguard, and the result can be
   dropped back into the timeline as new strips automatically.

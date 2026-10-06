@@ -17,13 +17,14 @@ déjà.
 ## En un coup d'œil
 
 - **Liste d'objets triée par profondeur** — triez vos objets Grease Pencil
-  par distance à la caméra, pas seulement par ordre alphabétique.
-- **Mode Compensate** — déplacez la profondeur d'un objet et regardez son
-  échelle s'ajuster automatiquement pour garder sa taille apparente
-  constante à l'écran.
-- **Mémoire du mode d'édition** — choisissez si basculer entre dessins
-  garde le mode courant, ou mémorise et restaure le dernier mode utilisé
-  sur chaque objet individuellement.
+  par distance à la caméra, les plus proches en haut, comme les calques
+  d'un logiciel de dessin 2D — pas seulement par ordre alphabétique.
+- **Mode Depth** — déplacez la profondeur d'un objet normalement, ou
+  passez en Compensate pour garder sa taille apparente constante à l'écran
+  pendant le déplacement.
+- **Deux modes de synchro d'édition** — Keep Current (changer d'objet
+  garde le mode courant) ou Remember Last (restaure le dernier mode
+  utilisé sur chaque objet).
 - **Opacité globale par objet** — un curseur qui atténue tous les calques
   d'un dessin ensemble, en préservant leur opacité relative.
 - **Images de fond de caméra** — ajoutez, réordonnez et gérez des images de
@@ -72,3 +73,6 @@ peux pas m'engager sur des délais de correctifs ou des développements sur
 demande. Les retours et les idées sont les bienvenus — les bugs les plus
 importants seront corrigés, et les bonnes idées feront leur chemin. Merci de
 votre compréhension.
+
+Trouvé un bug ? Voir [Signaler un bug](../index.md#signaler-un-bug) pour
+savoir quoi inclure.

@@ -56,3 +56,34 @@ installation, feature details, and support.
 !!! tip "Need help?"
     If you can't find the answer to your question in these pages, check the
     **Support** section at the bottom of the relevant add-on's page.
+
+## Reporting a bug
+
+A clear report is the single biggest factor in how fast a bug actually
+gets fixed. Before sending one, please include:
+
+- **Which add-on**, and its **version** — shown at the top of its
+  **Changelog** page (also in *Edit > Preferences > Get Extensions*,
+  under the add-on's own entry).
+- **Your Blender version** (*Help > About Blender*, or
+  `Help > Save System Info` for the full details).
+- **What you did, step by step** — the exact sequence of clicks/actions
+  that leads to the problem, starting from a state you can describe (e.g.
+  "a new file" or "the attached file"). "It doesn't work" on its own
+  can't be diagnosed.
+- **What you expected to happen, and what happened instead.**
+- **Does it happen every time**, or only sometimes? If only sometimes,
+  anything that seems to make it more or less likely helps a lot.
+- **A screenshot or short screen recording** for anything visual — worth
+  far more than a description of what's on screen.
+- **A minimal `.blend` file that reproduces it**, if you can put one
+  together — by far the fastest path to an actual fix, since it removes
+  all guesswork about your specific scene/file setup. Not always
+  possible (confidential production files, a problem tied to a huge
+  file) — understood, just say so.
+
+Send all of this through the channel named on the add-on's own **Support**
+section (issue tracker, email, or marketplace messaging depending on
+where you got it). Missing pieces don't block a report — they just mean
+the first reply will probably be a request for them, which slows things
+down for everyone.

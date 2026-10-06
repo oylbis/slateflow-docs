@@ -8,5 +8,9 @@ No changes yet — this is the current release.
 
 ## Roadmap
 
-Nothing specific queued right now — suggestions are welcome, see
-[Support](index.md#support).
+Addon consolidation and fixing any bugs that come up.
+
+Expose some display options for the data overlay text baked onto the
+image: color, size, corner rounding, transparency, and so on.
+
+Feedback and suggestions are welcome — see [Support](index.md#support).

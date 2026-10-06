@@ -43,9 +43,6 @@ Click and drag a thumbnail to move its key in time:
   follows them** shift together by the same amount; only the preceding key
   (which never moves) bounds the movement.
 
-The mode is decided the moment you click (holding Ctrl mid-drag doesn't
-change the mode already chosen).
-
 ### Multi-selection and groups
 
 - **Shift+click** a thumbnail to add or remove a key from the selection,
@@ -57,7 +54,8 @@ change the mode already chosen).
 
 Hold **Alt** while hovering any thumbnail to show an enlarged floating
 preview near the cursor — handy for judging a drawing without leaving the
-xsheet overview.
+xsheet overview. Its size is adjustable (**Hover Preview Scale** in the
+addon's own N-panel, see [Preferences](preferences.md)).
 
 ## Isolating a row
 
