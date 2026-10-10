@@ -11,6 +11,12 @@ Dope Sheet native de Blender.
 
 ![Vue d'ensemble de l'overlay xsheet dans la Dope Sheet](assets/dopesheetFlow_all_01.png)
 
+## Vidéo de présentation
+
+<div class="addon-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/czXVSeHg6JM" title="dopesheetFlow — vidéo de présentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## En un coup d'œil
 
 - **Vraies vignettes**, générées par rasterisation GPU directe des traits

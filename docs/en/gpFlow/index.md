@@ -13,6 +13,12 @@ operators, just with a lot less friction between you and the next stroke.
 
 ![Floating toolbar over a Grease Pencil drawing](assets/gpFlow_all_01.png)
 
+## Presentation video
+
+<div class="addon-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/DyvfrOK9qVM" title="gpFlow — presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## At a glance
 
 - **Draw / Erase / Fill in one click each**, with the last brush used

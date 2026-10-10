@@ -26,6 +26,12 @@ sequencerFlow existe en deux niveaux, à partir de la même base de code :
 
 Voir **[Fonctionnalités](features.md)** pour le détail complet.
 
+## Vidéo de présentation
+
+<div class="addon-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/915XezptkO4" title="sequencerFlow — vidéo de présentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## En un coup d'œil
 
 - **Une barre d'outils contextuelle dessinée directement dans le VSE** :

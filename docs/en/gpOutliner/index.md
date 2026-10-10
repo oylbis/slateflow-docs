@@ -14,6 +14,12 @@ you're already drawing.
 
 ![gpOutliner panel in the 3D Viewport sidebar](assets/gpOutliner_all_01.png)
 
+## Presentation video
+
+<div class="addon-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/xoqwsbq9xjs" title="gpOutliner — presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## At a glance
 
 - **Depth-sorted object list** — sort your Grease Pencil objects by distance

@@ -14,6 +14,12 @@ déjà.
 
 ![Panneau gpOutliner dans le panneau latéral de la vue 3D](assets/gpOutliner_all_01.png)
 
+## Vidéo de présentation
+
+<div class="addon-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/xoqwsbq9xjs" title="gpOutliner — vidéo de présentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## En un coup d'œil
 
 - **Liste d'objets triée par profondeur** — triez vos objets Grease Pencil

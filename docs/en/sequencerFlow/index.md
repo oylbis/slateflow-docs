@@ -24,6 +24,12 @@ sequencerFlow ships as two tiers from the same codebase:
 
 See **[Features](features.md)** for the detailed breakdown.
 
+## Presentation video
+
+<div class="addon-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/915XezptkO4" title="sequencerFlow — presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## At a glance
 
 - **A contextual toolbar drawn right into the VSE**: smart split, join,

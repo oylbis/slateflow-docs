@@ -19,6 +19,12 @@ same native VSE data on the way back in.
 
 ![sequencerOTIO overview](assets/sequencerOTIO_all_01.gif)
 
+## Presentation video
+
+<div class="addon-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/eiaDgmPmD-U" title="sequencerOTIO — presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## At a glance
 
 - **Export** the current VSE edit to a `.otio` file tuned for Resolve —

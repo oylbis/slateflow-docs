@@ -19,6 +19,12 @@ your way.
 
 ![storyFlow panels in the VSE](assets/storyFlow_all_01.png)
 
+## Presentation video
+
+<div class="addon-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/-kYS_VeX8yA" title="storyFlow — presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## At a glance
 
 - **One click to start a project**: "Setup Storyboard Session" creates the

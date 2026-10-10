@@ -57,6 +57,7 @@ plugins:
 
 nav:
   - index.md
+  - "slateFlow.com ↗": https://oylbis.github.io/slateflow-website/
   - sequencerFlow:
       - sequencerFlow/index.md
       - sequencerFlow/installation.md

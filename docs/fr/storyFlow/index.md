@@ -20,6 +20,12 @@ montage et dessin reste rapide, propre et transparent.
 
 ![Panneaux storyFlow dans le VSE](assets/storyFlow_all_01.png)
 
+## Vidéo de présentation
+
+<div class="addon-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/-kYS_VeX8yA" title="storyFlow — vidéo de présentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## En un coup d'œil
 
 - **Un clic pour démarrer un projet** : "Setup Storyboard Session" crée la

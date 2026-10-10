@@ -14,6 +14,12 @@ avec beaucoup moins de friction entre vous et le prochain trait.
 
 ![Boîte à outils flottante au-dessus d'un dessin Grease Pencil](assets/gpFlow_all_01.png)
 
+## Vidéo de présentation
+
+<div class="addon-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/DyvfrOK9qVM" title="gpFlow — vidéo de présentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## En un coup d'œil
 
 - **Dessin / Gomme / Fill en un clic chacun**, avec la dernière brosse

@@ -20,6 +20,12 @@ retiming) à la sortie, et les mêmes données natives du VSE au retour.
 
 ![Aperçu de sequencerOTIO](assets/sequencerOTIO_all_01.gif)
 
+## Vidéo de présentation
+
+<div class="addon-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/eiaDgmPmD-U" title="sequencerOTIO — vidéo de présentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## En un coup d'œil
 
 - **Export** du montage VSE actuel vers un fichier `.otio` calibré pour
