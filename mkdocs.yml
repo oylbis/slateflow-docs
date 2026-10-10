@@ -5,6 +5,7 @@ repo_url: https://github.com/oylbis/slateflow-docs
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/branding/logo_slateflow.png
   favicon: assets/branding/favicon.png
   font:
@@ -57,7 +58,6 @@ plugins:
 
 nav:
   - index.md
-  - "slateFlow.com ↗": https://oylbis.github.io/slateflow-website/
   - sequencerFlow:
       - sequencerFlow/index.md
       - sequencerFlow/installation.md

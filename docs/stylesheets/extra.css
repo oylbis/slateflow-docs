@@ -65,6 +65,40 @@ body {
   -webkit-backdrop-filter: blur(10px);
 }
 
+/* ——— Discreet "back to the presentation site" header link, right after
+   the GitHub repo icon — icon alone read as unclear ("what is this?"),
+   so it carries a short label too, hidden on narrow viewports like the
+   repo name already is. ——— */
+.slateflow-weblink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.slateflow-weblink__label {
+  color: #b60c10;
+  font-size: 0.65rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 59.9375em) {
+  .slateflow-weblink__label {
+    display: none;
+  }
+}
+
+/* ——— The GitHub repo box reserves a fixed 11.7rem width regardless of
+   how short "oylbis/slateflow-docs" actually renders, leaving visible
+   dead space before our link — shrink it to its real content width so
+   the two buttons sit flush against each other. ——— */
+@media screen and (min-width: 60em) {
+  .md-header__source {
+    width: auto;
+    max-width: none;
+  }
+}
+
 /* ——— Bigger, more legible header logo ——— */
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
@@ -161,20 +195,6 @@ body[data-addon="sequencerflow"] {
   height: 100%;
   border: 0;
   border-radius: 10px;
-}
-
-/* ——— "Back to the presentation site" nav button — matched by its fixed,
-   locale-independent external href rather than text (unlike the per-addon
-   dots below, whose match-by-text relies on the nav label itself). ——— */
-.md-nav--primary > .md-nav__list > .md-nav__item > a.md-nav__link[href^="https://oylbis.github.io/slateflow-website"] {
-  display: block;
-  margin: 0.5rem 0.8rem 0.8rem;
-  padding: 0.45rem 0.9rem;
-  border-radius: 999px;
-  background: #b60c10;
-  color: #fff !important;
-  font-weight: 700;
-  text-align: center;
 }
 
 /* ——— Category dot next to each addon's entry in the left nav ——— */
