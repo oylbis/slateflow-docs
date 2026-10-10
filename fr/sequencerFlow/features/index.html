@@ -1,0 +1,2260 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation utilisateur de la suite d'addons Blender SlateFlow">
+      
+      
+      
+        <link rel="canonical" href="https://oylbis.github.io/slateflow-docs/fr/sequencerFlow/features/">
+      
+      
+        <link rel="prev" href="../installation/">
+      
+      
+        <link rel="next" href="../shortcuts/">
+      
+      
+        
+          <link rel="alternate" href="../../../sequencerFlow/features/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="fr">
+        
+      
+      
+      <link rel="icon" href="../../../assets/branding/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Fonctionnalités - Documentation SlateFlow</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fonctionnalites" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../" title="Documentation SlateFlow" class="md-header__button md-logo" aria-label="Documentation SlateFlow" data-md-component="logo">
+      
+  <img src="../../../assets/branding/logo_slateflow.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation SlateFlow
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fonctionnalités
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sélectionner la langue">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../sequencerFlow/features/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/oylbis/slateflow-docs" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+    <a href="https://oylbis.github.io/slateflow-website/" title="Voir le site de présentation" class="md-header__button md-icon slateflow-weblink">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg>
+      <span class="slateflow-weblink__label">slateFlow.com</span>
+    </a>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="Documentation SlateFlow" class="md-nav__button md-logo" aria-label="Documentation SlateFlow" data-md-component="logo">
+      
+  <img src="../../../assets/branding/logo_slateflow.png" alt="logo">
+
+    </a>
+    Documentation SlateFlow
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/oylbis/slateflow-docs" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SlateFlow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sequencerFlow
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    sequencerFlow
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fonctionnalités
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fonctionnalités
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#barre-doutils-contextuelle-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Barre d'outils contextuelle — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connexions-de-strips-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connexions de strips — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isolate-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Isolate — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame-range-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frame range — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#follow-playhead-minimap-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Follow playhead &amp; Minimap — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guides-de-zones-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guides de zones — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renommage-en-lot-synchro-de-scene-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Renommage en lot &amp; synchro de scène — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-de-segments-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Export de segments — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-viewer-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Source Viewer — PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#courbes-sur-les-strips-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Courbes sur les strips — PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controle-de-vitesse-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contrôle de vitesse — PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-avance-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio avancé — PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Préférences &amp; raccourcis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Historique des versions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../sequencerOTIO/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sequencerOTIO
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    sequencerOTIO
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sequencerOTIO/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sequencerOTIO/features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fonctionnalités
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sequencerOTIO/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sequencerOTIO/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Historique des versions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../storyFlow/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    storyFlow
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    storyFlow
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../storyFlow/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../storyFlow/features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fonctionnalités
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../storyFlow/shortcuts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Référence des raccourcis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../storyFlow/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Historique des versions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../gpFlow/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gpFlow
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    gpFlow
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gpFlow/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gpFlow/features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fonctionnalités
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gpFlow/preferences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Préférences &amp; raccourcis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gpFlow/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Historique des versions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dopesheetFlow/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    dopesheetFlow
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    dopesheetFlow
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dopesheetFlow/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dopesheetFlow/features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fonctionnalités
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dopesheetFlow/preferences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Préférences &amp; raccourcis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dopesheetFlow/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Historique des versions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../gpOutliner/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gpOutliner
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    gpOutliner
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gpOutliner/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gpOutliner/features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fonctionnalités
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gpOutliner/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Historique des versions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#barre-doutils-contextuelle-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Barre d'outils contextuelle — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connexions-de-strips-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connexions de strips — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isolate-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Isolate — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame-range-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frame range — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#follow-playhead-minimap-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Follow playhead &amp; Minimap — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guides-de-zones-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guides de zones — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renommage-en-lot-synchro-de-scene-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Renommage en lot &amp; synchro de scène — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-de-segments-lite-et-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Export de segments — LITE et PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-viewer-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Source Viewer — PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#courbes-sur-les-strips-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Courbes sur les strips — PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controle-de-vitesse-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contrôle de vitesse — PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-avance-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio avancé — PRO
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../" class="md-path__link">
+        
+  <span class="md-ellipsis">
+    SlateFlow
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    sequencerFlow
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="fonctionnalites">Fonctionnalités<a class="headerlink" href="#fonctionnalites" title="Permanent link">&para;</a></h1>
+<p>Chaque section ci-dessous est taguée <strong>LITE</strong> et/ou <strong>PRO</strong>. Voir
+<a href="../#lite-et-pro">LITE et PRO</a> pour le détail complet des niveaux.</p>
+<h2 id="barre-doutils-contextuelle-lite-et-pro">Barre d'outils contextuelle — LITE et PRO<a class="headerlink" href="#barre-doutils-contextuelle-lite-et-pro" title="Permanent link">&para;</a></h2>
+<p><img alt="Toolbar de sequencerFlow" src="../assets/sequencerFlow_toolBar_01.png" /></p>
+<p>Dessinée directement dans le VSE, sans fouiller dans les menus. Chaque
+bouton ci-dessous a aussi son propre raccourci clavier — voir
+<a href="../shortcuts/">Préférences &amp; raccourcis</a> pour la liste complète.</p>
+<ul>
+<li><strong>Cut</strong> coupe chaque strip sélectionné à la tête de lecture. Sur un
+  strip SCENE (un plan storyFlow par exemple), un split natif laisserait
+  les deux moitiés partager la <strong>même</strong> scène sous-jacente — Cut donne à
+  la moitié de droite une copie complète à la place, pour que chaque
+  moitié soit indépendante dès le départ.</li>
+<li><strong>Join</strong> ne fonctionne que sur des strips qui se touchent vraiment,
+  même canal, même type, même fichier source — en pratique, ça annule un
+  Cut. Ça ne fusionne pas deux plans différents.</li>
+<li><strong>Swap</strong> (left/right) échange un strip, ou tout un bloc de plusieurs
+  strips sélectionnés qui se touchent sur le même canal, avec son unique
+  voisin non sélectionné de ce côté. Le bloc se déplace comme un seul
+  élément rigide ; un strip connecté à un autre (voir
+  <a href="#connexions-de-strips-lite-et-pro">Connexions de strips</a>) est entraîné même
+  si seul son partenaire était sélectionné.</li>
+<li><strong>Slip</strong> invoque l'outil Slip natif de Blender.</li>
+<li><strong>Insert</strong> (PRO) dépose la plage in/out d'une source — éditée dans le
+  Source Viewer ou dans le Dual Monitor, voir
+  <a href="#source-viewer-pro">Source Viewer</a> — à la tête de lecture.</li>
+<li><strong>Connect / Disconnect</strong> — voir <a href="#connexions-de-strips-lite-et-pro">Connexions de strips</a>.</li>
+<li><strong>Sélections avancées</strong> :</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Sélectionne</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select channel</td>
+<td>Tous les strips qui partagent un canal avec la sélection actuelle</td>
+</tr>
+<tr>
+<td>Select above / below</td>
+<td>Tous les strips de n'importe quel canal au-delà du plus haut/bas de la sélection — pas juste le suivant</td>
+</tr>
+<tr>
+<td>Navigate next/previous</td>
+<td>Le strip suivant ou précédent dans le temps, en déplaçant la tête de lecture à son début</td>
+</tr>
+<tr>
+<td>Selection sets</td>
+<td>Enregistre, rappelle ou supprime une sélection nommée</td>
+</tr>
+</tbody>
+</table>
+<p>Les jeux de sélection sont retrouvés par nom, type, position et canal —
+  si un strip a depuis été déplacé ou renommé, le rappel signale une
+  restauration partielle plutôt que de deviner.
+- <strong>Isolate</strong> — voir <a href="#isolate-lite-et-pro">Isolate</a> ci-dessous.
+- <strong>Frame range</strong> — voir <a href="#frame-range-lite-et-pro">Frame range</a> ci-dessous.
+- <strong>Follow playhead</strong> et <strong>Minimap toggle</strong> (PRO) — voir
+  <a href="#follow-playhead-minimap-lite-et-pro">Follow playhead &amp; Minimap</a>
+  ci-dessous.</p>
+<h2 id="connexions-de-strips-lite-et-pro">Connexions de strips — LITE et PRO<a class="headerlink" href="#connexions-de-strips-lite-et-pro" title="Permanent link">&para;</a></h2>
+<p>Une connexion est un lien partagé et invisible entre des strips liés —
+typiquement un plan vidéo et son son — pour que glisser, échanger (swap)
+ou exporter l'un entraîne l'autre. <strong>Connect</strong>/<strong>Disconnect</strong> sur la
+toolbar l'appliquent à la sélection actuelle.</p>
+<p>Les connexions ne sont pas détectées passivement — le panneau
+<strong>Connection Tools</strong> et son <strong>Conditional Connect</strong> pilotent ça
+explicitement, en combinant des critères appliqués en un clic :</p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Regroupe les strips qui...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Selected strips only</td>
+<td>...sont limités à la sélection actuelle (activé par défaut — désactivez pour scanner toute la timeline)</td>
+</tr>
+<tr>
+<td>Same start frame</td>
+<td>...démarrent exactement à la même frame</td>
+</tr>
+<tr>
+<td>Same end frame</td>
+<td>...se terminent exactement à la même frame</td>
+</tr>
+<tr>
+<td>Same channel</td>
+<td>...sont sur le même canal</td>
+</tr>
+<tr>
+<td>Same length</td>
+<td>...partagent la même durée</td>
+</tr>
+<tr>
+<td>Movie-sound pairs</td>
+<td>...ressemblent à une paire vidéo+audio correspondante, par le nom</td>
+</tr>
+</tbody>
+</table>
+<p>N'importe quelle combinaison peut être cochée à la fois — un strip doit
+satisfaire chaque condition cochée pour rejoindre un groupe. Le cas
+courant consiste à ne garder que <strong>Movie-sound pairs</strong> coché. Le
+même panneau liste aussi chaque groupe de connexion existant, avec un
+bouton pour sélectionner tout le groupe d'un coup.</p>
+<p>Principalement là pour préparer un aller-retour d'export :
+<strong><a href="../../sequencerOTIO/">sequencerOTIO</a></strong> (un autre addon SlateFlow)
+lit ces liens pour garder les paires vidéo/audio ensemble à l'export vers
+Resolve via OpenTimelineIO.</p>
+<h2 id="isolate-lite-et-pro">Isolate — LITE et PRO<a class="headerlink" href="#isolate-lite-et-pro" title="Permanent link">&para;</a></h2>
+<p>Deux bascules indépendantes et réversibles, toutes deux basées sur le
+mute (donc elles affectent aussi l'audio, pas seulement ce qui est
+visible) :</p>
+<table>
+<thead>
+<tr>
+<th>Bouton</th>
+<th>Coupe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Isolate Channel</td>
+<td>Tous les canaux sauf ceux que touche la sélection actuelle</td>
+</tr>
+<tr>
+<td>Isolate Selection</td>
+<td>Tous les strips qui ne sont pas actuellement sélectionnés</td>
+</tr>
+</tbody>
+</table>
+<p>Recliquez sur le même bouton pour restaurer exactement l'état d'avant.</p>
+<h2 id="frame-range-lite-et-pro">Frame range — LITE et PRO<a class="headerlink" href="#frame-range-lite-et-pro" title="Permanent link">&para;</a></h2>
+<p>Règle la plage de lecture/rendu de la <strong>scène</strong>, pas juste la vue :</p>
+<table>
+<thead>
+<tr>
+<th>Bouton</th>
+<th>Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Range Selected</td>
+<td>Cadre la plage sur les bornes de la sélection actuelle, une fois</td>
+</tr>
+<tr>
+<td>Range All</td>
+<td>Cadre la plage sur tous les strips de la timeline, une fois</td>
+</tr>
+<tr>
+<td>Auto Range</td>
+<td>Recadre la plage en continu sur la sélection actuelle — retombe sur l'ensemble des strips dès que rien n'est sélectionné</td>
+</tr>
+</tbody>
+</table>
+<h2 id="follow-playhead-minimap-lite-et-pro">Follow playhead &amp; Minimap — LITE et PRO<a class="headerlink" href="#follow-playhead-minimap-lite-et-pro" title="Permanent link">&para;</a></h2>
+<p><strong>Follow playhead</strong> fait défiler la vue pendant la lecture pour garder la
+tête de lecture dans une zone confortable (25–40% de la largeur
+visible), au lieu de sauter ou d'exiger un recentrage manuel.</p>
+<p><img alt="Minimap de la timeline" src="../assets/sequencerFlow_minimap_01.gif" /></p>
+<p><strong>Minimap</strong> (PRO) bascule une vue d'ensemble 2D (temps × canaux) de toute
+la timeline, affichée comme un panneau de taille fixe dans un coin — une
+silhouette par strip, colorée d'après son propre tag de couleur ou la
+couleur native de son type, plus un cadre indiquant la zone actuellement
+visible. Cliquez ou glissez pour recentrer la vue principale à cet
+endroit.</p>
+<h2 id="guides-de-zones-lite-et-pro">Guides de zones — LITE et PRO<a class="headerlink" href="#guides-de-zones-lite-et-pro" title="Permanent link">&para;</a></h2>
+<p><img alt="Guides de zones sur des plages de canaux" src="../assets/sequencerFlow_zoneGuides_01.gif" /></p>
+<p>Des lignes de séparation colorées sur une plage de canaux (audio, vidéo,
+effets...), réglables dans le panneau N <strong>Zone Guides</strong>.</p>
+<ul>
+<li><strong>Show Zone Guides</strong> / <strong>Lock</strong> affichent ou masquent l'overlay ; Lock
+  gèle les limites contre le glisser dans le VSE sans les cacher.</li>
+<li><strong>La liste des zones</strong> : cliquer le nom d'une zone en fait la zone
+  active (éditable juste en dessous). Sa plage de canaux est affichée en
+  lecture seule — pas de champ pour la taper directement. Pour la
+  changer : glissez une limite dans le VSE (clic-glisser sur la ligne
+  colorée près du <strong>bord gauche de la timeline visible</strong> — c'est le seul
+  endroit où c'est possible, pas n'importe où sur la ligne ; aucune
+  touche requise, Échap annule), ou utilisez ▲/▼, Add Zone, Reset ou un
+  preset.</li>
+<li><strong>▲ / ▼</strong> n'insèrent pas la zone ailleurs dans la liste : ils
+  <strong>échangent sa place</strong> avec la zone voisine, chacune gardant sa taille,
+  son nom et sa couleur.</li>
+<li><strong>+ Add Zone</strong> ajoute une nouvelle zone juste au-dessus de la dernière.</li>
+<li>La boîte du dessous édite le <strong>nom</strong> et la <strong>couleur</strong> de la zone
+  active.</li>
+<li><strong>Drag Mode</strong> règle ce qui arrive aux autres zones quand une limite
+  bouge :</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Adjust</strong> (défaut)</td>
+<td>Seule la zone voisine directement touchée suit — les autres restent fixes.</td>
+</tr>
+<tr>
+<td><strong>Push</strong></td>
+<td>Le reste de la pile dans cette direction se décale en conséquence, comme un accordéon.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Presets</strong> enregistrent la disposition actuelle sous un nom, la
+  rappellent ou la suppriment.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Par scène</p>
+<p>Zones et presets sont propres à chaque scène, pas au fichier entier —
+une autre scène (ou le Source Viewer) a sa propre configuration.</p>
+</div>
+<h2 id="renommage-en-lot-synchro-de-scene-lite-et-pro">Renommage en lot &amp; synchro de scène — LITE et PRO<a class="headerlink" href="#renommage-en-lot-synchro-de-scene-lite-et-pro" title="Permanent link">&para;</a></h2>
+<p>Le panneau N <strong>Name Tools</strong> renomme une sélection ou toute la timeline
+(<strong>Find/Replace</strong>, ou <strong>Set Name</strong> avec un préfixe/suffixe optionnel — le
+suffixe peut à la place s'auto-numéroter, dans l'<strong>ordre de la
+timeline</strong>, pas l'ordre de sélection). Un aperçu en direct montre ce que
+deviendrait le premier strip concerné.</p>
+<p>Renommer un strip SCENE renomme aussi automatiquement sa scène
+sous-jacente pour correspondre. <strong>Sync Scene Names</strong> réapplique cette
+même synchro strip→scène à la demande, sans rien renommer d'abord.</p>
+<h2 id="export-de-segments-lite-et-pro">Export de segments — LITE et PRO<a class="headerlink" href="#export-de-segments-lite-et-pro" title="Permanent link">&para;</a></h2>
+<p>Le panneau N <strong>Export Tools</strong> rend la timeline en un fichier vidéo par
+segment — pas "chaque strip sélectionné", et sans mixdown audio séparé
+(chaque strip son non muet dans la plage d'un segment est automatiquement
+mixé dans la vidéo de ce segment).</p>
+<ul>
+<li><strong>Export Range (In/Out)</strong> est la même plage que
+  <a href="#frame-range-lite-et-pro">Frame range</a> ci-dessus, réaffichée ici puisqu'elle
+  pilote l'export.</li>
+<li>Une coupure n'est posée que là où le <strong>strip visible le plus haut</strong>
+  change réellement — les strips empilés dessous ne forcent pas chacun
+  leur propre coupure. Le panneau affiche en direct le nombre de segments
+  que ça produirait.</li>
+<li><strong>Naming</strong> (nommage) :</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Nom du segment basé sur...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Topmost Strip</strong> (par défaut)</td>
+<td>Le strip le plus haut dans ce segment</td>
+</tr>
+<tr>
+<td><strong>Custom Pattern</strong></td>
+<td>Un nom de base + préfixe/suffixe/numérotation — même moteur que le Renommage en lot</td>
+</tr>
+</tbody>
+</table>
+<p>Un suffixe de numéro de frame s'ajoute par-dessus dans les deux cas,
+  comme vrai garde-fou anti-collision (un strip peut redevenir le plus
+  haut plus tard) :</p>
+<table>
+<thead>
+<tr>
+<th>Mode de suffixe</th>
+<th>Ajoute...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Off</td>
+<td>Rien</td>
+</tr>
+<tr>
+<td>Standard</td>
+<td>Un compte de durée <code>0001-NNNN</code></td>
+</tr>
+<tr>
+<td>Timeline</td>
+<td>Les vrais numéros de frame de la <strong>Timeline</strong></td>
+</tr>
+<tr>
+<td>- Le rendu utilise les <strong>Output Properties</strong> propres à la scène (format,</td>
+<td></td>
+</tr>
+<tr>
+<td>codec, chemin) — pas de sélecteur de format séparé ici. Le panneau</td>
+<td></td>
+</tr>
+<tr>
+<td>avertit si le chemin de sortie est encore celui par défaut de Blender,</td>
+<td></td>
+</tr>
+<tr>
+<td>signe fréquent que ces réglages ont été faits sur un autre onglet de</td>
+<td></td>
+</tr>
+<tr>
+<td>scène.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="source-viewer-pro">Source Viewer — PRO<a class="headerlink" href="#source-viewer-pro" title="Permanent link">&para;</a></h2>
+<p><img alt="Dual Monitor source viewing" src="../assets/sequencerFlow_dualMonitor_01.gif" /></p>
+<p>Un vrai montage 3 points dans Blender, via deux façons interchangeables de
+prévisualiser une source :</p>
+<ul>
+<li><strong>Scène dédiée</strong> : le Source Viewer classique — posez des points IN/OUT
+  sur n'importe quel plan dans sa propre scène, votre scène de montage
+  restant intacte pendant que vous parcourez les rushs.</li>
+<li><strong>Dual Monitor</strong> : une seconde prévisualisation indépendante (construite
+  sur le Movie Clip Editor) avec sa propre tête de lecture, image et son —
+  vraiment simultanée avec le montage principal, pas une bascule entre
+  les deux.</li>
+</ul>
+<p>Double-cliquer un fichier dans le File Browser (ou le glisser-déposer) va
+toujours vers celui qui est actuellement actif : dans le <strong>Dual Monitor</strong>
+si une zone Clip Editor est configurée pour l'afficher, sinon dans la
+<strong>scène dédiée</strong> classique. Un historique de médias et des points IN/OUT
+partagés fonctionnent dans les deux — basculez de l'un à l'autre sans
+perdre votre position. Avant de charger quoi que ce soit, l'overlay
+<strong>Folder Media Info</strong> affiche un tableau comparatif (fps, résolution,
+durée, profil couleur) directement dans le File Browser, pour comparer
+des fichiers candidats sans en ouvrir aucun au préalable.</p>
+<p>Le Dual Monitor ajoute quelques éléments propres : ses propres raccourcis
+<strong>I</strong>/<strong>O</strong> pour poser in/out directement dans le Clip Editor, un bouton
+<strong>Reset In/Out</strong>, une bascule d'affichage du timecode, et le système
+natif de Blender de génération de proxy par clip (25/50/75/100%, qualité
+réglable) — un proxy à 50% est construit et activé automatiquement en
+arrière-plan pour chaque nouveau clip chargé, pour que le scrubbing reste
+fluide sans avoir à le configurer à la main.</p>
+<p>Dans les deux cas, <strong>Insert</strong> dépose la plage in/out sélectionnée à la
+tête de lecture, en décalant automatiquement tous les plans suivants.</p>
+<h2 id="courbes-sur-les-strips-pro">Courbes sur les strips — PRO<a class="headerlink" href="#courbes-sur-les-strips-pro" title="Permanent link">&para;</a></h2>
+<p><img alt="Courbes de volume/opacité dessinées sur les strips" src="../assets/sequencerFlow_curves_01.gif" /></p>
+<p>Des courbes de volume et d'opacité dessinées directement sur les strips —
+pas besoin d'ouvrir le Graph Editor :</p>
+<ul>
+<li><strong>Ctrl+clic</strong> n'importe où sur un strip ajoute une clé à cet endroit.</li>
+<li><strong>Clic-glisser</strong> une clé existante pour la déplacer.</li>
+<li><strong>Double-clic</strong> sur une clé ouvre sa Frame/Value exacte pour édition
+  directe.</li>
+</ul>
+<p>Ces courbes pilotent de vraies F-Curves Blender sur les propriétés
+<code>volume</code> ou <code>blend_alpha</code> du strip — ouvrir le Graph Editor sur le même
+strip montre les mêmes clés.</p>
+<h2 id="controle-de-vitesse-pro">Contrôle de vitesse — PRO<a class="headerlink" href="#controle-de-vitesse-pro" title="Permanent link">&para;</a></h2>
+<p>Un petit badge <strong>s</strong> à côté de l'icône d'opacité sur chaque strip
+retimable (pas les strips d'effet — SOUND inclus, pour qu'une paire
+vidéo+audio connectée puisse être retimée ensemble), coloré gris/bleu/
+violet pour normal/réglé/figé. Cliquez-le pour le dialogue <strong>Set Speed</strong> :
+un <strong>pourcentage</strong> (100 = normal, 50 = demi-vitesse, 200 = double), ou
+<strong>Freeze Frame</strong> pour figer le point d'entrée à la place.</p>
+<p>Les deux pilotent les vrais opérateurs de retiming natifs de Blender —
+jamais un modèle de vitesse parallèle. Le facteur est aussi écrit sur le
+strip (<code>strip["otio_speed"]</code>) pour que
+<strong><a href="../../sequencerOTIO/">sequencerOTIO</a></strong> puisse le reporter à
+l'export.</p>
+<h2 id="audio-avance-pro">Audio avancé — PRO<a class="headerlink" href="#audio-avance-pro" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Un <strong>VU-mètre</strong> en temps réel (niveau en dB plus le pic depuis la
+  dernière réinitialisation), ancré à gauche du VSE.</li>
+<li>Chaque strip son reçoit un <strong>badge de canal</strong> qui montre son format
+  réel en un coup d'œil (Mono / Stereo / 5.1 / 7.1).</li>
+<li>Cliquez un badge pour forcer ce strip en <strong>mono</strong>, avec son propre pan
+  <strong>Left / Center / Right</strong>.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/oylbis" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.indexes", "navigation.top", "navigation.path", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/page-fx.js"></script>
+      
+        <script src="../../../javascripts/addon-theme.js"></script>
+      
+    
+  </body>
+</html>
