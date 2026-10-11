@@ -17,7 +17,7 @@ déjà.
 ## Vidéo de présentation
 
 <div class="addon-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/xoqwsbq9xjs" title="gpOutliner — vidéo de présentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/Gbx6NDKRMFw" title="gpOutliner — vidéo de présentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## En un coup d'œil
