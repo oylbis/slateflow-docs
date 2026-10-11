@@ -1,0 +1,208 @@
+/* SlateFlow brand palette — mirrors slateflow-website (oylbis/slateflow-website)
+   Light-only site, no dark mode / no scheme toggle. */
+
+:root {
+  --md-text-font: "Inter";
+
+  /* Header/nav bar: light, glassy, like the main site (not a dark bar) */
+  --md-primary-fg-color: #fbf7f1;
+  --md-primary-fg-color--light: #fdfbf8;
+  --md-primary-fg-color--dark: #efe9df;
+  --md-primary-bg-color: #1b1b22;
+  --md-primary-bg-color--light: #1b1b22cc;
+
+  --md-accent-fg-color: #00c281;
+  --md-accent-fg-color--transparent: #00c2811a;
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: #ffffff;
+
+  --md-default-bg-color: #ffffff;
+  --md-typeset-a-color: #00a76d;
+}
+
+/* ——— Brand dissolve-gradient background ———
+   Set by page-fx.js as body's own background-image (a data URL), not as
+   a separate stacked element — backgrounds are always painted behind an
+   element's own content by definition, so this can't end up hiding text
+   or getting hidden itself, unlike the fixed+z-index overlay this
+   replaced (unreliable across real browsers in both directions). */
+html,
+body {
+  background-color: #fbf7f1;
+}
+
+.md-container {
+  background: transparent;
+}
+
+/* The reading column sits as a translucent/frosted card over the canvas,
+   so the dissolve texture stays faintly visible behind the text at all
+   times (not just in the page gutters), same spirit as the frosted header
+   on slateflow-website. */
+.md-content__inner {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 1.2rem 1.4rem 1.6rem;
+}
+
+/* ——— Table of contents sidebar: plain white card, not transparent —
+   left as transparent (like .md-container) it shows the brand dissolve
+   background through it, which reads as an unwanted gradient rather than
+   the texture it's supposed to be. */
+.md-sidebar--secondary .md-sidebar__inner {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0.6rem 0.8rem;
+}
+
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid rgba(228, 225, 218, 0.8);
+  /* Same glassy header as slateflow-website: translucent + blurred,
+     not a flat opaque bar. */
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* ——— Discreet "back to the presentation site" header link, right after
+   the GitHub repo icon — icon alone read as unclear ("what is this?"),
+   so it carries a short label too, hidden on narrow viewports like the
+   repo name already is. ——— */
+.slateflow-weblink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.slateflow-weblink__label {
+  color: #b60c10;
+  font-size: 0.65rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 59.9375em) {
+  .slateflow-weblink__label {
+    display: none;
+  }
+}
+
+/* ——— The GitHub repo box reserves a fixed 11.7rem width regardless of
+   how short "oylbis/slateflow-docs" actually renders, leaving visible
+   dead space before our link — shrink it to its real content width so
+   the two buttons sit flush against each other. ——— */
+@media screen and (min-width: 60em) {
+  .md-header__source {
+    width: auto;
+    max-width: none;
+  }
+}
+
+/* ——— Bigger, more legible header logo ——— */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.2rem;
+  width: auto;
+}
+
+/* ——— Per-addon hero logo (used at the top of each addon's presentation) ——— */
+.addon-hero-logo {
+  display: block;
+  margin: 0.5rem auto 1.5rem;
+  max-height: 150px;
+  width: auto;
+  max-width: min(420px, 80%);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px;
+}
+
+.md-typeset code {
+  border-radius: 6px;
+}
+
+/* ——— Sidebar: drop the redundant "SlateFlow Docs" site-title header —
+   the "SlateFlow" nav item right below it already serves as the home
+   link, so this duplicated it. Only targets the top-level label (a
+   direct child of .md-nav--primary), not nested section titles. */
+.md-nav--primary > .md-nav__title {
+  display: none;
+}
+
+/* ——— Per-addon accent color (set by addon-theme.js via data-addon) ———
+   Must target <body>, not <html>: Material's own palette CSS sets
+   --md-accent-fg-color directly on <body data-md-color-accent="teal">
+   (unconditionally, since that's a static theme config value) — a
+   declaration on <html> only cascades by inheritance, which a direct,
+   same-element declaration on <body> always wins over regardless of
+   specificity. Redeclaring it on <body> too is what actually overrides
+   it for every descendant. */
+body[data-addon="storyflow"] {
+  --md-accent-fg-color: #00c7d6;
+  --md-accent-fg-color--transparent: #00c7d61a;
+  --md-typeset-a-color: #0097a3;
+}
+
+body[data-addon="sequencerotio"],
+body[data-addon="sequencerflow"] {
+  --md-accent-fg-color: #b60c10;
+  --md-accent-fg-color--transparent: #b60c101a;
+  --md-typeset-a-color: #b60c10;
+}
+
+/* ——— Breadcrumb trail: bigger and bolder than Material's small default,
+   so "where am I" stays clearly visible on every page. The current
+   addon's segment gets its category appended and colored by
+   addon-theme.js (tagBreadcrumb); ancestor segments (e.g. "SlateFlow")
+   stay at this default ink color. */
+.md-path {
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+.md-path__link {
+  color: #1b1b22;
+}
+
+.addon-path-category {
+  font-weight: 500;
+}
+
+/* ——— Presentation video embed (per-addon index page) ——— */
+.addon-video {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  margin: 1.2rem auto 1.5rem;
+  aspect-ratio: 16 / 9;
+}
+
+.addon-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* ——— Category dot next to each addon's entry in the left nav ——— */
+.addon-nav-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+}
