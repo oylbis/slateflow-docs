@@ -23,7 +23,7 @@ montage et dessin reste rapide, propre et transparent.
 ## Vidéo de présentation
 
 <div class="addon-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/-kYS_VeX8yA" title="storyFlow — vidéo de présentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/BLBGXYe3NPs" title="storyFlow — vidéo de présentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## En un coup d'œil

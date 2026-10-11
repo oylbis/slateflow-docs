@@ -22,7 +22,7 @@ same native VSE data on the way back in.
 ## Presentation video
 
 <div class="addon-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/eiaDgmPmD-U" title="sequencerOTIO — presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/p9nCg2ndz00" title="sequencerOTIO — presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## At a glance

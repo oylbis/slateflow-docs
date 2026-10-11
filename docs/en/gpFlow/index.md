@@ -16,7 +16,7 @@ operators, just with a lot less friction between you and the next stroke.
 ## Presentation video
 
 <div class="addon-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/DyvfrOK9qVM" title="gpFlow — presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/SuivQubJIrM" title="gpFlow — presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## At a glance

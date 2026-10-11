@@ -29,7 +29,7 @@ Voir **[Fonctionnalités](features.md)** pour le détail complet.
 ## Vidéo de présentation
 
 <div class="addon-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/915XezptkO4" title="sequencerFlow — vidéo de présentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/NgVXL5TVJd0" title="sequencerFlow — vidéo de présentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## En un coup d'œil

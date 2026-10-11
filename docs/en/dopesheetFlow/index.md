@@ -19,7 +19,7 @@ Dope Sheet header.
 ## Presentation video
 
 <div class="addon-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/czXVSeHg6JM" title="dopesheetFlow — presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/70PnKAOdH-E" title="dopesheetFlow — presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## At a glance
