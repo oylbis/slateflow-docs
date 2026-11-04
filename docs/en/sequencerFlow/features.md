@@ -27,39 +27,39 @@ the full list.
 - **Insert** (PRO) drops the in/out range of a source — edited in either
   the Source Viewer or the Dual Monitor, see [Source Viewer](#source-viewer-pro)
   — at the playhead.
-- **Connect / Disconnect** links or unlinks the current selection — a
-  connection is a shared, invisible link between related strips,
-  typically a video clip and its audio, so dragging, swapping or
-  exporting one takes its partner along. Connections aren't detected
-  passively — the **Connection Tools** N-panel's **Conditional Connect**
-  drives that explicitly, by combining criteria and applying them in one
-  click:
+- **Connect / Disconnect** links or unlinks the current selection —
+  connected strips show a colored dot indicator. The **Connection Tools**
+  N-panel's **Conditional Connect** does it automatically instead, by
+  combining criteria and applying them in one click:
 
-  | Condition | Groups strips that... |
-  |---|---|
-  | Selected strips only | ...are limited to the current selection (on by default — switch it off to scan the whole timeline instead) |
-  | Same start frame | ...start at exactly the same frame |
-  | Same end frame | ...end at exactly the same frame |
-  | Same channel | ...sit on the same channel |
-  | Same length | ...share the same duration |
-  | Movie-sound pairs | ...look like a matching video+audio pair, by name |
+    | Condition | Groups strips that... |
+    |---|---|
+    | Selected strips only | ...are limited to the current selection (on by default — switch it off to scan the whole timeline instead) |
+    | Same start frame | ...start at exactly the same frame |
+    | Same end frame | ...end at exactly the same frame |
+    | Same channel | ...sit on the same channel |
+    | Same length | ...share the same duration |
+    | Movie-sound pairs | ...look like a matching video+audio pair, by name |
 
-  Any combination can be checked at once — a strip has to satisfy every
-  checked condition to join a group. The common case is leaving only
-  **Movie-sound pairs** checked. The same panel also lists every existing
-  connection group, with a button to select the whole group at once.
+    Any combination can be checked at once — a strip has to satisfy every
+    checked condition to join a group. The common case is leaving only
+    **Movie-sound pairs** checked. The same panel also lists every
+    existing connection group, with a button to select the whole group at
+    once.
+
 - **Advanced selections**:
 
-  | Action | Selects |
-  |---|---|
-  | Select channel | Every strip sharing a channel with the current selection |
-  | Select above / below | Every strip in *any* channel beyond the selection's highest/lowest — not just the next one |
-  | Navigate next/previous | The next or previous strip in time, moving the playhead to its start |
-  | Selection sets | Save, recall or remove a named selection |
+    | Action | Selects |
+    |---|---|
+    | Select channel | Every strip sharing a channel with the current selection |
+    | Select above / below | Every strip in *any* channel beyond the selection's highest/lowest — not just the next one |
+    | Navigate next/previous | The next or previous strip in time, moving the playhead to its start |
+    | Selection sets | Save, recall or remove a named selection |
 
-  Selection sets are matched back by name, type, position and channel —
-  if a strip has since moved or been renamed, recall reports a partial
-  restore instead of guessing.
+    Selection sets are matched back by name, type, position and channel —
+    if a strip has since moved or been renamed, recall reports a partial
+    restore instead of guessing.
+
 - **Isolate** — see [Isolate](#isolate-lite-and-pro) below.
 - **Frame range** — see [Frame range](#frame-range-lite-and-pro) below.
 - **Follow playhead** and **Minimap toggle** (PRO) — see

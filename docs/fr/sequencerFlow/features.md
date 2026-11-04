@@ -28,40 +28,39 @@ bouton ci-dessous a aussi son propre raccourci clavier — voir
 - **Insert** (PRO) dépose la plage in/out d'une source — éditée dans le
   Source Viewer ou dans le Dual Monitor, voir
   [Source Viewer](#source-viewer-pro) — à la tête de lecture.
-- **Connect / Disconnect** lie ou délie la sélection actuelle — une
-  connexion est un lien partagé et invisible entre strips liés,
-  typiquement un plan vidéo et son son, pour que glisser, échanger ou
-  exporter l'un entraîne l'autre. Les connexions ne sont pas détectées
-  passivement — le panneau **Connection Tools** et son **Conditional
-  Connect** pilotent ça explicitement, en combinant des critères
-  appliqués en un clic :
+- **Connect / Disconnect** lie ou délie la sélection actuelle — les
+  strips connectés affichent une pastille de couleur. Le panneau
+  **Connection Tools** et son **Conditional Connect** le font
+  automatiquement, en combinant des critères appliqués en un clic :
 
-  | Condition | Regroupe les strips qui... |
-  |---|---|
-  | Selected strips only | ...sont limités à la sélection actuelle (activé par défaut — désactivez pour scanner toute la timeline) |
-  | Same start frame | ...démarrent exactement à la même frame |
-  | Same end frame | ...se terminent exactement à la même frame |
-  | Same channel | ...sont sur le même canal |
-  | Same length | ...partagent la même durée |
-  | Movie-sound pairs | ...ressemblent à une paire vidéo+audio correspondante, par le nom |
+    | Condition | Regroupe les strips qui... |
+    |---|---|
+    | Selected strips only | ...sont limités à la sélection actuelle (activé par défaut — désactivez pour scanner toute la timeline) |
+    | Same start frame | ...démarrent exactement à la même frame |
+    | Same end frame | ...se terminent exactement à la même frame |
+    | Same channel | ...sont sur le même canal |
+    | Same length | ...partagent la même durée |
+    | Movie-sound pairs | ...ressemblent à une paire vidéo+audio correspondante, par le nom |
 
-  N'importe quelle combinaison peut être cochée à la fois — un strip doit
-  satisfaire chaque condition cochée pour rejoindre un groupe. Le cas
-  courant consiste à ne garder que **Movie-sound pairs** coché. Le même
-  panneau liste aussi chaque groupe de connexion existant, avec un bouton
-  pour sélectionner tout le groupe d'un coup.
+    N'importe quelle combinaison peut être cochée à la fois — un strip
+    doit satisfaire chaque condition cochée pour rejoindre un groupe. Le
+    cas courant consiste à ne garder que **Movie-sound pairs** coché. Le
+    même panneau liste aussi chaque groupe de connexion existant, avec un
+    bouton pour sélectionner tout le groupe d'un coup.
+
 - **Sélections avancées** :
 
-  | Action | Sélectionne |
-  |---|---|
-  | Select channel | Tous les strips qui partagent un canal avec la sélection actuelle |
-  | Select above / below | Tous les strips de n'importe quel canal au-delà du plus haut/bas de la sélection — pas juste le suivant |
-  | Navigate next/previous | Le strip suivant ou précédent dans le temps, en déplaçant la tête de lecture à son début |
-  | Selection sets | Enregistre, rappelle ou supprime une sélection nommée |
+    | Action | Sélectionne |
+    |---|---|
+    | Select channel | Tous les strips qui partagent un canal avec la sélection actuelle |
+    | Select above / below | Tous les strips de n'importe quel canal au-delà du plus haut/bas de la sélection — pas juste le suivant |
+    | Navigate next/previous | Le strip suivant ou précédent dans le temps, en déplaçant la tête de lecture à son début |
+    | Selection sets | Enregistre, rappelle ou supprime une sélection nommée |
 
-  Les jeux de sélection sont retrouvés par nom, type, position et canal —
-  si un strip a depuis été déplacé ou renommé, le rappel signale une
-  restauration partielle plutôt que de deviner.
+    Les jeux de sélection sont retrouvés par nom, type, position et canal
+    — si un strip a depuis été déplacé ou renommé, le rappel signale une
+    restauration partielle plutôt que de deviner.
+
 - **Isolate** — voir [Isolate](#isolate-lite-et-pro) ci-dessous.
 - **Frame range** — voir [Frame range](#frame-range-lite-et-pro) ci-dessous.
 - **Follow playhead** et **Minimap toggle** (PRO) — voir
