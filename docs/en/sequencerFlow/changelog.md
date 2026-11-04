@@ -1,6 +1,15 @@
 # Version history
 
-Current version: **2.0.0**.
+Current version: **2.0.1**.
+
+## Since the first release
+
+- **Strip connections now use Blender's own native "Connect Strips"**
+  mechanism instead of an internal tag — no change in the toolbar, but
+  connections now also round-trip through
+  [sequencerOTIO](../sequencerOTIO/index.md) even without sequencerFlow
+  installed. Connect/Disconnect and Conditional Connect remain the
+  fastest way to create them.
 
 ## Roadmap
 

@@ -72,11 +72,6 @@ checked condition to join a group. The common case is leaving only
 panel also lists every existing connection group, with a button to select
 the whole group at once.
 
-Mainly there to prep a round-trip export:
-**[sequencerOTIO](../sequencerOTIO/index.md)** (a separate SlateFlow
-add-on) reads these links to keep video/audio pairs together when
-exporting to Resolve via OpenTimelineIO.
-
 ## Isolate — LITE and PRO
 
 Two independent, reversible toggles, both based on muting (so they

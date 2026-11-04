@@ -1,10 +1,13 @@
 # Version history
 
-Current version: **2.0.0**.
+Current version: **2.0.1**.
 
 ## Since the first release
 
-No changes yet — this is the current release.
+- Fixed the broken "report an issue" link.
+- Fixed a bug where switching scenes could silently clear a camera's
+  board/context reference, and a rare race when dragging an object's
+  depth while the list reordered.
 
 ## Roadmap
 

@@ -1,10 +1,16 @@
 # Historique des versions
 
-Version actuelle : **1.0.0**.
+Version actuelle : **2.0.2**.
 
 ## Depuis la première release
 
-Aucun changement pour l'instant — c'est la version actuelle.
+- **Les connexions de strips sont désormais lues directement depuis les
+  données natives "Connect Strips" de Blender**, au lieu d'une étiquette
+  propre à sequencerFlow — une connexion faite nativement dans le VSE
+  survit maintenant à l'aller-retour vers Resolve, que sequencerFlow soit
+  installé ou non. Les vitesses de retiming posées par les outils de
+  sequencerFlow restent lues séparément et nécessitent toujours cet
+  addon.
 
 ## Roadmap
 

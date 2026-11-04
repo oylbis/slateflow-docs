@@ -1,10 +1,15 @@
 # Version history
 
-Current version: **1.0.0**.
+Current version: **2.0.2**.
 
 ## Since the first release
 
-No changes yet — this is the current release.
+- **Strip connections are now read directly from Blender's own native
+  "Connect Strips" data** instead of a sequencerFlow-specific tag —
+  connections made natively in the VSE now round-trip to Resolve whether
+  or not sequencerFlow is installed. Retiming speeds set with
+  sequencerFlow's speed tools are read separately and still require that
+  add-on.
 
 ## Roadmap
 

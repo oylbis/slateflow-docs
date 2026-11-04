@@ -74,11 +74,6 @@ courant consiste à ne garder que **Movie-sound pairs** coché. Le
 même panneau liste aussi chaque groupe de connexion existant, avec un
 bouton pour sélectionner tout le groupe d'un coup.
 
-Principalement là pour préparer un aller-retour d'export :
-**[sequencerOTIO](../sequencerOTIO/index.md)** (un autre addon SlateFlow)
-lit ces liens pour garder les paires vidéo/audio ensemble à l'export vers
-Resolve via OpenTimelineIO.
-
 ## Isolate — LITE et PRO
 
 Deux bascules indépendantes et réversibles, toutes deux basées sur le

@@ -1,10 +1,14 @@
 # Historique des versions
 
-Version actuelle : **2.0.0**.
+Version actuelle : **2.0.1**.
 
 ## Depuis la première release
 
-Aucun changement pour l'instant — c'est la version actuelle.
+- Correction du lien "signaler un problème" qui était cassé.
+- Correction d'un bug où changer de scène pouvait silencieusement vider
+  la référence de board/contexte d'une caméra, et d'une rare collision
+  en glissant la profondeur d'un objet pendant que la liste se
+  réordonnait.
 
 ## Roadmap
 
