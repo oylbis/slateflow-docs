@@ -50,9 +50,8 @@ Voir **[Fonctionnalités](features.md)** pour le détail complet.
   vitesse en pourcentage, freeze frame, le tout sur les opérateurs de
   retiming natifs de Blender.
 - **Connexions de strips** — liaison automatique ou manuelle entre strips
-  liés (typiquement un plan vidéo et son son). Lues par
-  **[sequencerOTIO](../sequencerOTIO/index.md)** (un autre addon SlateFlow)
-  pour garder les paires vidéo/audio ensemble à l'export vers Resolve.
+  liés (typiquement un plan vidéo et son son), pour que glisser, échanger
+  ou exporter l'un entraîne l'autre.
 - **Renommage en lot** et **export par strip**.
 
 ## Pourquoi ça reste natif

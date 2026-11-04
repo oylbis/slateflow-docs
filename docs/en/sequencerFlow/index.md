@@ -48,10 +48,8 @@ See **[Features](features.md)** for the detailed breakdown.
   percentage-based speed dialog, freeze frame, all built on Blender's own
   native retiming operators.
 - **Strip connections** — automatic or manual linking between related
-  strips (typically a video clip and its audio). Reads these links to keep
-  video/audio pairs together when exporting to Resolve via
-  **[sequencerOTIO](../sequencerOTIO/index.md)** (a separate SlateFlow
-  add-on).
+  strips (typically a video clip and its audio), so dragging, swapping or
+  exporting one takes its partner along.
 - **Batch rename** and **per-strip export**.
 
 ## Why it feels native
