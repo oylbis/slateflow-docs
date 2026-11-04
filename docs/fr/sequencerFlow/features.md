@@ -22,14 +22,34 @@ bouton ci-dessous a aussi son propre raccourci clavier — voir
 - **Swap** (left/right) échange un strip, ou tout un bloc de plusieurs
   strips sélectionnés qui se touchent sur le même canal, avec son unique
   voisin non sélectionné de ce côté. Le bloc se déplace comme un seul
-  élément rigide ; un strip connecté à un autre (voir
-  [Connexions de strips](#connexions-de-strips-lite-et-pro)) est entraîné même
-  si seul son partenaire était sélectionné.
+  élément rigide ; un strip connecté à un autre (voir **Connect**
+  ci-dessous) est entraîné même si seul son partenaire était sélectionné.
 - **Slip** invoque l'outil Slip natif de Blender.
 - **Insert** (PRO) dépose la plage in/out d'une source — éditée dans le
   Source Viewer ou dans le Dual Monitor, voir
   [Source Viewer](#source-viewer-pro) — à la tête de lecture.
-- **Connect / Disconnect** — voir [Connexions de strips](#connexions-de-strips-lite-et-pro).
+- **Connect / Disconnect** lie ou délie la sélection actuelle — une
+  connexion est un lien partagé et invisible entre strips liés,
+  typiquement un plan vidéo et son son, pour que glisser, échanger ou
+  exporter l'un entraîne l'autre. Les connexions ne sont pas détectées
+  passivement — le panneau **Connection Tools** et son **Conditional
+  Connect** pilotent ça explicitement, en combinant des critères
+  appliqués en un clic :
+
+  | Condition | Regroupe les strips qui... |
+  |---|---|
+  | Selected strips only | ...sont limités à la sélection actuelle (activé par défaut — désactivez pour scanner toute la timeline) |
+  | Same start frame | ...démarrent exactement à la même frame |
+  | Same end frame | ...se terminent exactement à la même frame |
+  | Same channel | ...sont sur le même canal |
+  | Same length | ...partagent la même durée |
+  | Movie-sound pairs | ...ressemblent à une paire vidéo+audio correspondante, par le nom |
+
+  N'importe quelle combinaison peut être cochée à la fois — un strip doit
+  satisfaire chaque condition cochée pour rejoindre un groupe. Le cas
+  courant consiste à ne garder que **Movie-sound pairs** coché. Le même
+  panneau liste aussi chaque groupe de connexion existant, avec un bouton
+  pour sélectionner tout le groupe d'un coup.
 - **Sélections avancées** :
 
   | Action | Sélectionne |
@@ -47,32 +67,6 @@ bouton ci-dessous a aussi son propre raccourci clavier — voir
 - **Follow playhead** et **Minimap toggle** (PRO) — voir
   [Follow playhead & Minimap](#follow-playhead-minimap-lite-et-pro)
   ci-dessous.
-
-## Connexions de strips — LITE et PRO
-
-Une connexion est un lien partagé et invisible entre des strips liés —
-typiquement un plan vidéo et son son — pour que glisser, échanger (swap)
-ou exporter l'un entraîne l'autre. **Connect**/**Disconnect** sur la
-toolbar l'appliquent à la sélection actuelle.
-
-Les connexions ne sont pas détectées passivement — le panneau
-**Connection Tools** et son **Conditional Connect** pilotent ça
-explicitement, en combinant des critères appliqués en un clic :
-
-| Condition | Regroupe les strips qui... |
-|---|---|
-| Selected strips only | ...sont limités à la sélection actuelle (activé par défaut — désactivez pour scanner toute la timeline) |
-| Same start frame | ...démarrent exactement à la même frame |
-| Same end frame | ...se terminent exactement à la même frame |
-| Same channel | ...sont sur le même canal |
-| Same length | ...partagent la même durée |
-| Movie-sound pairs | ...ressemblent à une paire vidéo+audio correspondante, par le nom |
-
-N'importe quelle combinaison peut être cochée à la fois — un strip doit
-satisfaire chaque condition cochée pour rejoindre un groupe. Le cas
-courant consiste à ne garder que **Movie-sound pairs** coché. Le
-même panneau liste aussi chaque groupe de connexion existant, avec un
-bouton pour sélectionner tout le groupe d'un coup.
 
 ## Isolate — LITE et PRO
 

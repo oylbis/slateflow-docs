@@ -33,9 +33,9 @@ See **[Features](features.md)** for the detailed breakdown.
 ## At a glance
 
 - **A contextual toolbar drawn right into the VSE**: smart split, join,
-  swap, slip, directional/channel selection, selection sets, channel and
-  selection isolation, auto-fit frame range, follow-playhead during
-  playback.
+  swap, slip, strip connections, directional/channel selection, selection
+  sets, channel and selection isolation, auto-fit frame range,
+  follow-playhead during playback.
 - **Source Viewer** (PRO) — real 3-point editing: set IN/OUT points on any
   source clip in a dedicated space (second monitor or scene), then insert
   at the playhead with every later strip rippling out of the way
@@ -47,9 +47,6 @@ See **[Features](features.md)** for the detailed breakdown.
 - **Speed control** (PRO): a badge on every strip for quick retiming,
   percentage-based speed dialog, freeze frame, all built on Blender's own
   native retiming operators.
-- **Strip connections** — automatic or manual linking between related
-  strips (typically a video clip and its audio), so dragging, swapping or
-  exporting one takes its partner along.
 - **Batch rename** and **per-strip export**.
 
 ## Why it feels native

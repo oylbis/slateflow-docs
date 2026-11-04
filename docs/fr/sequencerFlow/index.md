@@ -35,7 +35,7 @@ Voir **[Fonctionnalités](features.md)** pour le détail complet.
 ## En un coup d'œil
 
 - **Une barre d'outils contextuelle dessinée directement dans le VSE** :
-  split intelligent, join, swap, slip,
+  split intelligent, join, swap, slip, connexions de strips,
   sélection directionnelle/par canal, jeux de sélection, isolation de canal
   et de sélection, cadrage automatique du frame range, suivi de la tête de
   lecture quand on fait "play".
@@ -49,9 +49,6 @@ Voir **[Fonctionnalités](features.md)** pour le détail complet.
 - **Contrôle de vitesse** (PRO) : badge sur chaque strip pour directement faire un retime, dialogue de
   vitesse en pourcentage, freeze frame, le tout sur les opérateurs de
   retiming natifs de Blender.
-- **Connexions de strips** — liaison automatique ou manuelle entre strips
-  liés (typiquement un plan vidéo et son son), pour que glisser, échanger
-  ou exporter l'un entraîne l'autre.
 - **Renommage en lot** et **export par strip**.
 
 ## Pourquoi ça reste natif

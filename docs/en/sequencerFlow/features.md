@@ -21,13 +21,33 @@ the full list.
 - **Swap** (left/right) swaps a strip, or a whole block of several
   touching selected strips on the same channel, with its single
   unselected neighbor on that side. The block moves as one rigid unit; a
-  strip connected to another (see [Strip connections](#strip-connections-lite-and-pro))
-  is dragged along even if only its partner was selected.
+  strip connected to another (see **Connect** below) is dragged along
+  even if only its partner was selected.
 - **Slip** invokes Blender's own native Slip tool.
 - **Insert** (PRO) drops the in/out range of a source — edited in either
   the Source Viewer or the Dual Monitor, see [Source Viewer](#source-viewer-pro)
   — at the playhead.
-- **Connect / Disconnect** — see [Strip connections](#strip-connections-lite-and-pro).
+- **Connect / Disconnect** links or unlinks the current selection — a
+  connection is a shared, invisible link between related strips,
+  typically a video clip and its audio, so dragging, swapping or
+  exporting one takes its partner along. Connections aren't detected
+  passively — the **Connection Tools** N-panel's **Conditional Connect**
+  drives that explicitly, by combining criteria and applying them in one
+  click:
+
+  | Condition | Groups strips that... |
+  |---|---|
+  | Selected strips only | ...are limited to the current selection (on by default — switch it off to scan the whole timeline instead) |
+  | Same start frame | ...start at exactly the same frame |
+  | Same end frame | ...end at exactly the same frame |
+  | Same channel | ...sit on the same channel |
+  | Same length | ...share the same duration |
+  | Movie-sound pairs | ...look like a matching video+audio pair, by name |
+
+  Any combination can be checked at once — a strip has to satisfy every
+  checked condition to join a group. The common case is leaving only
+  **Movie-sound pairs** checked. The same panel also lists every existing
+  connection group, with a button to select the whole group at once.
 - **Advanced selections**:
 
   | Action | Selects |
@@ -45,32 +65,6 @@ the full list.
 - **Follow playhead** and **Minimap toggle** (PRO) — see
   [Follow playhead & Minimap](#follow-playhead-minimap-lite-and-pro)
   below.
-
-## Strip connections — LITE and PRO
-
-A connection is a shared, invisible link between related strips —
-typically a video clip and its audio — so dragging, swapping or exporting
-one takes its partner along. **Connect**/**Disconnect** on the toolbar
-apply it to the current selection.
-
-Connections aren't detected passively — the **Connection Tools** N-panel's
-**Conditional Connect** drives that explicitly, by combining criteria and
-applying them in one click:
-
-| Condition | Groups strips that... |
-|---|---|
-| Selected strips only | ...are limited to the current selection (on by default — switch it off to scan the whole timeline instead) |
-| Same start frame | ...start at exactly the same frame |
-| Same end frame | ...end at exactly the same frame |
-| Same channel | ...sit on the same channel |
-| Same length | ...share the same duration |
-| Movie-sound pairs | ...look like a matching video+audio pair, by name |
-
-Any combination can be checked at once — a strip has to satisfy every
-checked condition to join a group. The common case is leaving only
-**Movie-sound pairs** checked. The same
-panel also lists every existing connection group, with a button to select
-the whole group at once.
 
 ## Isolate — LITE and PRO
 
